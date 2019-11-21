@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}<title>Бесплатные консультации юристов онлайн — Можно бесплатно задать вопрос на сайте</title>{% endblock title %}
+{% block meta_description %}
+<meta name="description" content="Каталог адвокатов и юристов России с рейтингом, отзывами, специализацией.">
+{% endblock meta_description %}
+
+{% block content %}
+<div class="banner df" style="background-image: url({% static 'images/main-banner.png' %});">
+    <h1>Бесплатная консультация юриста</h1>
+    <p>На сайте можно получить бесплатную консультацию юриста и получить бесплатную помощь компетентного юриста в течение 10 минут</p>
+    <a href="" class='banner-btn flex-abs-center'>Задать вопрос</a>
+</div>
+<div class="index-specs">
+    {% for specialization in specializations|slice:":6" %}
+    {% with specialization.num_subspecs as subspecs %}
+    {% if subspecs > 1 %}
+        <div class="spec-card df fxd-c">
+            {% if subspecs < 4 and subspecs > 1 %}
+            <img src="{% if specialization.image %}{{ specialization.image.url }}{% else %}{% static 'images/spec-placeholder.png' %}{% endif %}" alt="{{ specialization.name }}">
+            {% endif %}
+            <div class="df fxd-c">
+                <a href="/{{city_slug}}/{{ specialization.slug }}" class="spec-card">{{ specialization.name }}</a>
+                <div class="subspecs df">
+                    {% for subspec in specialization.related.all %}
+                    <a href="/{{city_slug}}/{{ subspec.slug }}">{{ subspec.name }}</a>
+                    {% endfor %}
+                </div>
+                <a href="" class="spec-card-btn flex-abs-center">Задать вопрос</a>
+            </div>
+        </div>
+    {% elif subspecs == 1 %}
+        <div class="spec-card df fxd-c">
+            <div class="df fxd-c">
+                    <a href="/{{city_slug}}/{{ specialization.slug }}" class="spec-card">{{ specialization.name }}</a>
+                    <div class="subspecs df">
+                        {% for subspec in specialization.related.all %}
+                        <a href="/{{city_slug}}/{{ subspec.slug }}">{{ subspec.name }}</a>
+                        {% endfor %}
+                    </div>
+            </div>
+        </div>
+    {% endif %}
+    {% endwith %}
+    {% endfor %}
+</div>
+<div class="question-block df">
+    <div>
+        <p>Задайте свой вопрос юристу</p>
+        <p>Чтобы задать вопрос юристу онлайн, вам потребуется всего несколько минут. Наши специалисты ответят в кратчайшие сроки и подскажут, как правильно поступить в вашей ситуации. Доверьте решение своей проблемы квалифицированным юристам!</p>
+    </div>
+    <form action='/' method='POST'>
+        {% csrf_token %}
+        <textarea name="text "placeholder="Опишите подробно вашу ситуацию. Чем подробнее вы разъясните ситуацию, тем полнее и точнее будут ответы юристов."></textarea>
+        <input type="submit" value="Отправить">
+    </form>
+</div>
+<div class="index-specs">
+    {% for specialization in specializations|slice:"6:7" %}
+    {% with specialization.num_subspecs as subspecs %}
+    {% if subspecs > 1 %}
+        <div class="spec-card-wide df">
+            {% if subspecs < 4 and subspecs > 1 %}
+            <img src="{% if specialization.image %}{{ specialization.image.url }}{% else %}{% static 'images/spec-placeholder.png' %}{% endif %}" alt="{{ specialization.name }}">
+            {% endif %}
+            <div class="df fxd-c">
+                <a href="/{{city_slug}}/{{ specialization.slug }}" class="spec-card">{{ specialization.name }}</a>
+                <div class="subspecs df">
+                    {% for subspec in specialization.related.all %}
+                    <a href="/{{city_slug}}/{{ subspec.slug }}">{{ subspec.name }}</a>
+                    {% endfor %}
+                </div>
+                <a href="" class="spec-card-btn flex-abs-center">Задать вопрос</a>
+            </div>
+        </div>
+    {% endif %}
+    {% endwith %}
+    {% endfor %}
+    <div class="specs-card df fxd-c">
+    {% for specialization in specializations|slice:"8:10" %}
+        <div class="df fxd-c">
+            <a href="/{{city_slug}}/{{ specialization.slug }}" class="spec-card">{{ specialization.name }}</a>
+            <div class="subspecs df">
+                {% for subspec in specialization.related.all %}
+                    <a href="/{{city_slug}}/{{ subspec.slug }}">{{ subspec.name }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+    {% for specialization in specializations|slice:"10:" %}
+        <div class="spec-card mini-card df fxd-c">
+            <img src="{% if specialization.image %}{{ specialization.image.url }}{% else %}{% static 'images/spec-placeholder.png' %}{% endif %}" alt="{{ specialization.name }}">
+            <div class="df fxd-c">
+                <a href="/{{city_slug}}/{{ specialization.slug }}" class="spec-card">{{ specialization.name }}</a>
+                <div class="subspecs df">
+                    {% for subspec in specialization.related.all %}
+                    <a href="/{{city_slug}}/{{ subspec.slug }}">{{ subspec.name }}</a>
+                    {% endfor %}
+                </div>
+                <a href="" class="spec-card-btn flex-abs-center">Задать вопрос</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock content %}

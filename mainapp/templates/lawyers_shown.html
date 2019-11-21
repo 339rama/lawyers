@@ -1,0 +1,20 @@
+{% load static %}
+
+{% for lawyer in lawyers %}
+<div class="list-item" data-href="{{ lawyer.get_absolute_url }}" onclick="goToPage(this)">
+    <img src="{{ lawyer.image.url }}" class="list-item" />
+    <div class="item-desc">
+        <div class="item-desc-top">
+            <p>{{ lawyer.major|capfirst }}</p>
+            <div class="rating">
+                <img src="{% static 'images/star.svg' %}" />
+                <span class="{% if lawyer.rating >= 8 %}green{% else %}orange{% endif %}">{{ lawyer.rating }}</span>
+                <span class="lawyer-feedbacks">{{ lawyer.num_comments }} отзыва</span>
+            </div>
+        </div>
+        <p class="name">{{ lawyer.lawyername }}</p>
+        <p class="item-desc">{{ lawyer.aboutself}}</p>
+        <a href="{{ lawyer.get_absolute_url }}" class="item-btn">Подробнее</a>
+    </div>
+</div>
+{% endfor %}

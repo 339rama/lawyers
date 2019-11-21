@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}<title>{{ lawyer.lawyername }} : юридическая помощь, {{ lawyer.specializations.all|first }}, отзывы</title>{% endblock title %}
+{% block meta_description %}<meta name="description" content="{{ lawyer.aboutself }}">
+<meta name="keywords" content="{{ lawyer.lawyername }}">
+{% endblock meta_description %}
+
+{% block content %}
+
+<div class="breadcrumbs df">
+    <a href="{% url 'mainapp:Index' %}" class="flex-abs-center">Главная</a>
+    <a href="/{{ city_slug }}/" class="flex-abs-center">Адвокаты и юристы</a>
+    <a class="flex-abs-center lawyer-bread">{{ lawyer.lawyername }}</a>
+</div>
+<div class="lawyer-page-wrapper">
+    <div class="left-col">
+        <img src="{{ lawyer.image.url }}" alt="" class="lawyer-page">
+        <div class="lawyer-links">
+            <a href="#about" class="lawyer-links" style="color: #1771E6;">О специалисте</a>
+            <a href="#feedbacks" class="lawyer-links">Отзывы</a>
+            <a href="#question" class="lawyer-links">Задать вопрос</a>
+        </div>
+    </div>
+    <div class="right-col">
+        <h1>{{ lawyer.lawyername }}</h1>
+        <div class="lawyer-extras">
+            <div class="rating">
+                <img src="{% static 'images/star.svg' %}" />
+                <span class="{% if lawyer.rating >= 8 %}green{% else %}orange{% endif %}">{{ lawyer.rating }}</span>
+            </div>
+            <span class="lawyer-feedbacks">{{ comments|length }} отзыва</span>
+            <span class="lawyer-city">{{ lawyer.city }}</span>
+        </div>
+        <div id="about">
+            <h2 class="lawyer-title">О специалисте</h2>
+            <p class="lawyer-info">{{ lawyer.aboutself }}</p>
+        </div>
+        <div id="feedbacks">
+            <h2 class="lawyer-title">Отзывы</h2>            
+            {% for comment in comments %}
+            <div class="feedback-item">
+                <p>{{ comment.text }}</p>
+                <p>{{ comment.author }}</p>
+            </div>
+            {% endfor %}    
+        </div>
+        <div id="question">
+            <h2 class="lawyer-title">Задайте свой вопрос юристу</h2>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <textarea name="question_body" placeholder="Опишите подробно вашу ситуацию. Чем подробнее вы разъясните ситуацию, тем полнее и точнее будут ответы юристов."></textarea>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,6104 @@
+[
+    {
+        "pk":1,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Москва",
+            "slug":"msk",
+            "city_names":"{'city1': 'Москва', 'city2': 'Москвы', 'city3': 'Москве', 'city4': 'Москву', 'city5': 'Москвой', 'city6': 'Москве', 'city7': 'Москве'}"
+        }
+    },
+    {
+        "pk":2,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Санкт-Петербург",
+            "slug":"spb",
+            "city_names":"{'city1': 'Санкт-Петербург', 'city2': 'Санкт-Петербурга', 'city3': 'Санкт-Петербургу', 'city4': 'Санкт-Петербург', 'city5': 'Санкт-Петербургом', 'city6': 'Санкт-Петербурге', 'city7': 'Санкт-Петербурге'}"
+        }
+    },
+    {
+        "pk":3,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Новосибирск",
+            "slug":"nsk",
+            "city_names":"{'city1': 'Новосибирск', 'city2': 'Новосибирска', 'city3': 'Новосибирску', 'city4': 'Новосибирск', 'city5': 'Новосибирском', 'city6': 'Новосибирске', 'city7': 'Новосибирске'}"
+        }
+    },
+    {
+        "pk":4,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Екатеринбург",
+            "slug":"ekb",
+            "city_names":"{'city1': 'Екатеринбург', 'city2': 'Екатеринбурга', 'city3': 'Екатеринбургу', 'city4': 'Екатеринбург', 'city5': 'Екатеринбургом', 'city6': 'Екатеринбурге', 'city7': 'Екатеринбурге'}"
+        }
+    },
+    {
+        "pk":5,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нижний Новгород",
+            "slug":"nn",
+            "city_names":"{'city1': 'Нижний Новгород', 'city2': 'НижнегНовгорода', 'city3': 'Нижнему Новгороду', 'city4': 'Нижний Новгород', 'city5': 'Нижним Новгородом', 'city6': 'Нижнем Новгороде', 'city7': 'Нижнем Новгороде'}"
+        }
+    },
+    {
+        "pk":6,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Казань",
+            "slug":"kazan",
+            "city_names":"{'city1': 'Казань', 'city2': 'Казани', 'city3': 'Казани', 'city4': 'Казань', 'city5': 'Казанью', 'city6': 'Казани', 'city7': 'Казани'}"
+        }
+    },
+    {
+        "pk":7,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Самара",
+            "slug":"samara",
+            "city_names":"{'city1': 'Самара', 'city2': 'Самары', 'city3': 'Самаре', 'city4': 'Самару', 'city5': 'Самарой', 'city6': 'Самаре', 'city7': 'Самаре'}"
+        }
+    },
+    {
+        "pk":8,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Омск",
+            "slug":"omsk",
+            "city_names":"{'city1': 'Омск', 'city2': 'Омска', 'city3': 'Омску', 'city4': 'Омск', 'city5': 'Омском', 'city6': 'Омске', 'city7': 'Омске'}"
+        }
+    },
+    {
+        "pk":9,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Челябинск",
+            "slug":"chel",
+            "city_names":"{'city1': 'Челябинск', 'city2': 'Челябинска', 'city3': 'Челябинску', 'city4': 'Челябинск', 'city5': 'Челябинском', 'city6': 'Челябинске', 'city7': 'Челябинске'}"
+        }
+    },
+    {
+        "pk":10,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ростов-на-Дону",
+            "slug":"rostov",
+            "city_names":"{'city1': 'Ростов-на-Дону', 'city2': 'Ростова-на-Дону', 'city3': 'Ростову-на-Дону', 'city4': 'Ростов-на-Дону', 'city5': 'Ростовом-на-Дону', 'city6': 'Ростове-на-Дону', 'city7': 'Ростове-на-Дону'}"
+        }
+    },
+    {
+        "pk":11,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Уфа",
+            "slug":"ufa",
+            "city_names":"{'city1': 'Уфа', 'city2': 'Уфы', 'city3': 'Уфе', 'city4': 'Уфу', 'city5': 'Уфой', 'city6': 'Уфе', 'city7': 'Уфе'}"
+        }
+    },
+    {
+        "pk":12,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Волгоград",
+            "slug":"volgograd",
+            "city_names":"{'city1': 'Волгоград', 'city2': 'Волгограда', 'city3': 'Волгограду', 'city4': 'Волгоград', 'city5': 'Волгоградом', 'city6': 'Волгограде', 'city7': 'Волгограде'}"
+        }
+    },
+    {
+        "pk":13,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Пермь",
+            "slug":"perm",
+            "city_names":"{'city1': 'Пермь', 'city2': 'Перми', 'city3': 'Перми', 'city4': 'Пермь', 'city5': 'Пермью', 'city6': 'Перми', 'city7': 'Перми'}"
+        }
+    },
+    {
+        "pk":14,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Красноярск",
+            "slug":"krsk",
+            "city_names":"{'city1': 'Красноярск', 'city2': 'Красноярска', 'city3': 'Красноярску', 'city4': 'Красноярск', 'city5': 'Красноярском', 'city6': 'Красноярске', 'city7': 'Красноярске'}"
+        }
+    },
+    {
+        "pk":15,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Воронеж",
+            "slug":"voronezh",
+            "city_names":"{'city1': 'Воронеж', 'city2': 'Воронежа', 'city3': 'Воронежу', 'city4': 'Воронеж', 'city5': 'Воронежем', 'city6': 'Воронеже', 'city7': 'Воронеже'}"
+        }
+    },
+    {
+        "pk":16,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Саратов",
+            "slug":"saratov",
+            "city_names":"{'city1': 'Саратов', 'city2': 'Саратова', 'city3': 'Саратову', 'city4': 'Саратов', 'city5': 'Саратовом', 'city6': 'Саратове', 'city7': 'Саратове'}"
+        }
+    },
+    {
+        "pk":17,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Краснодар",
+            "slug":"krasnodar",
+            "city_names":"{'city1': 'Краснодар', 'city2': 'Краснодара', 'city3': 'Краснодару', 'city4': 'Краснодара', 'city5': 'Краснодаром', 'city6': 'Краснодаре', 'city7': 'Краснодаре'}"
+        }
+    },
+    {
+        "pk":18,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тольятти",
+            "slug":"tol",
+            "city_names":"{'city1': 'Тольятти', 'city2': 'Тольятти', 'city3': 'Тольятти', 'city4': 'Тольятти', 'city5': 'Тольятти', 'city6': 'Тольятти', 'city7': 'Тольятти'}"
+        }
+    },
+    {
+        "pk":19,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Барнаул",
+            "slug":"barnaul",
+            "city_names":"{'city1': 'Барнаул', 'city2': 'Барнаула', 'city3': 'Барнаулу', 'city4': 'Барнаул', 'city5': 'Барнаулом', 'city6': 'Барнауле', 'city7': 'Барнауле'}"
+        }
+    },
+    {
+        "pk":20,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ижевск",
+            "slug":"izhevsk",
+            "city_names":"{'city1': 'Ижевск', 'city2': 'Ижевска', 'city3': 'Ижевску', 'city4': 'Ижевск', 'city5': 'Ижевском', 'city6': 'Ижевске', 'city7': 'Ижевске'}"
+        }
+    },
+    {
+        "pk":21,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ульяновск",
+            "slug":"ulyanovsk",
+            "city_names":"{'city1': 'Ульяновск', 'city2': 'Ульяновска', 'city3': 'Ульяновску', 'city4': 'Ульяновск', 'city5': 'Ульяновском', 'city6': 'Ульяновске', 'city7': 'Ульяновске'}"
+        }
+    },
+    {
+        "pk":22,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Владивосток",
+            "slug":"vladivostok",
+            "city_names":"{'city1': 'Владивосток', 'city2': 'Владивостока', 'city3': 'Владивостоку', 'city4': 'Владивосток', 'city5': 'Владивостоком', 'city6': 'Владивостоке', 'city7': 'вВладивостоке'}"
+        }
+    },
+    {
+        "pk":23,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ярославль",
+            "slug":"yaroslavl",
+            "city_names":"{'city1': 'Ярославль', 'city2': 'Ярославля', 'city3': 'Ярославлю', 'city4': 'Ярославль', 'city5': 'Ярославлем', 'city6': 'Ярославле', 'city7': 'Ярославле'}"
+        }
+    },
+    {
+        "pk":24,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Иркутск",
+            "slug":"irkutsk",
+            "city_names":"{'city1': 'Иркутск', 'city2': 'Иркутска', 'city3': 'Иркутску', 'city4': 'Иркутск', 'city5': 'Иркутском', 'city6': 'Иркутске', 'city7': 'Иркутске'}"
+        }
+    },
+    {
+        "pk":25,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тюмень",
+            "slug":"tyumen",
+            "city_names":"{'city1': 'Тюмень', 'city2': 'Тюмени', 'city3': 'Тюмени', 'city4': 'Тюмень', 'city5': 'Тюменью', 'city6': 'Тюмени', 'city7': 'Тюмени'}"
+        }
+    },
+    {
+        "pk":26,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Махачкала",
+            "slug":"mahachkala",
+            "city_names":"{'city1': 'Махачкала', 'city2': 'Махачкалы', 'city3': 'Махачкале', 'city4': 'Махачкалу', 'city5': 'Махачкалой', 'city6': 'Махачкале', 'city7': 'Махачкале'}"
+        }
+    },
+    {
+        "pk":27,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Хабаровск",
+            "slug":"habarovsk",
+            "city_names":"{'city1': 'Хабаровск', 'city2': 'Хабаровска', 'city3': 'Хабаровску', 'city4': 'Хабаровск', 'city5': 'Хабаровском', 'city6': 'Хабаровске', 'city7': 'Хабаровске'}"
+        }
+    },
+    {
+        "pk":28,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Оренбург",
+            "slug":"orenburg",
+            "city_names":"{'city1': 'Оренбург', 'city2': 'Оренбурга', 'city3': 'Оренбургу', 'city4': 'Оренбург', 'city5': 'Оренбургом', 'city6': 'Оренбурге', 'city7': 'Оренбурге'}"
+        }
+    },
+    {
+        "pk":29,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Новокузнецк",
+            "slug":"novokuzneck",
+            "city_names":"{'city1': 'Новокузнецк', 'city2': 'Новокузнецка', 'city3': 'Новокузнецку', 'city4': 'Новокузнецк', 'city5': 'Новокузнецком', 'city6': 'Новокузнецке', 'city7': 'Новокузнецке'}"
+        }
+    },
+    {
+        "pk":30,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кемерово",
+            "slug":"kemerovo",
+            "city_names":"{'city1': 'Кемерово', 'city2': 'Кемерово', 'city3': 'Кемерово', 'city4': 'Кемерово', 'city5': 'Кемерово', 'city6': 'Кемерово', 'city7': 'Кемерово'}"
+        }
+    },
+    {
+        "pk":31,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Рязань",
+            "slug":"ryazan",
+            "city_names":"{'city1': 'Рязань', 'city2': 'Рязани', 'city3': 'Рязани', 'city4': 'Рязань', 'city5': 'Рязанью', 'city6': 'Рязани', 'city7': 'Рязани'}"
+        }
+    },
+    {
+        "pk":32,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Томск",
+            "slug":"tomsk",
+            "city_names":"{'city1': 'Томск', 'city2': 'Томска', 'city3': 'Томску', 'city4': 'Томск', 'city5': 'Томском', 'city6': 'Томске', 'city7': 'Томске'}"
+        }
+    },
+    {
+        "pk":33,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Астрахань",
+            "slug":"astrahan",
+            "city_names":"{'city1': 'Астрахань', 'city2': 'Астрахани', 'city3': 'Астрахани', 'city4': 'Астрахань', 'city5': 'Астраханью', 'city6': 'Астрахани', 'city7': 'Астрахани'}"
+        }
+    },
+    {
+        "pk":34,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Пенза",
+            "slug":"penza",
+            "city_names":"{'city1': 'Пенза', 'city2': 'Пензы', 'city3': 'Пензе', 'city4': 'Пензу', 'city5': 'Пензой', 'city6': 'Пензе', 'city7': 'Пензе'}"
+        }
+    },
+    {
+        "pk":35,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Набережные Челны",
+            "slug":"chelny",
+            "city_names":"{'city1': 'Набережные Челны', 'city2': 'Набережных Челнов', 'city3': 'Набережным Челнам', 'city4': 'Набережные Челны', 'city5': 'Набережными Челнами', 'city6': 'Набережных Челнах', 'city7': 'Набережных Челнах'}"
+        }
+    },
+    {
+        "pk":36,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Липецк",
+            "slug":"lipeck",
+            "city_names":"{'city1': 'Липецк', 'city2': 'Липецка', 'city3': 'Липецку', 'city4': 'Липецк', 'city5': 'Липецком', 'city6': 'Липецке', 'city7': 'Липецке'}"
+        }
+    },
+    {
+        "pk":37,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тула",
+            "slug":"tula",
+            "city_names":"{'city1': 'Тула', 'city2': 'Тулы', 'city3': 'Туле', 'city4': 'Тулу', 'city5': 'Тулой', 'city6': 'Туле', 'city7': 'Туле'}"
+        }
+    },
+    {
+        "pk":490,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Киров",
+            "slug":"kirov",
+            "city_names":"{'city1': 'Киров', 'city2': 'Кирова', 'city3': 'Кирову', 'city4': 'Киров', 'city5': 'Кировом', 'city6': 'Кирове', 'city7': 'Кирове'}"
+        }
+    },
+    {
+        "pk":39,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Чебоксары",
+            "slug":"cheboksary",
+            "city_names":"{'city1': 'Чебоксары', 'city2': 'Чебоксар', 'city3': 'Чебоксарам', 'city4': 'Чебоксары', 'city5': 'Чебоксарами', 'city6': 'Чебоксарах', 'city7': 'Чебоксарах'}"
+        }
+    },
+    {
+        "pk":40,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Калининград",
+            "slug":"kaliningrad",
+            "city_names":"{'city1': 'Калининград', 'city2': 'Калининграда', 'city3': 'Калининграду', 'city4': 'Калининграда', 'city5': 'Калининградом', 'city6': 'Калининграде', 'city7': 'Калининграде'}"
+        }
+    },
+    {
+        "pk":41,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Брянск",
+            "slug":"bryansk",
+            "city_names":"{'city1': 'Брянск', 'city2': 'Брянска', 'city3': 'Брянску', 'city4': 'Брянск', 'city5': 'Брянском', 'city6': 'Брянске', 'city7': 'Брянске'}"
+        }
+    },
+    {
+        "pk":42,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Курск",
+            "slug":"kursk",
+            "city_names":"{'city1': 'Курск', 'city2': 'Курска', 'city3': 'Курску', 'city4': 'Курск', 'city5': 'Курском', 'city6': 'Курске', 'city7': 'Курске'}"
+        }
+    },
+    {
+        "pk":43,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Иваново",
+            "slug":"ivanovo",
+            "city_names":"{'city1': 'Иваново', 'city2': 'Иваново', 'city3': 'Иваново', 'city4': 'Иваново', 'city5': 'Иваново', 'city6': 'Иваново', 'city7': 'Иваново'}"
+        }
+    },
+    {
+        "pk":44,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Магнитогорск",
+            "slug":"magnitogorsk",
+            "city_names":"{'city1': 'Магнитогорск', 'city2': 'Магнитогорска', 'city3': 'Магнитогорску', 'city4': 'Магнитогорск', 'city5': 'Магнитогорском', 'city6': 'Магнитогорске', 'city7': 'Магнитогорске'}"
+        }
+    },
+    {
+        "pk":45,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Улан-Удэ",
+            "slug":"ulan-ude",
+            "city_names":"{'city1': 'Улан-Удэ', 'city2': 'Улан-Удэ', 'city3': 'Улан-Удэ', 'city4': 'Улан-Удэ', 'city5': 'Улан-Удэ', 'city6': 'Улан-Удэ', 'city7': 'Улан-Удэ'}"
+        }
+    },
+    {
+        "pk":46,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тверь",
+            "slug":"tver",
+            "city_names":"{'city1': 'Тверь', 'city2': 'Твери', 'city3': 'Твери', 'city4': 'Тверь', 'city5': 'Тверью', 'city6': 'Твери', 'city7': 'Твери'}"
+        }
+    },
+    {
+        "pk":47,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ставрополь",
+            "slug":"stavropol",
+            "city_names":"{'city1': 'Ставрополь', 'city2': 'Ставрополя', 'city3': 'Ставрополю', 'city4': 'Ставрополь', 'city5': 'Ставрополем', 'city6': 'Ставрополе', 'city7': 'Ставрополе'}"
+        }
+    },
+    {
+        "pk":48,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Симферополь ",
+            "slug":"simferopol",
+            "city_names":"{'city1': 'Симферополь '}"
+        }
+    },
+    {
+        "pk":49,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нижний Тагил",
+            "slug":"tagil",
+            "city_names":"{'city1': 'Нижний Тагил', 'city2': 'НижнегТагила', 'city3': 'Нижнему Тагилу', 'city4': 'Нижний Тагил', 'city5': 'Нижним Тагилом', 'city6': 'Нижнем Тагиле', 'city7': 'Нижнем Тагиле'}"
+        }
+    },
+    {
+        "pk":50,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Белгород",
+            "slug":"belgorod",
+            "city_names":"{'city1': 'Белгород', 'city2': 'Белгорода', 'city3': 'Белгороду', 'city4': 'Белгород', 'city5': 'Белгородом', 'city6': 'Белгороде', 'city7': 'Белгороде'}"
+        }
+    },
+    {
+        "pk":51,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Архангельск",
+            "slug":"arhangelsk",
+            "city_names":"{'city1': 'Архангельск', 'city2': 'Архангельска', 'city3': 'Архангельску', 'city4': 'Архангельск', 'city5': 'Архангельском', 'city6': 'Архангельске', 'city7': 'Архангельске'}"
+        }
+    },
+    {
+        "pk":52,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Владимир",
+            "slug":"vladimir",
+            "city_names":"{'city1': 'Владимир', 'city2': 'Владимира', 'city3': 'Владимиру', 'city4': 'Владимира', 'city5': 'Владимиром', 'city6': 'Владимире', 'city7': 'вВладимире'}"
+        }
+    },
+    {
+        "pk":53,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Севастополь ",
+            "slug":"sevastopol",
+            "city_names":"{'city1': 'Севастополь '}"
+        }
+    },
+    {
+        "pk":54,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сочи",
+            "slug":"sochi",
+            "city_names":"{'city1': 'Сочи', 'city2': 'Сочи', 'city3': 'Сочи', 'city4': 'Сочи', 'city5': 'Сочи', 'city6': 'Сочи', 'city7': 'Сочи'}"
+        }
+    },
+    {
+        "pk":55,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Курган",
+            "slug":"kurgan",
+            "city_names":"{'city1': 'Курган', 'city2': 'Кургана', 'city3': 'Кургану', 'city4': 'Курган', 'city5': 'Курганом', 'city6': 'Кургане', 'city7': 'Кургане'}"
+        }
+    },
+    {
+        "pk":56,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Смоленск",
+            "slug":"smolensk",
+            "city_names":"{'city1': 'Смоленск', 'city2': 'Смоленска', 'city3': 'Смоленску', 'city4': 'Смоленск', 'city5': 'Смоленском', 'city6': 'Смоленске', 'city7': 'Смоленске'}"
+        }
+    },
+    {
+        "pk":57,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Калуга",
+            "slug":"kaluga",
+            "city_names":"{'city1': 'Калуга', 'city2': 'Калуги', 'city3': 'Калуге', 'city4': 'Калугу', 'city5': 'Калугой', 'city6': 'Калуге', 'city7': 'Калуге'}"
+        }
+    },
+    {
+        "pk":58,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Чита",
+            "slug":"chita",
+            "city_names":"{'city1': 'Чита', 'city2': 'Читы', 'city3': 'Чите', 'city4': 'Читу', 'city5': 'Читой', 'city6': 'Чите', 'city7': 'Чите'}"
+        }
+    },
+    {
+        "pk":59,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Орёл",
+            "slug":"oryol",
+            "city_names":"{'city1': 'Орёл'}"
+        }
+    },
+    {
+        "pk":60,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Волжский",
+            "slug":"volzhskij",
+            "city_names":"{'city1': 'Волжский', 'city2': 'Волжского', 'city3': 'Волжскому', 'city4': 'Волжский', 'city5': 'Волжским', 'city6': 'Волжском', 'city7': 'Волжском'}"
+        }
+    },
+    {
+        "pk":61,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Череповец",
+            "slug":"cher",
+            "city_names":"{'city1': 'Череповец', 'city2': 'Череповца', 'city3': 'Череповцу', 'city4': 'Череповец', 'city5': 'Череповцом', 'city6': 'Череповце', 'city7': 'Череповце'}"
+        }
+    },
+    {
+        "pk":62,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Владикавказ",
+            "slug":"vladikavkaz",
+            "city_names":"{'city1': 'Владикавказ', 'city2': 'Владикавказа', 'city3': 'Владикавказу', 'city4': 'Владикавказ', 'city5': 'Владикавказом', 'city6': 'Владикавказе', 'city7': 'на Владикавказе'}"
+        }
+    },
+    {
+        "pk":63,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Мурманск",
+            "slug":"murmansk",
+            "city_names":"{'city1': 'Мурманск', 'city2': 'Мурманска', 'city3': 'Мурманску', 'city4': 'Мурманск', 'city5': 'Мурманском', 'city6': 'Мурманске', 'city7': 'Мурманске'}"
+        }
+    },
+    {
+        "pk":64,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сургут",
+            "slug":"surgut",
+            "city_names":"{'city1': 'Сургут', 'city2': 'Сургута', 'city3': 'Сургуту', 'city4': 'Сургута', 'city5': 'Сургутом', 'city6': 'Сургуте', 'city7': 'Сургуте'}"
+        }
+    },
+    {
+        "pk":65,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Вологда",
+            "slug":"vologda",
+            "city_names":"{'city1': 'Вологда', 'city2': 'Вологды', 'city3': 'Вологде', 'city4': 'Вологду', 'city5': 'Вологдой', 'city6': 'Вологде', 'city7': 'Вологде'}"
+        }
+    },
+    {
+        "pk":66,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Саранск",
+            "slug":"saransk",
+            "city_names":"{'city1': 'Саранск', 'city2': 'Саранска', 'city3': 'Саранску', 'city4': 'Саранск', 'city5': 'Саранском', 'city6': 'Саранске', 'city7': 'Саранске'}"
+        }
+    },
+    {
+        "pk":67,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тамбов",
+            "slug":"tambov",
+            "city_names":"{'city1': 'Тамбов', 'city2': 'Тамбова', 'city3': 'Тамбову', 'city4': 'Тамбова', 'city5': 'Тамбовым', 'city6': 'Тамбове', 'city7': 'Тамбове'}"
+        }
+    },
+    {
+        "pk":68,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Стерлитамак",
+            "slug":"sterlitamak",
+            "city_names":"{'city1': 'Стерлитамак', 'city2': 'Стерлитамака', 'city3': 'Стерлитамаку', 'city4': 'Стерлитамака', 'city5': 'Стерлитамаком', 'city6': 'Стерлитамаке', 'city7': 'Стерлитамаке'}"
+        }
+    },
+    {
+        "pk":69,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Грозный",
+            "slug":"groznyj",
+            "city_names":"{'city1': 'Грозный', 'city2': 'Грозного', 'city3': 'Грозному', 'city4': 'Грозный', 'city5': 'Грозным', 'city6': 'Грозном', 'city7': 'Грозном'}"
+        }
+    },
+    {
+        "pk":70,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Якутск",
+            "slug":"yakutsk",
+            "city_names":"{'city1': 'Якутск', 'city2': 'Якутска', 'city3': 'Якутску', 'city4': 'Якутск', 'city5': 'Якутском', 'city6': 'Якутске', 'city7': 'Якутске'}"
+        }
+    },
+    {
+        "pk":71,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кострома",
+            "slug":"kostroma",
+            "city_names":"{'city1': 'Кострома', 'city2': 'Костромы', 'city3': 'Костроме', 'city4': 'Кострому', 'city5': 'Костромой', 'city6': 'Костроме', 'city7': 'Костроме'}"
+        }
+    },
+    {
+        "pk":72,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Комсомольск-на-Амуре",
+            "slug":"kms",
+            "city_names":"{'city1': 'Комсомольск-на-Амуре', 'city2': 'Комсомольска-на-Амуре', 'city3': 'Комсомольску-на-Амуре', 'city4': 'Комсомольск-на-Амуре', 'city5': 'Комсомольском-на-Амуре', 'city6': 'Комсомольске-на-Амуре', 'city7': 'Комсомольске-на-Амуре'}"
+        }
+    },
+    {
+        "pk":73,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Петрозаводск",
+            "slug":"petrozavodsk",
+            "city_names":"{'city1': 'Петрозаводск', 'city2': 'Петрозаводска', 'city3': 'Петрозаводску', 'city4': 'Петрозаводск', 'city5': 'Петрозаводском', 'city6': 'Петрозаводске', 'city7': 'Петрозаводске'}"
+        }
+    },
+    {
+        "pk":74,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Таганрог",
+            "slug":"taganrog",
+            "city_names":"{'city1': 'Таганрог', 'city2': 'Таганрога', 'city3': 'Таганрогу', 'city4': 'Таганрог', 'city5': 'Таганрогом', 'city6': 'Таганроге', 'city7': 'Таганроге'}"
+        }
+    },
+    {
+        "pk":75,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нижневартовск",
+            "slug":"nv",
+            "city_names":"{'city1': 'Нижневартовск', 'city2': 'Нижневартовска', 'city3': 'Нижневартовску', 'city4': 'Нижневартовск', 'city5': 'Нижневартовском', 'city6': 'Нижневартовске', 'city7': 'Нижневартовске'}"
+        }
+    },
+    {
+        "pk":76,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Йошкар-Ола",
+            "slug":"joshkar-ola",
+            "city_names":"{'city1': 'Йошкар-Ола', 'city2': 'Йошкар-Олы', 'city3': 'Йошкар-Оле', 'city4': 'Йошкар-Олу', 'city5': 'Йошкар-Олой', 'city6': 'Йошкар-Оле', 'city7': 'Йошкар-Оле'}"
+        }
+    },
+    {
+        "pk":77,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Братск",
+            "slug":"bratsk",
+            "city_names":"{'city1': 'Братск', 'city2': 'Братска', 'city3': 'Братску', 'city4': 'Братск', 'city5': 'Братском', 'city6': 'Братске', 'city7': 'Братске'}"
+        }
+    },
+    {
+        "pk":78,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Новороссийск",
+            "slug":"nr",
+            "city_names":"{'city1': 'Новороссийск', 'city2': 'Новороссийска', 'city3': 'Новороссийску', 'city4': 'Новороссийск', 'city5': 'Новороссийском', 'city6': 'Новороссийске', 'city7': 'Новороссийске'}"
+        }
+    },
+    {
+        "pk":79,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Дзержинск",
+            "slug":"dzerzhinsk",
+            "city_names":"{'city1': 'Дзержинск', 'city2': 'Дзержинска', 'city3': 'Дзержинску', 'city4': 'Дзержинск', 'city5': 'Дзержинском', 'city6': 'Дзержинске', 'city7': 'Дзержинске'}"
+        }
+    },
+    {
+        "pk":80,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Шахты",
+            "slug":"shahty",
+            "city_names":"{'city1': 'Шахты', 'city2': 'Шахт', 'city3': 'Шахтам', 'city4': 'Шахты', 'city5': 'Шахтами', 'city6': 'Шахтах', 'city7': 'Шахтах'}"
+        }
+    },
+    {
+        "pk":81,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нальчик",
+            "slug":"nalchik",
+            "city_names":"{'city1': 'Нальчик', 'city2': 'Нальчика', 'city3': 'Нальчику', 'city4': 'Нальчика', 'city5': 'Нальчиком', 'city6': 'Нальчике', 'city7': 'Нальчике'}"
+        }
+    },
+    {
+        "pk":82,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Орск",
+            "slug":"orsk",
+            "city_names":"{'city1': 'Орск', 'city2': 'Орска', 'city3': 'Орску', 'city4': 'Орск', 'city5': 'Орском', 'city6': 'Орске', 'city7': 'Орске'}"
+        }
+    },
+    {
+        "pk":83,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сыктывкар",
+            "slug":"syktyvkar",
+            "city_names":"{'city1': 'Сыктывкар', 'city2': 'Сыктывкара', 'city3': 'Сыктывкару', 'city4': 'Сыктывкар', 'city5': 'Сыктывкаром', 'city6': 'Сыктывкаре', 'city7': 'Сыктывкаре'}"
+        }
+    },
+    {
+        "pk":84,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нижнекамск",
+            "slug":"nizhnekamsk",
+            "city_names":"{'city1': 'Нижнекамск', 'city2': 'Нижнекамска', 'city3': 'Нижнекамску', 'city4': 'Нижнекамск', 'city5': 'Нижнекамском', 'city6': 'Нижнекамске', 'city7': 'Нижнекамске'}"
+        }
+    },
+    {
+        "pk":85,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ангарск",
+            "slug":"angarsk",
+            "city_names":"{'city1': 'Ангарск', 'city2': 'Ангарска', 'city3': 'Ангарску', 'city4': 'Ангарск', 'city5': 'Ангарском', 'city6': 'Ангарске', 'city7': 'Ангарске'}"
+        }
+    },
+    {
+        "pk":86,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Старый Оскол",
+            "slug":"oskol",
+            "city_names":"{'city1': 'Старый Оскол', 'city2': 'СтарогОскола', 'city3': 'Старому Осколу', 'city4': 'Старый Оскол', 'city5': 'Старым Осколом', 'city6': 'Старом Осколе', 'city7': 'Старом Осколе'}"
+        }
+    },
+    {
+        "pk":87,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Великий Новгород",
+            "slug":"novgorod",
+            "city_names":"{'city1': 'Великий Новгород', 'city2': 'ВеликогНовгорода', 'city3': 'Великому Новгороду', 'city4': 'Великий Новгород', 'city5': 'Великим Новгородом', 'city6': 'Великом Новгороде', 'city7': 'Великом Новгороде'}"
+        }
+    },
+    {
+        "pk":88,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Балашиха",
+            "slug":"balashiha",
+            "city_names":"{'city1': 'Балашиха', 'city2': 'Балашихи', 'city3': 'Балашихе', 'city4': 'Балашиху', 'city5': 'Балашихой', 'city6': 'Балашихе', 'city7': 'Балашихе'}"
+        }
+    },
+    {
+        "pk":463,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Благовещенск",
+            "slug":"blagoveshchensk",
+            "city_names":"{'city1': 'Благовещенск', 'city2': 'Благовещенска', 'city3': 'Благовещенску', 'city4': 'Благовещенск', 'city5': 'Благовещенском', 'city6': 'Благовещенске', 'city7': 'Благовещенске'}"
+        }
+    },
+    {
+        "pk":90,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Прокопьевск",
+            "slug":"prokopevsk",
+            "city_names":"{'city1': 'Прокопьевск', 'city2': 'Прокопьевска', 'city3': 'Прокопьевску', 'city4': 'Прокопьевск', 'city5': 'Прокопьевском', 'city6': 'Прокопьевске', 'city7': 'Прокопьевске'}"
+        }
+    },
+    {
+        "pk":91,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Химки",
+            "slug":"himki",
+            "city_names":"{'city1': 'Химки', 'city2': 'Химок', 'city3': 'Химкам', 'city4': 'Химки', 'city5': 'Химками', 'city6': 'Химках', 'city7': 'Химках'}"
+        }
+    },
+    {
+        "pk":92,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Псков",
+            "slug":"pskov",
+            "city_names":"{'city1': 'Псков', 'city2': 'Пскова', 'city3': 'Пскову', 'city4': 'Пскова', 'city5': 'Псковым', 'city6': 'Пскове', 'city7': 'Пскове'}"
+        }
+    },
+    {
+        "pk":93,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Бийск",
+            "slug":"bijsk",
+            "city_names":"{'city1': 'Бийск', 'city2': 'Бийска', 'city3': 'Бийску', 'city4': 'Бийск', 'city5': 'Бийском', 'city6': 'Бийске', 'city7': 'Бийске'}"
+        }
+    },
+    {
+        "pk":94,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Энгельс",
+            "slug":"ehngels",
+            "city_names":"{'city1': 'Энгельс', 'city2': 'Энгельса', 'city3': 'Энгельсу', 'city4': 'Энгельс', 'city5': 'Энгельсом', 'city6': 'Энгельсе', 'city7': 'Энгельсе'}"
+        }
+    },
+    {
+        "pk":95,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Рыбинск",
+            "slug":"rybinsk",
+            "city_names":"{'city1': 'Рыбинск', 'city2': 'Рыбинска', 'city3': 'Рыбинску', 'city4': 'Рыбинск', 'city5': 'Рыбинском', 'city6': 'Рыбинске', 'city7': 'Рыбинске'}"
+        }
+    },
+    {
+        "pk":96,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Балаково",
+            "slug":"balakovo",
+            "city_names":"{'city1': 'Балаково', 'city2': 'Балаково', 'city3': 'Балаково', 'city4': 'Балаково', 'city5': 'Балаково', 'city6': 'Балаково', 'city7': 'Балаково'}"
+        }
+    },
+    {
+        "pk":97,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Северодвинск",
+            "slug":"severodvinsk",
+            "city_names":"{'city1': 'Северодвинск', 'city2': 'Северодвинска', 'city3': 'Северодвинску', 'city4': 'Северодвинск', 'city5': 'Северодвинском', 'city6': 'Северодвинске', 'city7': 'Северодвинске'}"
+        }
+    },
+    {
+        "pk":98,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Армавир",
+            "slug":"armavir",
+            "city_names":"{'city1': 'Армавир', 'city2': 'Армавира', 'city3': 'Армавиру', 'city4': 'Армавира', 'city5': 'Армавиром', 'city6': 'Армавире', 'city7': 'Армавире'}"
+        }
+    },
+    {
+        "pk":99,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Подольск",
+            "slug":"podolsk",
+            "city_names":"{'city1': 'Подольск', 'city2': 'Подольска', 'city3': 'Подольску', 'city4': 'Подольск', 'city5': 'Подольском', 'city6': 'Подольске', 'city7': 'Подольске'}"
+        }
+    },
+    {
+        "pk":100,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Королёв",
+            "slug":"korolyov",
+            "city_names":"{'city1': 'Королёв', 'city2': 'Королёва', 'city3': 'Королёву', 'city4': 'Королёва', 'city5': 'Королёвым', 'city6': 'Королёве', 'city7': 'Королёве'}"
+        }
+    },
+    {
+        "pk":101,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Южно-Сахалинск",
+            "slug":"sahalin",
+            "city_names":"{'city1': 'Южно-Сахалинск', 'city2': 'Южно-Сахалинска', 'city3': 'Южно-Сахалинску', 'city4': 'Южно-Сахалинск', 'city5': 'Южно-Сахалинском', 'city6': 'Южно-Сахалинске', 'city7': 'Южно-Сахалинске'}"
+        }
+    },
+    {
+        "pk":102,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Петропавловск-Камчатский",
+            "slug":"pk",
+            "city_names":"{'city1': 'Петропавловск-Камчатский', 'city2': 'Петропавловска-Камчатского', 'city3': 'Петропавловску-Камчатскому', 'city4': 'Петропавловск-Камчатский', 'city5': 'Петропавловском-Камчатским', 'city6': 'Петропавловске-Камчатском', 'city7': 'Петропавловске-Камчатском'}"
+        }
+    },
+    {
+        "pk":103,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сызрань",
+            "slug":"syzran",
+            "city_names":"{'city1': 'Сызрань', 'city2': 'Сызрани', 'city3': 'Сызрани', 'city4': 'Сызрань', 'city5': 'Сызранью', 'city6': 'Сызрани', 'city7': 'Сызрани'}"
+        }
+    },
+    {
+        "pk":104,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Норильск",
+            "slug":"norilsk",
+            "city_names":"{'city1': 'Норильск', 'city2': 'Норильска', 'city3': 'Норильску', 'city4': 'Норильск', 'city5': 'Норильском', 'city6': 'Норильске', 'city7': 'Норильске'}"
+        }
+    },
+    {
+        "pk":105,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Златоуст",
+            "slug":"zlatoust",
+            "city_names":"{'city1': 'Златоуст', 'city2': 'Златоуста', 'city3': 'Златоусту', 'city4': 'Златоуста', 'city5': 'Златоустом', 'city6': 'Златоусте', 'city7': 'Златоусте'}"
+        }
+    },
+    {
+        "pk":106,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Каменск-Уральский",
+            "slug":"ku",
+            "city_names":"{'city1': 'Каменск-Уральский', 'city2': 'Каменска-Уральского', 'city3': 'Каменску-Уральскому', 'city4': 'Каменск-Уральский', 'city5': 'Каменском-Уральским', 'city6': 'Каменске-Уральском', 'city7': 'Каменске-Уральском'}"
+        }
+    },
+    {
+        "pk":107,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Мытищи",
+            "slug":"mytishchi",
+            "city_names":"{'city1': 'Мытищи', 'city2': 'Мытищ', 'city3': 'Мытищам', 'city4': 'Мытищ', 'city5': 'Мытищами', 'city6': 'Мытищах', 'city7': 'Мытищах'}"
+        }
+    },
+    {
+        "pk":108,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Люберцы",
+            "slug":"lyubercy",
+            "city_names":"{'city1': 'Люберцы', 'city2': 'Люберец', 'city3': 'Люберцам', 'city4': 'Люберцы', 'city5': 'Люберцами', 'city6': 'Люберцах', 'city7': 'Люберцах'}"
+        }
+    },
+    {
+        "pk":109,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Волгодонск",
+            "slug":"volgodonsk",
+            "city_names":"{'city1': 'Волгодонск', 'city2': 'Волгодонска', 'city3': 'Волгодонску', 'city4': 'Волгодонск', 'city5': 'Волгодонском', 'city6': 'Волгодонске', 'city7': 'Волгодонске'}"
+        }
+    },
+    {
+        "pk":110,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Новочеркасск",
+            "slug":"novocherkassk",
+            "city_names":"{'city1': 'Новочеркасск', 'city2': 'Новочеркасска', 'city3': 'Новочеркасску', 'city4': 'Новочеркасск', 'city5': 'Новочеркасском', 'city6': 'Новочеркасске', 'city7': 'Новочеркасске'}"
+        }
+    },
+    {
+        "pk":111,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Абакан",
+            "slug":"abakan",
+            "city_names":"{'city1': 'Абакан', 'city2': 'Абакана', 'city3': 'Абакану', 'city4': 'Абакан', 'city5': 'Абаканом', 'city6': 'Абакане', 'city7': 'Абакане'}"
+        }
+    },
+    {
+        "pk":112,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Находка",
+            "slug":"nahodka",
+            "city_names":"{'city1': 'Находка', 'city2': 'Находки', 'city3': 'Находке', 'city4': 'Находку', 'city5': 'Находкой', 'city6': 'Находке', 'city7': 'Находке'}"
+        }
+    },
+    {
+        "pk":113,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Уссурийск",
+            "slug":"ussurijsk",
+            "city_names":"{'city1': 'Уссурийск', 'city2': 'Уссурийска', 'city3': 'Уссурийску', 'city4': 'Уссурийск', 'city5': 'Уссурийском', 'city6': 'Уссурийске', 'city7': 'Уссурийске'}"
+        }
+    },
+    {
+        "pk":114,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Березники",
+            "slug":"berezniki",
+            "city_names":"{'city1': 'Березники', 'city2': 'Березников', 'city3': 'Березникам', 'city4': 'Березники', 'city5': 'Березниками', 'city6': 'Березниках', 'city7': 'Березниках'}"
+        }
+    },
+    {
+        "pk":115,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Салават",
+            "slug":"salavat",
+            "city_names":"{'city1': 'Салават', 'city2': 'Салавата', 'city3': 'Салавату', 'city4': 'Салавата', 'city5': 'Салаватом', 'city6': 'Салавате', 'city7': 'Салавате'}"
+        }
+    },
+    {
+        "pk":116,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Электросталь",
+            "slug":"ehlektrostal",
+            "city_names":"{'city1': 'Электросталь', 'city2': 'Электростали', 'city3': 'Электростали', 'city4': 'Электросталь', 'city5': 'Электросталью', 'city6': 'Электростали', 'city7': 'Электростали'}"
+        }
+    },
+    {
+        "pk":117,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Миасс",
+            "slug":"miass",
+            "city_names":"{'city1': 'Миасс', 'city2': 'Миасса', 'city3': 'Миассу', 'city4': 'Миасс', 'city5': 'Миассом', 'city6': 'Миассе', 'city7': 'Миассе'}"
+        }
+    },
+    {
+        "pk":118,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Первоуральск",
+            "slug":"pervouralsk",
+            "city_names":"{'city1': 'Первоуральск', 'city2': 'Первоуральска', 'city3': 'Первоуральску', 'city4': 'Первоуральск', 'city5': 'Первоуральском', 'city6': 'Первоуральске', 'city7': 'Первоуральске'}"
+        }
+    },
+    {
+        "pk":119,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Рубцовск",
+            "slug":"rubcovsk",
+            "city_names":"{'city1': 'Рубцовск', 'city2': 'Рубцовска', 'city3': 'Рубцовску', 'city4': 'Рубцовск', 'city5': 'Рубцовском', 'city6': 'Рубцовске', 'city7': 'Рубцовске'}"
+        }
+    },
+    {
+        "pk":120,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Альметьевск",
+            "slug":"almetevsk",
+            "city_names":"{'city1': 'Альметьевск', 'city2': 'Альметьевска', 'city3': 'Альметьевску', 'city4': 'Альметьевск', 'city5': 'Альметьевском', 'city6': 'Альметьевске', 'city7': 'Альметьевске'}"
+        }
+    },
+    {
+        "pk":121,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ковров",
+            "slug":"kovrov",
+            "city_names":"{'city1': 'Ковров', 'city2': 'Коврова', 'city3': 'Коврову', 'city4': 'Коврова', 'city5': 'Ковровым', 'city6': 'Коврове', 'city7': 'Коврове'}"
+        }
+    },
+    {
+        "pk":122,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Коломна",
+            "slug":"kolomna",
+            "city_names":"{'city1': 'Коломна', 'city2': 'Коломны', 'city3': 'Коломне', 'city4': 'Коломну', 'city5': 'Коломной', 'city6': 'Коломне', 'city7': 'Коломне'}"
+        }
+    },
+    {
+        "pk":123,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Керчь ",
+            "slug":"kerch",
+            "city_names":"{'city1': 'Керчь '}"
+        }
+    },
+    {
+        "pk":124,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Майкоп",
+            "slug":"majkop",
+            "city_names":"{'city1': 'Майкоп', 'city2': 'Майкопа', 'city3': 'Майкопу', 'city4': 'Майкоп', 'city5': 'Майкопом', 'city6': 'Майкопе', 'city7': 'Майкопе'}"
+        }
+    },
+    {
+        "pk":125,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Пятигорск",
+            "slug":"pyatigorsk",
+            "city_names":"{'city1': 'Пятигорск', 'city2': 'Пятигорска', 'city3': 'Пятигорску', 'city4': 'Пятигорск', 'city5': 'Пятигорском', 'city6': 'Пятигорске', 'city7': 'Пятигорске'}"
+        }
+    },
+    {
+        "pk":126,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Одинцово",
+            "slug":"odincovo",
+            "city_names":"{'city1': 'Одинцово', 'city2': 'Одинцово', 'city3': 'Одинцово', 'city4': 'Одинцово', 'city5': 'Одинцово', 'city6': 'Одинцово', 'city7': 'Одинцово'}"
+        }
+    },
+    {
+        "pk":127,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Копейск",
+            "slug":"kopejsk",
+            "city_names":"{'city1': 'Копейск', 'city2': 'Копейска', 'city3': 'Копейску', 'city4': 'Копейск', 'city5': 'Копейском', 'city6': 'Копейске', 'city7': 'Копейске'}"
+        }
+    },
+    {
+        "pk":128,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Хасавюрт",
+            "slug":"hasavyurt",
+            "city_names":"{'city1': 'Хасавюрт', 'city2': 'Хасавюрта', 'city3': 'Хасавюрту', 'city4': 'Хасавюрт', 'city5': 'Хасавюртом', 'city6': 'Хасавюрте', 'city7': 'Хасавюрте'}"
+        }
+    },
+    {
+        "pk":129,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Новомосковск",
+            "slug":"novomoskovsk",
+            "city_names":"{'city1': 'Новомосковск', 'city2': 'Новомосковска', 'city3': 'Новомосковску', 'city4': 'Новомосковск', 'city5': 'Новомосковском', 'city6': 'Новомосковске', 'city7': 'Новомосковске'}"
+        }
+    },
+    {
+        "pk":130,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кисловодск",
+            "slug":"kislovodsk",
+            "city_names":"{'city1': 'Кисловодск', 'city2': 'Кисловодска', 'city3': 'Кисловодску', 'city4': 'Кисловодск', 'city5': 'Кисловодском', 'city6': 'Кисловодске', 'city7': 'Кисловодске'}"
+        }
+    },
+    {
+        "pk":131,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Серпухов",
+            "slug":"serpuhov",
+            "city_names":"{'city1': 'Серпухов', 'city2': 'Серпухова', 'city3': 'Серпухову', 'city4': 'Серпухова', 'city5': 'Серпуховым', 'city6': 'Серпухове', 'city7': 'Серпухове'}"
+        }
+    },
+    {
+        "pk":132,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Новочебоксарск",
+            "slug":"novocheboksarsk",
+            "city_names":"{'city1': 'Новочебоксарск', 'city2': 'Новочебоксарска', 'city3': 'Новочебоксарску', 'city4': 'Новочебоксарск', 'city5': 'Новочебоксарском', 'city6': 'Новочебоксарске', 'city7': 'Новочебоксарске'}"
+        }
+    },
+    {
+        "pk":133,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нефтеюганск",
+            "slug":"nefteyugansk",
+            "city_names":"{'city1': 'Нефтеюганск', 'city2': 'Нефтеюганска', 'city3': 'Нефтеюганску', 'city4': 'Нефтеюганск', 'city5': 'Нефтеюганском', 'city6': 'Нефтеюганске', 'city7': 'Нефтеюганске'}"
+        }
+    },
+    {
+        "pk":134,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Димитровград",
+            "slug":"dimitrovgrad",
+            "city_names":"{'city1': 'Димитровград', 'city2': 'Димитровграда', 'city3': 'Димитровграду', 'city4': 'Димитровграда', 'city5': 'Димитровградом', 'city6': 'Димитровграде', 'city7': 'Димитровграде'}"
+        }
+    },
+    {
+        "pk":135,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нефтекамск",
+            "slug":"neftekamsk",
+            "city_names":"{'city1': 'Нефтекамск', 'city2': 'Нефтекамска', 'city3': 'Нефтекамску', 'city4': 'Нефтекамск', 'city5': 'Нефтекамском', 'city6': 'Нефтекамске', 'city7': 'Нефтекамске'}"
+        }
+    },
+    {
+        "pk":136,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Черкесск",
+            "slug":"cherkessk",
+            "city_names":"{'city1': 'Черкесск', 'city2': 'Черкесска', 'city3': 'Черкесску', 'city4': 'Черкесск', 'city5': 'Черкесском', 'city6': 'Черкесске', 'city7': 'Черкесске'}"
+        }
+    },
+    {
+        "pk":137,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Орехово-Зуево",
+            "slug":"oz",
+            "city_names":"{'city1': 'Орехово-Зуево', 'city2': 'Орехово-Зуево', 'city3': 'Орехово-Зуево', 'city4': 'Орехово-Зуево', 'city5': 'Орехово-Зуево', 'city6': 'Орехово-Зуево', 'city7': 'Орехово-Зуево'}"
+        }
+    },
+    {
+        "pk":138,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Дербент",
+            "slug":"derbent",
+            "city_names":"{'city1': 'Дербент', 'city2': 'Дербента', 'city3': 'Дербенту', 'city4': 'Дербент', 'city5': 'Дербентом', 'city6': 'Дербенте', 'city7': 'Дербенте'}"
+        }
+    },
+    {
+        "pk":139,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Камышин",
+            "slug":"kamyshin",
+            "city_names":"{'city1': 'Камышин', 'city2': 'Камышина', 'city3': 'Камышину', 'city4': 'Камышина', 'city5': 'Камышиным', 'city6': 'Камышине', 'city7': 'Камышине'}"
+        }
+    },
+    {
+        "pk":140,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Невинномысск",
+            "slug":"nevinnomyssk",
+            "city_names":"{'city1': 'Невинномысск', 'city2': 'Невинномысска', 'city3': 'Невинномысску', 'city4': 'Невинномысск', 'city5': 'Невинномысском', 'city6': 'Невинномысске', 'city7': 'Невинномысске'}"
+        }
+    },
+    {
+        "pk":141,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Красногорск",
+            "slug":"krasnogorsk",
+            "city_names":"{'city1': 'Красногорск', 'city2': 'Красногорска', 'city3': 'Красногорску', 'city4': 'Красногорск', 'city5': 'Красногорском', 'city6': 'Красногорске', 'city7': 'Красногорске'}"
+        }
+    },
+    {
+        "pk":142,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Муром",
+            "slug":"murom",
+            "city_names":"{'city1': 'Муром', 'city2': 'Мурома', 'city3': 'Мурому', 'city4': 'Муром', 'city5': 'Муромом', 'city6': 'Муроме', 'city7': 'Муроме'}"
+        }
+    },
+    {
+        "pk":143,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Батайск",
+            "slug":"batajsk",
+            "city_names":"{'city1': 'Батайск', 'city2': 'Батайска', 'city3': 'Батайску', 'city4': 'Батайск', 'city5': 'Батайском', 'city6': 'Батайске', 'city7': 'Батайске'}"
+        }
+    },
+    {
+        "pk":144,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Новошахтинск",
+            "slug":"novoshahtinsk",
+            "city_names":"{'city1': 'Новошахтинск', 'city2': 'Новошахтинска', 'city3': 'Новошахтинску', 'city4': 'Новошахтинск', 'city5': 'Новошахтинском', 'city6': 'Новошахтинске', 'city7': 'Новошахтинске'}"
+        }
+    },
+    {
+        "pk":145,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сергиев Посад",
+            "slug":"sergiev-posad",
+            "city_names":"{'city1': 'Сергиев Посад', 'city2': 'Сергиева Посада', 'city3': 'Сергиеву Посаду', 'city4': 'СергиеПосад', 'city5': 'Сергиевым Посадом', 'city6': 'Сергиевом Посаде', 'city7': 'Сергиевом Посаде'}"
+        }
+    },
+    {
+        "pk":146,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ноябрьск",
+            "slug":"noyabrsk",
+            "city_names":"{'city1': 'Ноябрьск', 'city2': 'Ноябрьска', 'city3': 'Ноябрьску', 'city4': 'Ноябрьск', 'city5': 'Ноябрьском', 'city6': 'Ноябрьске', 'city7': 'Ноябрьске'}"
+        }
+    },
+    {
+        "pk":147,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Щёлково",
+            "slug":"shchyolkovo",
+            "city_names":"{'city1': 'Щёлково', 'city2': 'Щёлково', 'city3': 'Щёлково', 'city4': 'Щёлково', 'city5': 'Щёлково', 'city6': 'Щёлково', 'city7': 'Щёлково'}"
+        }
+    },
+    {
+        "pk":148,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кызыл",
+            "slug":"kyzyl",
+            "city_names":"{'city1': 'Кызыл', 'city2': 'Кызыла', 'city3': 'Кызылу', 'city4': 'Кызыла', 'city5': 'Кызылом', 'city6': 'Кызыле', 'city7': 'Кызыле'}"
+        }
+    },
+    {
+        "pk":149,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Октябрьский",
+            "slug":"oktyabrskij",
+            "city_names":"{'city1': 'Октябрьский', 'city2': 'Октябрьского', 'city3': 'Октябрьскому', 'city4': 'Октябрьский', 'city5': 'Октябрьским', 'city6': 'Октябрьском', 'city7': 'Октябрьском'}"
+        }
+    },
+    {
+        "pk":150,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ачинск",
+            "slug":"achinsk",
+            "city_names":"{'city1': 'Ачинск', 'city2': 'Ачинска', 'city3': 'Ачинску', 'city4': 'Ачинск', 'city5': 'Ачинском', 'city6': 'Ачинске', 'city7': 'Ачинске'}"
+        }
+    },
+    {
+        "pk":151,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Северск",
+            "slug":"seversk",
+            "city_names":"{'city1': 'Северск', 'city2': 'Северска', 'city3': 'Северску', 'city4': 'Северск', 'city5': 'Северском', 'city6': 'Северске', 'city7': 'Северске'}"
+        }
+    },
+    {
+        "pk":152,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Новокуйбышевск",
+            "slug":"novokujbyshevsk",
+            "city_names":"{'city1': 'Новокуйбышевск', 'city2': 'Новокуйбышевска', 'city3': 'Новокуйбышевску', 'city4': 'Новокуйбышевск', 'city5': 'Новокуйбышевском', 'city6': 'Новокуйбышевске', 'city7': 'Новокуйбышевске'}"
+        }
+    },
+    {
+        "pk":153,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Елец",
+            "slug":"elec",
+            "city_names":"{'city1': 'Елец', 'city2': 'Ельца', 'city3': 'Ельцу', 'city4': 'Ельца', 'city5': 'Ельцом', 'city6': 'Ельце', 'city7': 'Ельце'}"
+        }
+    },
+    {
+        "pk":154,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Евпатория ",
+            "slug":"evpatoriya",
+            "city_names":"{'city1': 'Евпатория '}"
+        }
+    },
+    {
+        "pk":155,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Арзамас",
+            "slug":"arzamas",
+            "city_names":"{'city1': 'Арзамас', 'city2': 'Арзамаса', 'city3': 'Арзамасу', 'city4': 'Арзамаса', 'city5': 'Арзамасом', 'city6': 'Арзамасе', 'city7': 'Арзамасе'}"
+        }
+    },
+    {
+        "pk":156,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Обнинск",
+            "slug":"obninsk",
+            "city_names":"{'city1': 'Обнинск', 'city2': 'Обнинска', 'city3': 'Обнинску', 'city4': 'Обнинск', 'city5': 'Обнинском', 'city6': 'Обнинске', 'city7': 'Обнинске'}"
+        }
+    },
+    {
+        "pk":157,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Новый Уренгой",
+            "slug":"novyj-urengoj",
+            "city_names":"{'city1': 'Новый Уренгой', 'city2': 'НовогУренгоя', 'city3': 'Новому Уренгою', 'city4': 'Новый Уренгой', 'city5': 'Новым Уренгоем', 'city6': 'Новом Уренгое', 'city7': 'Новом Уренгое'}"
+        }
+    },
+    {
+        "pk":158,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Каспийск",
+            "slug":"kaspijsk",
+            "city_names":"{'city1': 'Каспийск', 'city2': 'Каспийска', 'city3': 'Каспийску', 'city4': 'Каспийск', 'city5': 'Каспийском', 'city6': 'Каспийске', 'city7': 'Каспийске'}"
+        }
+    },
+    {
+        "pk":159,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Элиста",
+            "slug":"ehlista",
+            "city_names":"{'city1': 'Элиста', 'city2': 'Элисты', 'city3': 'Элисте', 'city4': 'Элисту', 'city5': 'Элистой', 'city6': 'Элисте', 'city7': 'Элисте'}"
+        }
+    },
+    {
+        "pk":160,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Пушкино",
+            "slug":"pushkino",
+            "city_names":"{'city1': 'Пушкино', 'city2': 'Пушкино', 'city3': 'Пушкино', 'city4': 'Пушкино', 'city5': 'Пушкино', 'city6': 'Пушкино', 'city7': 'Пушкино'}"
+        }
+    },
+    {
+        "pk":161,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Жуковский",
+            "slug":"zhukovskij",
+            "city_names":"{'city1': 'Жуковский', 'city2': 'Жуковского', 'city3': 'Жуковскому', 'city4': 'Жуковский', 'city5': 'Жуковским', 'city6': 'Жуковском', 'city7': 'Жуковском'}"
+        }
+    },
+    {
+        "pk":162,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Артём",
+            "slug":"artyom",
+            "city_names":"{'city1': 'Артём'}"
+        }
+    },
+    {
+        "pk":163,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Междуреченск",
+            "slug":"mezhdurechensk",
+            "city_names":"{'city1': 'Междуреченск', 'city2': 'Междуреченска', 'city3': 'Междуреченску', 'city4': 'Междуреченск', 'city5': 'Междуреченском', 'city6': 'Междуреченске', 'city7': 'Междуреченске'}"
+        }
+    },
+    {
+        "pk":164,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ленинск-Кузнецкий",
+            "slug":"leninsk-kuz",
+            "city_names":"{'city1': 'Ленинск-Кузнецкий', 'city2': 'Ленинска-Кузнецкого', 'city3': 'Ленинску-Кузнецкому', 'city4': 'Ленинск-Кузнецкий', 'city5': 'Ленинском-Кузнецким', 'city6': 'Ленинске-Кузнецком', 'city7': 'Ленинске-Кузнецком'}"
+        }
+    },
+    {
+        "pk":165,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сарапул",
+            "slug":"sarapul",
+            "city_names":"{'city1': 'Сарапул', 'city2': 'Сарапула', 'city3': 'Сарапулу', 'city4': 'Сарапул', 'city5': 'Сарапулом', 'city6': 'Сарапуле', 'city7': 'Сарапуле'}"
+        }
+    },
+    {
+        "pk":166,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ессентуки",
+            "slug":"essentuki",
+            "city_names":"{'city1': 'Ессентуки', 'city2': 'Ессентуков', 'city3': 'Ессентукам', 'city4': 'Ессентуки', 'city5': 'Ессентуками', 'city6': 'Ессентуках', 'city7': 'Ессентуках'}"
+        }
+    },
+    {
+        "pk":167,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Воткинск",
+            "slug":"votkinsk",
+            "city_names":"{'city1': 'Воткинск', 'city2': 'Воткинска', 'city3': 'Воткинску', 'city4': 'Воткинск', 'city5': 'Воткинском', 'city6': 'Воткинске', 'city7': 'Воткинске'}"
+        }
+    },
+    {
+        "pk":168,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ногинск",
+            "slug":"noginsk",
+            "city_names":"{'city1': 'Ногинск', 'city2': 'Ногинска', 'city3': 'Ногинску', 'city4': 'Ногинск', 'city5': 'Ногинском', 'city6': 'Ногинске', 'city7': 'Ногинске'}"
+        }
+    },
+    {
+        "pk":169,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тобольск",
+            "slug":"tobolsk",
+            "city_names":"{'city1': 'Тобольск', 'city2': 'Тобольска', 'city3': 'Тобольску', 'city4': 'Тобольск', 'city5': 'Тобольском', 'city6': 'Тобольске', 'city7': 'Тобольске'}"
+        }
+    },
+    {
+        "pk":170,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ухта",
+            "slug":"uhta",
+            "city_names":"{'city1': 'Ухта', 'city2': 'Ухты', 'city3': 'Ухте', 'city4': 'Ухту', 'city5': 'Ухтой', 'city6': 'Ухте', 'city7': 'Ухте'}"
+        }
+    },
+    {
+        "pk":171,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Серов",
+            "slug":"serov",
+            "city_names":"{'city1': 'Серов', 'city2': 'Серова', 'city3': 'Серову', 'city4': 'Серова', 'city5': 'Серовым', 'city6': 'Серове', 'city7': 'Серове'}"
+        }
+    },
+    {
+        "pk":172,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Бердск",
+            "slug":"berdsk",
+            "city_names":"{'city1': 'Бердск', 'city2': 'Бердска', 'city3': 'Бердску', 'city4': 'Бердск', 'city5': 'Бердском', 'city6': 'Бердске', 'city7': 'Бердске'}"
+        }
+    },
+    {
+        "pk":173,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Великие Луки",
+            "slug":"velikie-luki",
+            "city_names":"{'city1': 'Великие Луки', 'city2': 'Великих Луков', 'city3': 'Великим Лукам', 'city4': 'Великие Луки', 'city5': 'Великими Луками', 'city6': 'Великих Луках', 'city7': 'Великих Луках'}"
+        }
+    },
+    {
+        "pk":174,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Мичуринск",
+            "slug":"michurinsk",
+            "city_names":"{'city1': 'Мичуринск', 'city2': 'Мичуринска', 'city3': 'Мичуринску', 'city4': 'Мичуринск', 'city5': 'Мичуринском', 'city6': 'Мичуринске', 'city7': 'Мичуринске'}"
+        }
+    },
+    {
+        "pk":175,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Киселёвск",
+            "slug":"kiselyovsk",
+            "city_names":"{'city1': 'Киселёвск'}"
+        }
+    },
+    {
+        "pk":176,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Новотроицк",
+            "slug":"novotroick",
+            "city_names":"{'city1': 'Новотроицк', 'city2': 'Новотроицка', 'city3': 'Новотроицку', 'city4': 'Новотроицк', 'city5': 'Новотроицком', 'city6': 'Новотроицке', 'city7': 'Новотроицке'}"
+        }
+    },
+    {
+        "pk":177,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Зеленодольск",
+            "slug":"zelenodolsk",
+            "city_names":"{'city1': 'Зеленодольск', 'city2': 'Зеленодольска', 'city3': 'Зеленодольску', 'city4': 'Зеленодольск', 'city5': 'Зеленодольском', 'city6': 'Зеленодольске', 'city7': 'Зеленодольске'}"
+        }
+    },
+    {
+        "pk":178,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Соликамск",
+            "slug":"solikamsk",
+            "city_names":"{'city1': 'Соликамск', 'city2': 'Соликамска', 'city3': 'Соликамску', 'city4': 'Соликамск', 'city5': 'Соликамском', 'city6': 'Соликамске', 'city7': 'Соликамске'}"
+        }
+    },
+    {
+        "pk":179,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Раменское",
+            "slug":"ramenskoe",
+            "city_names":"{'city1': 'Раменское', 'city2': 'Раменского', 'city3': 'Раменскому', 'city4': 'Раменское', 'city5': 'Раменским', 'city6': 'Раменском', 'city7': 'Раменском'}"
+        }
+    },
+    {
+        "pk":180,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Домодедово",
+            "slug":"domodedovo",
+            "city_names":"{'city1': 'Домодедово', 'city2': 'Домодедово', 'city3': 'Домодедово', 'city4': 'Домодедово', 'city5': 'Домодедово', 'city6': 'Домодедово', 'city7': 'Домодедово'}"
+        }
+    },
+    {
+        "pk":181,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Магадан",
+            "slug":"magadan",
+            "city_names":"{'city1': 'Магадан', 'city2': 'Магадана', 'city3': 'Магадану', 'city4': 'Магадана', 'city5': 'Магаданом', 'city6': 'Магадане', 'city7': 'Магадане'}"
+        }
+    },
+    {
+        "pk":182,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Глазов",
+            "slug":"glazov",
+            "city_names":"{'city1': 'Глазов', 'city2': 'Глазова', 'city3': 'Глазову', 'city4': 'Глазова', 'city5': 'Глазовым', 'city6': 'Глазове', 'city7': 'Глазове'}"
+        }
+    },
+    {
+        "pk":183,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Каменск-Шахтинский",
+            "slug":"kamensk-shah",
+            "city_names":"{'city1': 'Каменск-Шахтинский', 'city2': 'Каменска-Шахтинского', 'city3': 'Каменску-Шахтинскому', 'city4': 'Каменск-Шахтинский', 'city5': 'Каменском-Шахтинским', 'city6': 'Каменске-Шахтинском', 'city7': 'Каменске-Шахтинском'}"
+        }
+    },
+    {
+        "pk":199,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Железногорск",
+            "slug":"zheleznogorsk",
+            "city_names":"{'city1': 'Железногорск'}"
+        }
+    },
+    {
+        "pk":185,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Канск",
+            "slug":"kansk",
+            "city_names":"{'city1': 'Канск', 'city2': 'Канска', 'city3': 'Канску', 'city4': 'Канск', 'city5': 'Канском', 'city6': 'Канске', 'city7': 'Канске'}"
+        }
+    },
+    {
+        "pk":186,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Назрань",
+            "slug":"nazran",
+            "city_names":"{'city1': 'Назрань', 'city2': 'Назрани', 'city3': 'Назрани', 'city4': 'Назрань', 'city5': 'Назранью', 'city6': 'Назрани', 'city7': 'Назрани'}"
+        }
+    },
+    {
+        "pk":187,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Гатчина",
+            "slug":"gatchina",
+            "city_names":"{'city1': 'Гатчина', 'city2': 'Гатчины', 'city3': 'Гатчине', 'city4': 'Гатчину', 'city5': 'Гатчиной', 'city6': 'Гатчине', 'city7': 'Гатчине'}"
+        }
+    },
+    {
+        "pk":188,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Саров",
+            "slug":"sarov",
+            "city_names":"{'city1': 'Саров', 'city2': 'Сарова', 'city3': 'Сарову', 'city4': 'Саров', 'city5': 'Саровом', 'city6': 'Сарове', 'city7': 'Сарове'}"
+        }
+    },
+    {
+        "pk":189,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Новоуральск",
+            "slug":"novouralsk",
+            "city_names":"{'city1': 'Новоуральск', 'city2': 'Новоуральска', 'city3': 'Новоуральску', 'city4': 'Новоуральск', 'city5': 'Новоуральском', 'city6': 'Новоуральске', 'city7': 'Новоуральске'}"
+        }
+    },
+    {
+        "pk":190,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Воскресенск",
+            "slug":"voskresensk",
+            "city_names":"{'city1': 'Воскресенск', 'city2': 'Воскресенска', 'city3': 'Воскресенску', 'city4': 'Воскресенск', 'city5': 'Воскресенском', 'city6': 'Воскресенске', 'city7': 'Воскресенске'}"
+        }
+    },
+    {
+        "pk":191,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Долгопрудный",
+            "slug":"dolgoprudnyj",
+            "city_names":"{'city1': 'Долгопрудный', 'city2': 'Долгопрудного', 'city3': 'Долгопрудному', 'city4': 'Долгопрудный', 'city5': 'Долгопрудным', 'city6': 'Долгопрудном', 'city7': 'Долгопрудном'}"
+        }
+    },
+    {
+        "pk":192,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Бугульма",
+            "slug":"bugulma",
+            "city_names":"{'city1': 'Бугульма', 'city2': 'Бугульмы', 'city3': 'Бугульме', 'city4': 'Бугульму', 'city5': 'Бугульмой', 'city6': 'Бугульме', 'city7': 'Бугульме'}"
+        }
+    },
+    {
+        "pk":193,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кузнецк",
+            "slug":"kuzneck",
+            "city_names":"{'city1': 'Кузнецк', 'city2': 'Кузнецка', 'city3': 'Кузнецку', 'city4': 'Кузнецк', 'city5': 'Кузнецком', 'city6': 'Кузнецке', 'city7': 'Кузнецке'}"
+        }
+    },
+    {
+        "pk":194,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Губкин",
+            "slug":"gubkin",
+            "city_names":"{'city1': 'Губкин', 'city2': 'Губкина', 'city3': 'Губкину', 'city4': 'Губкина', 'city5': 'Губкиным', 'city6': 'Губкине', 'city7': 'Губкине'}"
+        }
+    },
+    {
+        "pk":195,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кинешма",
+            "slug":"kineshma",
+            "city_names":"{'city1': 'Кинешма', 'city2': 'Кинешмы', 'city3': 'Кинешме', 'city4': 'Кинешму', 'city5': 'Кинешмой', 'city6': 'Кинешме', 'city7': 'Кинешме'}"
+        }
+    },
+    {
+        "pk":196,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ейск",
+            "slug":"ejsk",
+            "city_names":"{'city1': 'Ейск', 'city2': 'Ейска', 'city3': 'Ейску', 'city4': 'Ейск', 'city5': 'Ейском', 'city6': 'Ейске', 'city7': 'Ейске'}"
+        }
+    },
+    {
+        "pk":197,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Реутов",
+            "slug":"reutov",
+            "city_names":"{'city1': 'Реутов', 'city2': 'Реутова', 'city3': 'Реутову', 'city4': 'Реутов', 'city5': 'Реутовом', 'city6': 'Реутове', 'city7': 'Реутове'}"
+        }
+    },
+    {
+        "pk":198,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Усть-Илимск",
+            "slug":"ust-ilimsk",
+            "city_names":"{'city1': 'Усть-Илимск', 'city2': 'Усть-Илимска', 'city3': 'Усть-Илимску', 'city4': 'Усть-Илимск', 'city5': 'Усть-Илимском', 'city6': 'Усть-Илимске', 'city7': 'Усть-Илимске'}"
+        }
+    },
+    {
+        "pk":200,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Усолье-Сибирское",
+            "slug":"usole-sibir",
+            "city_names":"{'city1': 'Усолье-Сибирское', 'city2': 'Усолья-Сибирского', 'city3': 'Усолью-Сибирскому', 'city4': 'Усолье-Сибирское', 'city5': 'Усольем-Сибирским', 'city6': 'Усолье-Сибирском', 'city7': 'Усолье-Сибирском'}"
+        }
+    },
+    {
+        "pk":201,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Чайковский",
+            "slug":"chajkovskij",
+            "city_names":"{'city1': 'Чайковский', 'city2': 'Чайковского', 'city3': 'Чайковскому', 'city4': 'Чайковский', 'city5': 'Чайковским', 'city6': 'Чайковском', 'city7': 'Чайковском'}"
+        }
+    },
+    {
+        "pk":202,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Азов",
+            "slug":"azov",
+            "city_names":"{'city1': 'Азов', 'city2': 'Азова', 'city3': 'Азову', 'city4': 'Азов', 'city5': 'Азовом', 'city6': 'Азове', 'city7': 'Азове'}"
+        }
+    },
+    {
+        "pk":203,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Бузулук",
+            "slug":"buzuluk",
+            "city_names":"{'city1': 'Бузулук', 'city2': 'Бузулука', 'city3': 'Бузулуку', 'city4': 'Бузулук', 'city5': 'Бузулуком', 'city6': 'Бузулуке', 'city7': 'Бузулуке'}"
+        }
+    },
+    {
+        "pk":204,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Озёрск",
+            "slug":"ozyorsk",
+            "city_names":"{'city1': 'Озёрск'}"
+        }
+    },
+    {
+        "pk":205,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Балашов",
+            "slug":"balashov",
+            "city_names":"{'city1': 'Балашов', 'city2': 'Балашова', 'city3': 'Балашову', 'city4': 'Балашова', 'city5': 'Балашовым', 'city6': 'Балашове', 'city7': 'Балашове'}"
+        }
+    },
+    {
+        "pk":206,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Юрга",
+            "slug":"yurga",
+            "city_names":"{'city1': 'Юрга', 'city2': 'Юрги', 'city3': 'Юрге', 'city4': 'Юргу', 'city5': 'Юргой', 'city6': 'Юрге', 'city7': 'Юрге'}"
+        }
+    },
+    {
+        "pk":207,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кирово-Чепецк",
+            "slug":"kirovo-chepeck",
+            "city_names":"{'city1': 'Кирово-Чепецк', 'city2': 'Кирово-Чепецка', 'city3': 'Кирово-Чепецку', 'city4': 'Кирово-Чепецк', 'city5': 'Кирово-Чепецком', 'city6': 'Кирово-Чепецке', 'city7': 'Кирово-Чепецке'}"
+        }
+    },
+    {
+        "pk":208,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кропоткин",
+            "slug":"kropotkin",
+            "city_names":"{'city1': 'Кропоткин', 'city2': 'Кропоткина', 'city3': 'Кропоткину', 'city4': 'Кропоткина', 'city5': 'Кропоткиным', 'city6': 'Кропоткине', 'city7': 'Кропоткине'}"
+        }
+    },
+    {
+        "pk":209,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Клин",
+            "slug":"klin",
+            "city_names":"{'city1': 'Клин', 'city2': 'Клина', 'city3': 'Клину', 'city4': 'Клин', 'city5': 'Клином', 'city6': 'Клине', 'city7': 'Клине'}"
+        }
+    },
+    {
+        "pk":210,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Красноуфимск",
+            "slug":"krasnoufimsk",
+            "city_names":"{'city1': 'Красноуфимск'}"
+        }
+    },
+    {
+        "pk":211,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Выборг",
+            "slug":"vyborg",
+            "city_names":"{'city1': 'Выборг', 'city2': 'Выборга', 'city3': 'Выборгу', 'city4': 'Выборг', 'city5': 'Выборгом', 'city6': 'Выборге', 'city7': 'Выборге'}"
+        }
+    },
+    {
+        "pk":212,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ханты-Мансийск",
+            "slug":"hm",
+            "city_names":"{'city1': 'Ханты-Мансийск', 'city2': 'Ханты-Мансийска', 'city3': 'Ханты-Мансийску', 'city4': 'Ханты-Мансийск', 'city5': 'Ханты-Мансийском', 'city6': 'Ханты-Мансийске', 'city7': 'Ханты-Мансийске'}"
+        }
+    },
+    {
+        "pk":213,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Троицк",
+            "slug":"troick",
+            "city_names":"{'city1': 'Троицк', 'city2': 'Троицка', 'city3': 'Троицку', 'city4': 'Троицк', 'city5': 'Троицком', 'city6': 'Троицке', 'city7': 'Троицке'}"
+        }
+    },
+    {
+        "pk":214,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Бор",
+            "slug":"bor",
+            "city_names":"{'city1': 'Бор', 'city2': 'Бора', 'city3': 'Бору', 'city4': 'Бор', 'city5': 'Бором', 'city6': 'Боре', 'city7': 'Бору'}"
+        }
+    },
+    {
+        "pk":215,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ялта ",
+            "slug":"yalta",
+            "city_names":"{'city1': 'Ялта '}"
+        }
+    },
+    {
+        "pk":216,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Шадринск",
+            "slug":"shadrinsk",
+            "city_names":"{'city1': 'Шадринск', 'city2': 'Шадринска', 'city3': 'Шадринску', 'city4': 'Шадринск', 'city5': 'Шадринском', 'city6': 'Шадринске', 'city7': 'Шадринске'}"
+        }
+    },
+    {
+        "pk":217,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Белово",
+            "slug":"belovo",
+            "city_names":"{'city1': 'Белово', 'city2': 'Белово', 'city3': 'Белово', 'city4': 'Белово', 'city5': 'Белово', 'city6': 'Белово', 'city7': 'Белово'}"
+        }
+    },
+    {
+        "pk":218,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Минеральные Воды",
+            "slug":"mnv",
+            "city_names":"{'city1': 'Минеральные Воды', 'city2': 'Минеральных Вод', 'city3': 'Минеральным Водам', 'city4': 'Минеральные Воды', 'city5': 'Минеральными Водами', 'city6': 'Минеральных Водах', 'city7': 'Минеральных Водах'}"
+        }
+    },
+    {
+        "pk":219,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Анжеро-Судженск",
+            "slug":"anzhero-sudzhensk",
+            "city_names":"{'city1': 'Анжеро-Судженск', 'city2': 'Анжеро-Судженска', 'city3': 'Анжеро-Судженску', 'city4': 'Анжеро-Судженск', 'city5': 'Анжеро-Судженском', 'city6': 'Анжеро-Судженске', 'city7': 'Анжеро-Судженске'}"
+        }
+    },
+    {
+        "pk":220,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Биробиджан",
+            "slug":"birobidzhan",
+            "city_names":"{'city1': 'Биробиджан', 'city2': 'Биробиджана', 'city3': 'Биробиджану', 'city4': 'Биробиджана', 'city5': 'Биробиджаном', 'city6': 'Биробиджане', 'city7': 'Биробиджане'}"
+        }
+    },
+    {
+        "pk":221,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Лобня",
+            "slug":"lobnya",
+            "city_names":"{'city1': 'Лобня', 'city2': 'Лобни', 'city3': 'Лобне', 'city4': 'Лобню', 'city5': 'Лобней', 'city6': 'Лобне', 'city7': 'Лобне'}"
+        }
+    },
+    {
+        "pk":222,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Новоалтайск",
+            "slug":"novoaltajsk",
+            "city_names":"{'city1': 'Новоалтайск', 'city2': 'Новоалтайска', 'city3': 'Новоалтайску', 'city4': 'Новоалтайск', 'city5': 'Новоалтайском', 'city6': 'Новоалтайске', 'city7': 'Новоалтайске'}"
+        }
+    },
+    {
+        "pk":223,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Чапаевск",
+            "slug":"chapaevsk",
+            "city_names":"{'city1': 'Чапаевск', 'city2': 'Чапаевска', 'city3': 'Чапаевску', 'city4': 'Чапаевск', 'city5': 'Чапаевском', 'city6': 'Чапаевске', 'city7': 'Чапаевске'}"
+        }
+    },
+    {
+        "pk":224,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Георгиевск",
+            "slug":"georgievsk",
+            "city_names":"{'city1': 'Георгиевск', 'city2': 'Георгиевска', 'city3': 'Георгиевску', 'city4': 'Георгиевск', 'city5': 'Георгиевском', 'city6': 'Георгиевске', 'city7': 'Георгиевске'}"
+        }
+    },
+    {
+        "pk":225,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Черногорск",
+            "slug":"chernogorsk",
+            "city_names":"{'city1': 'Черногорск', 'city2': 'Черногорска', 'city3': 'Черногорску', 'city4': 'Черногорск', 'city5': 'Черногорском', 'city6': 'Черногорске', 'city7': 'Черногорске'}"
+        }
+    },
+    {
+        "pk":226,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Минусинск",
+            "slug":"minusinsk",
+            "city_names":"{'city1': 'Минусинск', 'city2': 'Минусинска', 'city3': 'Минусинску', 'city4': 'Минусинск', 'city5': 'Минусинском', 'city6': 'Минусинске', 'city7': 'Минусинске'}"
+        }
+    },
+    {
+        "pk":227,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Михайловск",
+            "slug":"mihajlovsk",
+            "city_names":"{'city1': 'Михайловск', 'city2': 'Михайловска', 'city3': 'Михайловску', 'city4': 'Михайловск', 'city5': 'Михайловском', 'city6': 'Михайловске', 'city7': 'Михайловске'}"
+        }
+    },
+    {
+        "pk":228,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Елабуга",
+            "slug":"elabuga",
+            "city_names":"{'city1': 'Елабуга', 'city2': 'Елабуги', 'city3': 'Елабуге', 'city4': 'Елабугу', 'city5': 'Елабугой', 'city6': 'Елабуге', 'city7': 'Елабуге'}"
+        }
+    },
+    {
+        "pk":229,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Дубна",
+            "slug":"dubna",
+            "city_names":"{'city1': 'Дубна', 'city2': 'Дубны', 'city3': 'Дубне', 'city4': 'Дубну', 'city5': 'Дубной', 'city6': 'Дубне', 'city7': 'Дубне'}"
+        }
+    },
+    {
+        "pk":230,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Воркута",
+            "slug":"vorkuta",
+            "city_names":"{'city1': 'Воркута', 'city2': 'Воркуты', 'city3': 'Воркуте', 'city4': 'Воркуту', 'city5': 'Воркутой', 'city6': 'Воркуте', 'city7': 'Воркуте'}"
+        }
+    },
+    {
+        "pk":231,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Егорьевск",
+            "slug":"egorevsk",
+            "city_names":"{'city1': 'Егорьевск', 'city2': 'Егорьевска', 'city3': 'Егорьевску', 'city4': 'Егорьевск', 'city5': 'Егорьевском', 'city6': 'Егорьевске', 'city7': 'Егорьевске'}"
+        }
+    },
+    {
+        "pk":232,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Асбест",
+            "slug":"asbest",
+            "city_names":"{'city1': 'Асбест', 'city2': 'Асбеста', 'city3': 'Асбесту', 'city4': 'Асбест', 'city5': 'Асбестом', 'city6': 'Асбесте', 'city7': 'Асбесте'}"
+        }
+    },
+    {
+        "pk":233,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Феодосия ",
+            "slug":"feodosiya",
+            "city_names":"{'city1': 'Феодосия '}"
+        }
+    },
+    {
+        "pk":234,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ишим",
+            "slug":"ishim",
+            "city_names":"{'city1': 'Ишим', 'city2': 'Ишима', 'city3': 'Ишиму', 'city4': 'Ишима', 'city5': 'Ишимом', 'city6': 'Ишиме', 'city7': 'Ишиме'}"
+        }
+    },
+    {
+        "pk":235,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Белорецк",
+            "slug":"beloreck",
+            "city_names":"{'city1': 'Белорецк', 'city2': 'Белорецка', 'city3': 'Белорецку', 'city4': 'Белорецк', 'city5': 'Белорецком', 'city6': 'Белорецке', 'city7': 'Белорецке'}"
+        }
+    },
+    {
+        "pk":236,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Белогорск",
+            "slug":"belogorsk",
+            "city_names":"{'city1': 'Белогорск', 'city2': 'Белогорска', 'city3': 'Белогорску', 'city4': 'Белогорск', 'city5': 'Белогорском', 'city6': 'Белогорске', 'city7': 'Белогорске'}"
+        }
+    },
+    {
+        "pk":237,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кунгур",
+            "slug":"kungur",
+            "city_names":"{'city1': 'Кунгур', 'city2': 'Кунгура', 'city3': 'Кунгуру', 'city4': 'Кунгура', 'city5': 'Кунгуром', 'city6': 'Кунгуре', 'city7': 'Кунгуре'}"
+        }
+    },
+    {
+        "pk":238,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Лысьва",
+            "slug":"lysva",
+            "city_names":"{'city1': 'Лысьва', 'city2': 'Лысьвы', 'city3': 'Лысьве', 'city4': 'Лысьву', 'city5': 'Лысьвой', 'city6': 'Лысьве', 'city7': 'Лысьве'}"
+        }
+    },
+    {
+        "pk":239,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Гуково",
+            "slug":"gukovo",
+            "city_names":"{'city1': 'Гуково', 'city2': 'Гуково', 'city3': 'Гуково', 'city4': 'Гуково', 'city5': 'Гуково', 'city6': 'Гуково', 'city7': 'Гуково'}"
+        }
+    },
+    {
+        "pk":240,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ступино",
+            "slug":"stupino",
+            "city_names":"{'city1': 'Ступино', 'city2': 'Ступино', 'city3': 'Ступино', 'city4': 'Ступино', 'city5': 'Ступино', 'city6': 'Ступино', 'city7': 'Ступино'}"
+        }
+    },
+    {
+        "pk":241,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Туймазы",
+            "slug":"tujmazy",
+            "city_names":"{'city1': 'Туймазы', 'city2': 'Туймазов', 'city3': 'Туймазам', 'city4': 'Туймазов', 'city5': 'Туймазами', 'city6': 'Туймазах', 'city7': 'Туймазах'}"
+        }
+    },
+    {
+        "pk":242,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кстово",
+            "slug":"kstovo",
+            "city_names":"{'city1': 'Кстово', 'city2': 'Кстово', 'city3': 'Кстово', 'city4': 'Кстово', 'city5': 'Кстово', 'city6': 'Кстово', 'city7': 'Кстово'}"
+        }
+    },
+    {
+        "pk":243,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Вольск",
+            "slug":"volsk",
+            "city_names":"{'city1': 'Вольск', 'city2': 'Вольска', 'city3': 'Вольску', 'city4': 'Вольск', 'city5': 'Вольском', 'city6': 'Вольске', 'city7': 'Вольске'}"
+        }
+    },
+    {
+        "pk":244,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ишимбай",
+            "slug":"ishimbaj",
+            "city_names":"{'city1': 'Ишимбай', 'city2': 'Ишимбая', 'city3': 'Ишимбаю', 'city4': 'Ишимбая', 'city5': 'Ишимбаем', 'city6': 'Ишимбае', 'city7': 'Ишимбае'}"
+        }
+    },
+    {
+        "pk":245,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Зеленогорск",
+            "slug":"zelenogorsk",
+            "city_names":"{'city1': 'Зеленогорск', 'city2': 'Зеленогорска', 'city3': 'Зеленогорску', 'city4': 'Зеленогорск', 'city5': 'Зеленогорском', 'city6': 'Зеленогорске', 'city7': 'Зеленогорске'}"
+        }
+    },
+    {
+        "pk":246,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сосновый Бор",
+            "slug":"sosnovyj-bor",
+            "city_names":"{'city1': 'Сосновый Бор', 'city2': 'СосновогБора', 'city3': 'Сосновому Бору', 'city4': 'Сосновый Бор', 'city5': 'Сосновым Бором', 'city6': 'Сосновом Боре', 'city7': 'Сосновом Бору'}"
+        }
+    },
+    {
+        "pk":247,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Буйнакск",
+            "slug":"bujnaksk",
+            "city_names":"{'city1': 'Буйнакск', 'city2': 'Буйнакска', 'city3': 'Буйнакску', 'city4': 'Буйнакск', 'city5': 'Буйнакском', 'city6': 'Буйнакске', 'city7': 'Буйнакске'}"
+        }
+    },
+    {
+        "pk":248,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Борисоглебск",
+            "slug":"borisoglebsk",
+            "city_names":"{'city1': 'Борисоглебск', 'city2': 'Борисоглебска', 'city3': 'Борисоглебску', 'city4': 'Борисоглебск', 'city5': 'Борисоглебском', 'city6': 'Борисоглебске', 'city7': 'Борисоглебске'}"
+        }
+    },
+    {
+        "pk":249,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Наро-Фоминск",
+            "slug":"naro-fominsk",
+            "city_names":"{'city1': 'Наро-Фоминск', 'city2': 'Наро-Фоминска', 'city3': 'Наро-Фоминску', 'city4': 'Наро-Фоминск', 'city5': 'Наро-Фоминском', 'city6': 'Наро-Фоминске', 'city7': 'Наро-Фоминске'}"
+        }
+    },
+    {
+        "pk":250,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Будённовск",
+            "slug":"budyonnovsk",
+            "city_names":"{'city1': 'Будённовск', 'city2': 'Будённовска', 'city3': 'Будённовску', 'city4': 'Будённовск', 'city5': 'Будённовском', 'city6': 'Будённовске', 'city7': 'Будённовске'}"
+        }
+    },
+    {
+        "pk":251,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Донской",
+            "slug":"donskoj",
+            "city_names":"{'city1': 'Донской'}"
+        }
+    },
+    {
+        "pk":252,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Полевской",
+            "slug":"polevskoj",
+            "city_names":"{'city1': 'Полевской', 'city2': 'Полевского', 'city3': 'Полевскому', 'city4': 'Полевской', 'city5': 'Полевским', 'city6': 'Полевском', 'city7': 'Полевском'}"
+        }
+    },
+    {
+        "pk":253,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Лениногорск",
+            "slug":"leninogorsk",
+            "city_names":"{'city1': 'Лениногорск', 'city2': 'Лениногорска', 'city3': 'Лениногорску', 'city4': 'Лениногорск', 'city5': 'Лениногорском', 'city6': 'Лениногорске', 'city7': 'Лениногорске'}"
+        }
+    },
+    {
+        "pk":254,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Павловский Посад",
+            "slug":"pavlovskij-posad",
+            "city_names":"{'city1': 'Павловский Посад', 'city2': 'ПавловскогПосада', 'city3': 'Павловскому Посаду', 'city4': 'Павловский Посад', 'city5': 'Павловским Посадом', 'city6': 'Павловском Посаде', 'city7': 'Павловском Посаде'}"
+        }
+    },
+    {
+        "pk":255,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Славянск-на-Кубани",
+            "slug":"slavyansk-na-kubani",
+            "city_names":"{'city1': 'Славянск-на-Кубани', 'city2': 'Славянска-на-Кубани', 'city3': 'Славянску-на-Кубани', 'city4': 'Славянск-на-Кубани', 'city5': 'Славянском-на-Кубани', 'city6': 'Славянске-на-Кубани', 'city7': 'Славянске-на-Кубани'}"
+        }
+    },
+    {
+        "pk":560,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Заречный",
+            "slug":"zarechnyj",
+            "city_names":"{'city1': 'Заречный', 'city2': 'Заречного', 'city3': 'Заречному', 'city4': 'Заречный', 'city5': 'Заречным', 'city6': 'Заречном', 'city7': 'Заречном'}"
+        }
+    },
+    {
+        "pk":257,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Туапсе",
+            "slug":"tuapse",
+            "city_names":"{'city1': 'Туапсе', 'city2': 'Туапсе', 'city3': 'Туапсе', 'city4': 'Туапсе', 'city5': 'Туапсе', 'city6': 'Туапсе', 'city7': 'Туапсе'}"
+        }
+    },
+    {
+        "pk":258,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Россошь",
+            "slug":"rossosh",
+            "city_names":"{'city1': 'Россошь', 'city2': 'Россоши', 'city3': 'Россоши', 'city4': 'Россошь', 'city5': 'Россошью', 'city6': 'Россоши', 'city7': 'Россоши'}"
+        }
+    },
+    {
+        "pk":259,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Горно-Алтайск",
+            "slug":"gorno-altajsk",
+            "city_names":"{'city1': 'Горно-Алтайск', 'city2': 'Горно-Алтайска', 'city3': 'Горно-Алтайску', 'city4': 'Горно-Алтайск', 'city5': 'Горно-Алтайском', 'city6': 'Горно-Алтайске', 'city7': 'Горно-Алтайске'}"
+        }
+    },
+    {
+        "pk":260,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кумертау",
+            "slug":"kumertau",
+            "city_names":"{'city1': 'Кумертау', 'city2': 'Кумертау', 'city3': 'Кумертау', 'city4': 'Кумертау', 'city5': 'Кумертау', 'city6': 'Кумертау', 'city7': 'Кумертау'}"
+        }
+    },
+    {
+        "pk":261,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Лабинск",
+            "slug":"labinsk",
+            "city_names":"{'city1': 'Лабинск', 'city2': 'Лабинска', 'city3': 'Лабинску', 'city4': 'Лабинск', 'city5': 'Лабинском', 'city6': 'Лабинске', 'city7': 'Лабинске'}"
+        }
+    },
+    {
+        "pk":262,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сибай",
+            "slug":"sibaj",
+            "city_names":"{'city1': 'Сибай', 'city2': 'Сибая', 'city3': 'Сибаю', 'city4': 'Сибая', 'city5': 'Сибаем', 'city6': 'Сибае', 'city7': 'Сибае'}"
+        }
+    },
+    {
+        "pk":263,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Клинцы",
+            "slug":"klincy",
+            "city_names":"{'city1': 'Клинцы', 'city2': 'Клинцов', 'city3': 'Клинцам', 'city4': 'Клинцы', 'city5': 'Клинцами', 'city6': 'Клинцах', 'city7': 'Клинцах'}"
+        }
+    },
+    {
+        "pk":264,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ржев",
+            "slug":"rzhev",
+            "city_names":"{'city1': 'Ржев', 'city2': 'Ржева', 'city3': 'Ржеву', 'city4': 'Ржев', 'city5': 'Ржевом', 'city6': 'Ржеве', 'city7': 'Ржеве'}"
+        }
+    },
+    {
+        "pk":265,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тихорецк",
+            "slug":"tihoreck",
+            "city_names":"{'city1': 'Тихорецк', 'city2': 'Тихорецка', 'city3': 'Тихорецку', 'city4': 'Тихорецк', 'city5': 'Тихорецком', 'city6': 'Тихорецке', 'city7': 'Тихорецке'}"
+        }
+    },
+    {
+        "pk":266,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нерюнгри",
+            "slug":"neryungri",
+            "city_names":"{'city1': 'Нерюнгри', 'city2': 'Нерюнгри', 'city3': 'Нерюнгри', 'city4': 'Нерюнгри', 'city5': 'Нерюнгри', 'city6': 'Нерюнгри', 'city7': 'Нерюнгри'}"
+        }
+    },
+    {
+        "pk":267,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Алексин",
+            "slug":"aleksin",
+            "city_names":"{'city1': 'Алексин', 'city2': 'Алексина', 'city3': 'Алексину', 'city4': 'Алексин', 'city5': 'Алексином', 'city6': 'Алексине', 'city7': 'Алексине'}"
+        }
+    },
+    {
+        "pk":268,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ревда",
+            "slug":"revda",
+            "city_names":"{'city1': 'Ревда', 'city2': 'Ревды', 'city3': 'Ревде', 'city4': 'Ревду', 'city5': 'Ревдой', 'city6': 'Ревде', 'city7': 'Ревде'}"
+        }
+    },
+    {
+        "pk":269,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Александров",
+            "slug":"aleksandrov",
+            "city_names":"{'city1': 'Александров', 'city2': 'Александрова', 'city3': 'Александрову', 'city4': 'Александрова', 'city5': 'Александровым', 'city6': 'Александрове', 'city7': 'Александрове'}"
+        }
+    },
+    {
+        "pk":270,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Дмитров",
+            "slug":"dmitrov",
+            "city_names":"{'city1': 'Дмитров', 'city2': 'Дмитрова', 'city3': 'Дмитрову', 'city4': 'Дмитров', 'city5': 'Дмитровом', 'city6': 'Дмитрове', 'city7': 'Дмитрове'}"
+        }
+    },
+    {
+        "pk":271,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Мелеуз",
+            "slug":"meleuz",
+            "city_names":"{'city1': 'Мелеуз', 'city2': 'Мелеуза', 'city3': 'Мелеузу', 'city4': 'Мелеуз', 'city5': 'Мелеузом', 'city6': 'Мелеузе', 'city7': 'Мелеузе'}"
+        }
+    },
+    {
+        "pk":272,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сальск",
+            "slug":"salsk",
+            "city_names":"{'city1': 'Сальск', 'city2': 'Сальска', 'city3': 'Сальску', 'city4': 'Сальск', 'city5': 'Сальском', 'city6': 'Сальске', 'city7': 'Сальске'}"
+        }
+    },
+    {
+        "pk":273,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Лесосибирск",
+            "slug":"lesosibirsk",
+            "city_names":"{'city1': 'Лесосибирск', 'city2': 'Лесосибирска', 'city3': 'Лесосибирску', 'city4': 'Лесосибирск', 'city5': 'Лесосибирском', 'city6': 'Лесосибирске', 'city7': 'Лесосибирске'}"
+        }
+    },
+    {
+        "pk":274,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Гусь-Хрустальный",
+            "slug":"gus-hrustalnyj",
+            "city_names":"{'city1': 'Гусь-Хрустальный', 'city2': 'Гусь-Хрустального', 'city3': 'Гусь-Хрустальному', 'city4': 'Гусь-Хрустальный', 'city5': 'Гусь-Хрустальным', 'city6': 'Гусь-Хрустальном', 'city7': 'Гусь-Хрустальном'}"
+        }
+    },
+    {
+        "pk":275,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Чистополь",
+            "slug":"chistopol",
+            "city_names":"{'city1': 'Чистополь', 'city2': 'Чистополя', 'city3': 'Чистополю', 'city4': 'Чистополь', 'city5': 'Чистополем', 'city6': 'Чистополе', 'city7': 'Чистополе'}"
+        }
+    },
+    {
+        "pk":276,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Павлово",
+            "slug":"pavlovo",
+            "city_names":"{'city1': 'Павлово', 'city2': 'Павлово', 'city3': 'Павлово', 'city4': 'Павлово', 'city5': 'Павлово', 'city6': 'Павлово', 'city7': 'Павлово'}"
+        }
+    },
+    {
+        "pk":277,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Чехов",
+            "slug":"chekhov",
+            "city_names":"{'city1': 'Чехов', 'city2': 'Чехова', 'city3': 'Чехову', 'city4': 'Чехова', 'city5': 'Чеховым', 'city6': 'Чехове', 'city7': 'Чехове'}"
+        }
+    },
+    {
+        "pk":278,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Котлас",
+            "slug":"kotlas",
+            "city_names":"{'city1': 'Котлас', 'city2': 'Котласа', 'city3': 'Котласу', 'city4': 'Котлас', 'city5': 'Котласом', 'city6': 'Котласе', 'city7': 'Котласе'}"
+        }
+    },
+    {
+        "pk":279,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Белебей",
+            "slug":"belebej",
+            "city_names":"{'city1': 'Белебей', 'city2': 'Белебея', 'city3': 'Белебею', 'city4': 'Белебея', 'city5': 'Белебеем', 'city6': 'Белебее', 'city7': 'Белебее'}"
+        }
+    },
+    {
+        "pk":280,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Искитим",
+            "slug":"iskitim",
+            "city_names":"{'city1': 'Искитим', 'city2': 'Искитима', 'city3': 'Искитиму', 'city4': 'Искитима', 'city5': 'Искитимом', 'city6': 'Искитиме', 'city7': 'Искитиме'}"
+        }
+    },
+    {
+        "pk":281,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Краснотурьинск",
+            "slug":"krasnoturinsk",
+            "city_names":"{'city1': 'Краснотурьинск', 'city2': 'Краснотурьинска', 'city3': 'Краснотурьинску', 'city4': 'Краснотурьинск', 'city5': 'Краснотурьинском', 'city6': 'Краснотурьинске', 'city7': 'Краснотурьинске'}"
+        }
+    },
+    {
+        "pk":282,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Апатиты",
+            "slug":"apatity",
+            "city_names":"{'city1': 'Апатиты', 'city2': 'Апатитов', 'city3': 'Апатитам', 'city4': 'Апатиты', 'city5': 'Апатитами', 'city6': 'Апатитах', 'city7': 'Апатитах'}"
+        }
+    },
+    {
+        "pk":283,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Всеволожск",
+            "slug":"vsevolozhsk",
+            "city_names":"{'city1': 'Всеволожск'}"
+        }
+    },
+    {
+        "pk":284,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Прохладный",
+            "slug":"prohladnyj",
+            "city_names":"{'city1': 'Прохладный', 'city2': 'Прохладного', 'city3': 'Прохладному', 'city4': 'Прохладный', 'city5': 'Прохладным', 'city6': 'Прохладном', 'city7': 'Прохладном'}"
+        }
+    },
+    {
+        "pk":285,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Михайловка",
+            "slug":"mihajlovka",
+            "city_names":"{'city1': 'Михайловка', 'city2': 'Михайловки', 'city3': 'Михайловке', 'city4': 'Михайловку', 'city5': 'Михайловкой', 'city6': 'Михайловке', 'city7': 'Михайловке'}"
+        }
+    },
+    {
+        "pk":286,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Анапа",
+            "slug":"anapa",
+            "city_names":"{'city1': 'Анапа', 'city2': 'Анапы', 'city3': 'Анапе', 'city4': 'Анапу', 'city5': 'Анапой', 'city6': 'Анапе', 'city7': 'Анапе'}"
+        }
+    },
+    {
+        "pk":287,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тихвин",
+            "slug":"tihvin",
+            "city_names":"{'city1': 'Тихвин', 'city2': 'Тихвина', 'city3': 'Тихвину', 'city4': 'Тихвина', 'city5': 'Тихвиным', 'city6': 'Тихвине', 'city7': 'Тихвине'}"
+        }
+    },
+    {
+        "pk":288,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Верхняя Пышма",
+            "slug":"verhnyaya-pyshma",
+            "city_names":"{'city1': 'Верхняя Пышма', 'city2': 'Верхней Пышмы', 'city3': 'Верхней Пышме', 'city4': 'Верхнюю Пышму', 'city5': 'Верхней Пышмой', 'city6': 'Верхней Пышме', 'city7': 'Верхней Пышме'}"
+        }
+    },
+    {
+        "pk":289,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Свободный",
+            "slug":"svobodnyj",
+            "city_names":"{'city1': 'Свободный', 'city2': 'Свободного', 'city3': 'Свободному', 'city4': 'Свободного', 'city5': 'Свободным', 'city6': 'Свободном', 'city7': 'Свободном'}"
+        }
+    },
+    {
+        "pk":290,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ивантеевка",
+            "slug":"ivanteevka",
+            "city_names":"{'city1': 'Ивантеевка', 'city2': 'Ивантеевки', 'city3': 'Ивантеевке', 'city4': 'Ивантеевку', 'city5': 'Ивантеевкой', 'city6': 'Ивантеевке', 'city7': 'Ивантеевке'}"
+        }
+    },
+    {
+        "pk":291,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Шуя",
+            "slug":"shuya",
+            "city_names":"{'city1': 'Шуя', 'city2': 'Шуи', 'city3': 'Шуе', 'city4': 'Шую', 'city5': 'Шуёй', 'city6': 'Шуе', 'city7': 'Шуе'}"
+        }
+    },
+    {
+        "pk":292,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Когалым",
+            "slug":"kogalym",
+            "city_names":"{'city1': 'Когалым', 'city2': 'Когалыма', 'city3': 'Когалыму', 'city4': 'Когалыма', 'city5': 'Когалымом', 'city6': 'Когалыме', 'city7': 'Когалыме'}"
+        }
+    },
+    {
+        "pk":293,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Щёкино",
+            "slug":"shchyokino",
+            "city_names":"{'city1': 'Щёкино'}"
+        }
+    },
+    {
+        "pk":294,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Жигулёвск",
+            "slug":"zhigulyovsk",
+            "city_names":"{'city1': 'Жигулёвск'}"
+        }
+    },
+    {
+        "pk":295,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Крымск",
+            "slug":"krymsk",
+            "city_names":"{'city1': 'Крымск', 'city2': 'Крымска', 'city3': 'Крымску', 'city4': 'Крымск', 'city5': 'Крымском', 'city6': 'Крымске', 'city7': 'Крымске'}"
+        }
+    },
+    {
+        "pk":296,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Вязьма",
+            "slug":"vyazma",
+            "city_names":"{'city1': 'Вязьма', 'city2': 'Вязьмы', 'city3': 'Вязьме', 'city4': 'Вязьму', 'city5': 'Вязьмой', 'city6': 'Вязьме', 'city7': 'Вязьме'}"
+        }
+    },
+    {
+        "pk":297,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Видное",
+            "slug":"vidnoe",
+            "city_names":"{'city1': 'Видное', 'city2': 'Видного', 'city3': 'Видному', 'city4': 'Видное', 'city5': 'Видным', 'city6': 'Видном', 'city7': 'Видном'}"
+        }
+    },
+    {
+        "pk":298,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Арсеньев",
+            "slug":"arsenev",
+            "city_names":"{'city1': 'Арсеньев', 'city2': 'Арсеньева', 'city3': 'Арсеньеву', 'city4': 'Арсеньева', 'city5': 'Арсеньевым', 'city6': 'Арсеньеве', 'city7': 'Арсеньеве'}"
+        }
+    },
+    {
+        "pk":299,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Избербаш",
+            "slug":"izberbash",
+            "city_names":"{'city1': 'Избербаш'}"
+        }
+    },
+    {
+        "pk":300,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Выкса",
+            "slug":"vyksa",
+            "city_names":"{'city1': 'Выкса', 'city2': 'Выксы', 'city3': 'Выксе', 'city4': 'Выксу', 'city5': 'Выксой', 'city6': 'Выксе', 'city7': 'Выксе'}"
+        }
+    },
+    {
+        "pk":301,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Лиски",
+            "slug":"liski",
+            "city_names":"{'city1': 'Лиски', 'city2': 'Лисок', 'city3': 'Лискам', 'city4': 'Лиски', 'city5': 'Лисками', 'city6': 'Лисках', 'city7': 'Лисках'}"
+        }
+    },
+    {
+        "pk":302,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Волжск",
+            "slug":"volzhsk",
+            "city_names":"{'city1': 'Волжск', 'city2': 'Волжска', 'city3': 'Волжску', 'city4': 'Волжск', 'city5': 'Волжском', 'city6': 'Волжске', 'city7': 'Волжске'}"
+        }
+    },
+    {
+        "pk":303,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Краснокаменск",
+            "slug":"krasnokamensk",
+            "city_names":"{'city1': 'Краснокаменск', 'city2': 'Краснокаменска', 'city3': 'Краснокаменску', 'city4': 'Краснокаменск', 'city5': 'Краснокаменском', 'city6': 'Краснокаменске', 'city7': 'Краснокаменске'}"
+        }
+    },
+    {
+        "pk":304,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Фрязино",
+            "slug":"fryazino",
+            "city_names":"{'city1': 'Фрязино', 'city2': 'Фрязино', 'city3': 'Фрязино', 'city4': 'Фрязино', 'city5': 'Фрязино', 'city6': 'Фрязино', 'city7': 'вФрязино'}"
+        }
+    },
+    {
+        "pk":305,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Узловая",
+            "slug":"uzlovaya",
+            "city_names":"{'city1': 'Узловая', 'city2': 'Узловой', 'city3': 'Узловой', 'city4': 'Узловую', 'city5': 'Узловой', 'city6': 'Узловой', 'city7': 'Узловой'}"
+        }
+    },
+    {
+        "pk":306,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Лыткарино",
+            "slug":"lytkarino",
+            "city_names":"{'city1': 'Лыткарино', 'city2': 'Лыткарино', 'city3': 'Лыткарино', 'city4': 'Лыткарино', 'city5': 'Лыткарино', 'city6': 'Лыткарино', 'city7': 'Лыткарино'}"
+        }
+    },
+    {
+        "pk":307,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нягань",
+            "slug":"nyagan",
+            "city_names":"{'city1': 'Нягань', 'city2': 'Нягани', 'city3': 'Нягани', 'city4': 'Нягань', 'city5': 'Няганью', 'city6': 'Нягани', 'city7': 'Нягани'}"
+        }
+    },
+    {
+        "pk":308,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Рославль",
+            "slug":"roslavl",
+            "city_names":"{'city1': 'Рославль', 'city2': 'Рославля', 'city3': 'Рославлю', 'city4': 'Рославль', 'city5': 'Рославлем', 'city6': 'Рославле', 'city7': 'Рославле'}"
+        }
+    },
+    {
+        "pk":309,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Геленджик",
+            "slug":"gelendzhik",
+            "city_names":"{'city1': 'Геленджик', 'city2': 'Геленджика', 'city3': 'Геленджику', 'city4': 'Геленджик', 'city5': 'Геленджиком', 'city6': 'Геленджике', 'city7': 'Геленджике'}"
+        }
+    },
+    {
+        "pk":310,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Боровичи",
+            "slug":"borovichi",
+            "city_names":"{'city1': 'Боровичи', 'city2': 'Боровичей', 'city3': 'Боровичам', 'city4': 'Боровичей', 'city5': 'Боровичами', 'city6': 'Боровичах', 'city7': 'Боровичах'}"
+        }
+    },
+    {
+        "pk":311,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тимашёвск",
+            "slug":"timashyovsk",
+            "city_names":"{'city1': 'Тимашёвск'}"
+        }
+    },
+    {
+        "pk":312,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Белореченск",
+            "slug":"belorechensk",
+            "city_names":"{'city1': 'Белореченск', 'city2': 'Белореченска', 'city3': 'Белореченску', 'city4': 'Белореченск', 'city5': 'Белореченском', 'city6': 'Белореченске', 'city7': 'Белореченске'}"
+        }
+    },
+    {
+        "pk":313,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Солнечногорск",
+            "slug":"solnechnogorsk",
+            "city_names":"{'city1': 'Солнечногорск', 'city2': 'Солнечногорска', 'city3': 'Солнечногорску', 'city4': 'Солнечногорск', 'city5': 'Солнечногорском', 'city6': 'Солнечногорске', 'city7': 'Солнечногорске'}"
+        }
+    },
+    {
+        "pk":314,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Назарово",
+            "slug":"nazarovo",
+            "city_names":"{'city1': 'Назарово', 'city2': 'Назарово', 'city3': 'Назарово', 'city4': 'Назарово', 'city5': 'Назарово', 'city6': 'Назарово', 'city7': 'Назарово'}"
+        }
+    },
+    {
+        "pk":315,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кириши",
+            "slug":"kirishi",
+            "city_names":"{'city1': 'Кириши', 'city2': 'Киришей', 'city3': 'Киришам', 'city4': 'Киришей', 'city5': 'Киришами', 'city6': 'Киришах', 'city7': 'Киришах'}"
+        }
+    },
+    {
+        "pk":316,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Черемхово",
+            "slug":"cheremhovo",
+            "city_names":"{'city1': 'Черемхово', 'city2': 'Черемхово', 'city3': 'Черемхово', 'city4': 'Черемхово', 'city5': 'Черемхово', 'city6': 'Черемхово', 'city7': 'Черемхово'}"
+        }
+    },
+    {
+        "pk":317,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Краснокамск",
+            "slug":"krasnokamsk",
+            "city_names":"{'city1': 'Краснокамск', 'city2': 'Краснокамска', 'city3': 'Краснокамску', 'city4': 'Краснокамск', 'city5': 'Краснокамском', 'city6': 'Краснокамске', 'city7': 'Краснокамске'}"
+        }
+    },
+    {
+        "pk":318,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Лесной",
+            "slug":"lesnoj",
+            "city_names":"{'city1': 'Лесной', 'city2': 'Лесного', 'city3': 'Лесному', 'city4': 'Лесной', 'city5': 'Лесным', 'city6': 'Лесном', 'city7': 'Лесном'}"
+        }
+    },
+    {
+        "pk":319,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Вышний Волочёк",
+            "slug":"vyshnij-volochyok",
+            "city_names":"{'city1': 'Вышний Волочёк'}"
+        }
+    },
+    {
+        "pk":320,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Бугуруслан",
+            "slug":"buguruslan",
+            "city_names":"{'city1': 'Бугуруслан', 'city2': 'Бугуруслана', 'city3': 'Бугуруслану', 'city4': 'Бугуруслана', 'city5': 'Бугурусланом', 'city6': 'Бугуруслане', 'city7': 'Бугуруслане'}"
+        }
+    },
+    {
+        "pk":343,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Берёзовский",
+            "slug":"beryozovskij",
+            "city_names":"{'city1': 'Берёзовский'}"
+        }
+    },
+    {
+        "pk":322,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Балахна",
+            "slug":"balahna",
+            "city_names":"{'city1': 'Балахна', 'city2': 'Балахны', 'city3': 'Балахне', 'city4': 'Балахну', 'city5': 'Балахной', 'city6': 'Балахне', 'city7': 'Балахне'}"
+        }
+    },
+    {
+        "pk":323,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ливны",
+            "slug":"livny",
+            "city_names":"{'city1': 'Ливны', 'city2': 'Ливнов', 'city3': 'Ливнам', 'city4': 'Ливны', 'city5': 'Ливнами', 'city6': 'Ливнах', 'city7': 'Ливнах'}"
+        }
+    },
+    {
+        "pk":324,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Донецк",
+            "slug":"doneck",
+            "city_names":"{'city1': 'Донецк'}"
+        }
+    },
+    {
+        "pk":325,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Североморск",
+            "slug":"severomorsk",
+            "city_names":"{'city1': 'Североморск', 'city2': 'Североморска', 'city3': 'Североморску', 'city4': 'Североморск', 'city5': 'Североморском', 'city6': 'Североморске', 'city7': 'Североморске'}"
+        }
+    },
+    {
+        "pk":326,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Саяногорск",
+            "slug":"sayanogorsk",
+            "city_names":"{'city1': 'Саяногорск', 'city2': 'Саяногорска', 'city3': 'Саяногорску', 'city4': 'Саяногорск', 'city5': 'Саяногорском', 'city6': 'Саяногорске', 'city7': 'Саяногорске'}"
+        }
+    },
+    {
+        "pk":327,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кимры",
+            "slug":"kimry",
+            "city_names":"{'city1': 'Кимры', 'city2': 'Кимр', 'city3': 'Кимрам', 'city4': 'Кимры', 'city5': 'Кимрами', 'city6': 'Кимрах', 'city7': 'Кимрах'}"
+        }
+    },
+    {
+        "pk":328,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Мегион",
+            "slug":"megion",
+            "city_names":"{'city1': 'Мегион'}"
+        }
+    },
+    {
+        "pk":329,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кизляр",
+            "slug":"kizlyar",
+            "city_names":"{'city1': 'Кизляр'}"
+        }
+    },
+    {
+        "pk":330,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Урус-Мартан",
+            "slug":"urus-martan",
+            "city_names":"{'city1': 'Урус-Мартан'}"
+        }
+    },
+    {
+        "pk":331,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Снежинск",
+            "slug":"snezhinsk",
+            "city_names":"{'city1': 'Снежинск', 'city2': 'Снежинска', 'city3': 'Снежинску', 'city4': 'Снежинск', 'city5': 'Снежинском', 'city6': 'Снежинске', 'city7': 'Снежинске'}"
+        }
+    },
+    {
+        "pk":332,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кингисепп",
+            "slug":"kingisepp",
+            "city_names":"{'city1': 'Кингисепп', 'city2': 'Кингисеппа', 'city3': 'Кингисеппу', 'city4': 'Кингисепп', 'city5': 'Кингисеппом', 'city6': 'Кингисеппе', 'city7': 'Кингисеппе'}"
+        }
+    },
+    {
+        "pk":333,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Курганинск",
+            "slug":"kurganinsk",
+            "city_names":"{'city1': 'Курганинск'}"
+        }
+    },
+    {
+        "pk":334,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Шелехов",
+            "slug":"shelekhov",
+            "city_names":"{'city1': 'Шелехов'}"
+        }
+    },
+    {
+        "pk":335,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Можга",
+            "slug":"mozhga",
+            "city_names":"{'city1': 'Можга'}"
+        }
+    },
+    {
+        "pk":336,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сертолово",
+            "slug":"sertolovo",
+            "city_names":"{'city1': 'Сертолово'}"
+        }
+    },
+    {
+        "pk":337,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ярцево",
+            "slug":"yarcevo",
+            "city_names":"{'city1': 'Ярцево', 'city2': 'Ярцево', 'city3': 'Ярцево', 'city4': 'Ярцево', 'city5': 'Ярцево', 'city6': 'Ярцево', 'city7': 'Ярцево'}"
+        }
+    },
+    {
+        "pk":338,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Шали",
+            "slug":"shali",
+            "city_names":"{'city1': 'Шали'}"
+        }
+    },
+    {
+        "pk":339,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Отрадный",
+            "slug":"otradnyj",
+            "city_names":"{'city1': 'Отрадный', 'city2': 'Отрадного', 'city3': 'Отрадному', 'city4': 'Отрадный', 'city5': 'Отрадным', 'city6': 'Отрадном', 'city7': 'Отрадном'}"
+        }
+    },
+    {
+        "pk":340,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Торжок",
+            "slug":"torzhok",
+            "city_names":"{'city1': 'Торжок'}"
+        }
+    },
+    {
+        "pk":341,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Рузаевка",
+            "slug":"ruzaevka",
+            "city_names":"{'city1': 'Рузаевка'}"
+        }
+    },
+    {
+        "pk":342,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Волхов",
+            "slug":"volhov",
+            "city_names":"{'city1': 'Волхов'}"
+        }
+    },
+    {
+        "pk":344,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Куйбышев",
+            "slug":"kujbyshev",
+            "city_names":"{'city1': 'Куйбышев'}"
+        }
+    },
+    {
+        "pk":345,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Дзержинский",
+            "slug":"dzerzhinskij",
+            "city_names":"{'city1': 'Дзержинский'}"
+        }
+    },
+    {
+        "pk":346,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Заринск",
+            "slug":"zarinsk",
+            "city_names":"{'city1': 'Заринск', 'city2': 'Заринска', 'city3': 'Заринску', 'city4': 'Заринск', 'city5': 'Заринском', 'city6': 'Заринске', 'city7': 'Заринске'}"
+        }
+    },
+    {
+        "pk":347,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Грязи",
+            "slug":"gryazi",
+            "city_names":"{'city1': 'Грязи'}"
+        }
+    },
+    {
+        "pk":348,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Чусовой",
+            "slug":"chusovoj",
+            "city_names":"{'city1': 'Чусовой', 'city2': 'Чусового', 'city3': 'Чусовому', 'city4': 'Чусовой', 'city5': 'Чусовым', 'city6': 'Чусовом', 'city7': 'Чусовом'}"
+        }
+    },
+    {
+        "pk":349,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Надым",
+            "slug":"nadym",
+            "city_names":"{'city1': 'Надым'}"
+        }
+    },
+    {
+        "pk":350,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Верхняя Салда",
+            "slug":"verhnyaya-salda",
+            "city_names":"{'city1': 'Верхняя Салда', 'city2': 'Верхней Салды', 'city3': 'Верхней Салде', 'city4': 'Верхнюю Салду', 'city5': 'Верхней Салдой', 'city6': 'Верхней Салде', 'city7': 'Верхней Салде'}"
+        }
+    },
+    {
+        "pk":351,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сафоново",
+            "slug":"safonovo",
+            "city_names":"{'city1': 'Сафоново'}"
+        }
+    },
+    {
+        "pk":352,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Осинники",
+            "slug":"osinniki",
+            "city_names":"{'city1': 'Осинники', 'city2': 'Осинников', 'city3': 'Осинникам', 'city4': 'Осинники', 'city5': 'Осинниками', 'city6': 'Осинниках', 'city7': 'Осинниках'}"
+        }
+    },
+    {
+        "pk":353,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кольчугино",
+            "slug":"kolchugino",
+            "city_names":"{'city1': 'Кольчугино'}"
+        }
+    },
+    {
+        "pk":354,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Гудермес",
+            "slug":"gudermes",
+            "city_names":"{'city1': 'Гудермес'}"
+        }
+    },
+    {
+        "pk":355,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Канаш",
+            "slug":"kanash",
+            "city_names":"{'city1': 'Канаш', 'city2': 'Канаша', 'city3': 'Канашу', 'city4': 'Канаша', 'city5': 'Канашем', 'city6': 'Канаше', 'city7': 'Канаше'}"
+        }
+    },
+    {
+        "pk":356,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Рассказово",
+            "slug":"rasskazovo",
+            "city_names":"{'city1': 'Рассказово'}"
+        }
+    },
+    {
+        "pk":357,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сатка",
+            "slug":"satka",
+            "city_names":"{'city1': 'Сатка'}"
+        }
+    },
+    {
+        "pk":358,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Мончегорск",
+            "slug":"monchegorsk",
+            "city_names":"{'city1': 'Мончегорск', 'city2': 'Мончегорска', 'city3': 'Мончегорску', 'city4': 'Мончегорск', 'city5': 'Мончегорском', 'city6': 'Мончегорске', 'city7': 'Мончегорске'}"
+        }
+    },
+    {
+        "pk":359,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Усть-Кут",
+            "slug":"ust-kut",
+            "city_names":"{'city1': 'Усть-Кут'}"
+        }
+    },
+    {
+        "pk":360,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тулун",
+            "slug":"tulun",
+            "city_names":"{'city1': 'Тулун', 'city2': 'Тулуна', 'city3': 'Тулуну', 'city4': 'Тулун', 'city5': 'Тулуном', 'city6': 'Тулуне', 'city7': 'Тулуне'}"
+        }
+    },
+    {
+        "pk":361,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Шебекино",
+            "slug":"shebekino",
+            "city_names":"{'city1': 'Шебекино'}"
+        }
+    },
+    {
+        "pk":362,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Спасск-Дальний",
+            "slug":"spassk-dalnij",
+            "city_names":"{'city1': 'Спасск-Дальний', 'city2': 'Спасска-Дальнего', 'city3': 'Спасску-Дальнему', 'city4': 'Спасск-Дальний', 'city5': 'Спасском-Дальним', 'city6': 'Спасске-Дальнем', 'city7': 'Спасске-Дальнем'}"
+        }
+    },
+    {
+        "pk":363,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Белая Калитва",
+            "slug":"belaya-kalitva",
+            "city_names":"{'city1': 'Белая Калитва'}"
+        }
+    },
+    {
+        "pk":364,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Печора",
+            "slug":"pechora",
+            "city_names":"{'city1': 'Печора'}"
+        }
+    },
+    {
+        "pk":365,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Чебаркуль",
+            "slug":"chebarkul",
+            "city_names":"{'city1': 'Чебаркуль'}"
+        }
+    },
+    {
+        "pk":366,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Радужный",
+            "slug":"raduzhnyj",
+            "city_names":"{'city1': 'Радужный'}"
+        }
+    },
+    {
+        "pk":367,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Усть-Лабинск",
+            "slug":"ust-labinsk",
+            "city_names":"{'city1': 'Усть-Лабинск'}"
+        }
+    },
+    {
+        "pk":368,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Мценск",
+            "slug":"mcensk",
+            "city_names":"{'city1': 'Мценск'}"
+        }
+    },
+    {
+        "pk":369,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Мыски",
+            "slug":"myski",
+            "city_names":"{'city1': 'Мыски'}"
+        }
+    },
+    {
+        "pk":370,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Амурск",
+            "slug":"amursk",
+            "city_names":"{'city1': 'Амурск'}"
+        }
+    },
+    {
+        "pk":371,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Курчатов",
+            "slug":"kurchatov",
+            "city_names":"{'city1': 'Курчатов'}"
+        }
+    },
+    {
+        "pk":372,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Качканар",
+            "slug":"kachkanar",
+            "city_names":"{'city1': 'Качканар'}"
+        }
+    },
+    {
+        "pk":373,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Салехард",
+            "slug":"salekhard",
+            "city_names":"{'city1': 'Салехард'}"
+        }
+    },
+    {
+        "pk":374,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ефремов",
+            "slug":"efremov",
+            "city_names":"{'city1': 'Ефремов'}"
+        }
+    },
+    {
+        "pk":375,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Стрежевой",
+            "slug":"strezhevoj",
+            "city_names":"{'city1': 'Стрежевой'}"
+        }
+    },
+    {
+        "pk":376,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Аксай",
+            "slug":"aksaj",
+            "city_names":"{'city1': 'Аксай'}"
+        }
+    },
+    {
+        "pk":377,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Переславль-Залесский",
+            "slug":"pereslavl-zalesskij",
+            "city_names":"{'city1': 'Переславль-Залесский'}"
+        }
+    },
+    {
+        "pk":378,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ахтубинск",
+            "slug":"ahtubinsk",
+            "city_names":"{'city1': 'Ахтубинск'}"
+        }
+    },
+    {
+        "pk":379,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кашира",
+            "slug":"kashira",
+            "city_names":"{'city1': 'Кашира'}"
+        }
+    },
+    {
+        "pk":380,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Заинск",
+            "slug":"zainsk",
+            "city_names":"{'city1': 'Заинск'}"
+        }
+    },
+    {
+        "pk":381,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Камень-на-Оби",
+            "slug":"kamen-na-obi",
+            "city_names":"{'city1': 'Камень-на-Оби'}"
+        }
+    },
+    {
+        "pk":382,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Советск",
+            "slug":"sovetsk",
+            "city_names":"{'city1': 'Советск'}"
+        }
+    },
+    {
+        "pk":383,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Пугачёв",
+            "slug":"pugachyov",
+            "city_names":"{'city1': 'Пугачёв'}"
+        }
+    },
+    {
+        "pk":384,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Лангепас",
+            "slug":"langepas",
+            "city_names":"{'city1': 'Лангепас'}"
+        }
+    },
+    {
+        "pk":385,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Бирск",
+            "slug":"birsk",
+            "city_names":"{'city1': 'Бирск'}"
+        }
+    },
+    {
+        "pk":386,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Урюпинск",
+            "slug":"uryupinsk",
+            "city_names":"{'city1': 'Урюпинск'}"
+        }
+    },
+    {
+        "pk":387,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Моршанск",
+            "slug":"morshansk",
+            "city_names":"{'city1': 'Моршанск'}"
+        }
+    },
+    {
+        "pk":388,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Пыть-Ях",
+            "slug":"pyt-yah",
+            "city_names":"{'city1': 'Пыть-Ях'}"
+        }
+    },
+    {
+        "pk":389,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Конаково",
+            "slug":"konakovo",
+            "city_names":"{'city1': 'Конаково'}"
+        }
+    },
+    {
+        "pk":390,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ртищево",
+            "slug":"rtishchevo",
+            "city_names":"{'city1': 'Ртищево'}"
+        }
+    },
+    {
+        "pk":391,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Вязники",
+            "slug":"vyazniki",
+            "city_names":"{'city1': 'Вязники'}"
+        }
+    },
+    {
+        "pk":392,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кореновск",
+            "slug":"korenovsk",
+            "city_names":"{'city1': 'Кореновск'}"
+        }
+    },
+    {
+        "pk":393,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Усинск",
+            "slug":"usinsk",
+            "city_names":"{'city1': 'Усинск'}"
+        }
+    },
+    {
+        "pk":394,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тутаев",
+            "slug":"tutaev",
+            "city_names":"{'city1': 'Тутаев'}"
+        }
+    },
+    {
+        "pk":395,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Красный Сулин",
+            "slug":"krasnyj-sulin",
+            "city_names":"{'city1': 'Красный Сулин'}"
+        }
+    },
+    {
+        "pk":396,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Саянск",
+            "slug":"sayansk",
+            "city_names":"{'city1': 'Саянск'}"
+        }
+    },
+    {
+        "pk":397,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Новодвинск",
+            "slug":"novodvinsk",
+            "city_names":"{'city1': 'Новодвинск'}"
+        }
+    },
+    {
+        "pk":398,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Новозыбков",
+            "slug":"novozybkov",
+            "city_names":"{'city1': 'Новозыбков'}"
+        }
+    },
+    {
+        "pk":399,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Людиново",
+            "slug":"lyudinovo",
+            "city_names":"{'city1': 'Людиново'}"
+        }
+    },
+    {
+        "pk":400,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Изобильный",
+            "slug":"izobilnyj",
+            "city_names":"{'city1': 'Изобильный'}"
+        }
+    },
+    {
+        "pk":401,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Мариинск",
+            "slug":"mariinsk",
+            "city_names":"{'city1': 'Мариинск'}"
+        }
+    },
+    {
+        "pk":402,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Черняховск",
+            "slug":"chernyahovsk",
+            "city_names":"{'city1': 'Черняховск'}"
+        }
+    },
+    {
+        "pk":403,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Заволжье",
+            "slug":"zavolzhe",
+            "city_names":"{'city1': 'Заволжье'}"
+        }
+    },
+    {
+        "pk":404,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Апшеронск",
+            "slug":"apsheronsk",
+            "city_names":"{'city1': 'Апшеронск'}"
+        }
+    },
+    {
+        "pk":405,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Коряжма",
+            "slug":"koryazhma",
+            "city_names":"{'city1': 'Коряжма'}"
+        }
+    },
+    {
+        "pk":406,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Каменка",
+            "slug":"kamenka",
+            "city_names":"{'city1': 'Каменка'}"
+        }
+    },
+    {
+        "pk":407,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Елизово",
+            "slug":"elizovo",
+            "city_names":"{'city1': 'Елизово'}"
+        }
+    },
+    {
+        "pk":408,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Фролово",
+            "slug":"frolovo",
+            "city_names":"{'city1': 'Фролово'}"
+        }
+    },
+    {
+        "pk":409,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Урай",
+            "slug":"uraj",
+            "city_names":"{'city1': 'Урай'}"
+        }
+    },
+    {
+        "pk":410,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Большой Камень",
+            "slug":"bolshoj-kamen",
+            "city_names":"{'city1': 'Большой Камень'}"
+        }
+    },
+    {
+        "pk":411,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тосно",
+            "slug":"tosno",
+            "city_names":"{'city1': 'Тосно'}"
+        }
+    },
+    {
+        "pk":412,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Алексеевка",
+            "slug":"alekseevka",
+            "city_names":"{'city1': 'Алексеевка'}"
+        }
+    },
+    {
+        "pk":413,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кыштым",
+            "slug":"kyshtym",
+            "city_names":"{'city1': 'Кыштым'}"
+        }
+    },
+    {
+        "pk":414,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Коркино",
+            "slug":"korkino",
+            "city_names":"{'city1': 'Коркино'}"
+        }
+    },
+    {
+        "pk":415,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Лянтор",
+            "slug":"lyantor",
+            "city_names":"{'city1': 'Лянтор'}"
+        }
+    },
+    {
+        "pk":416,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Моздок",
+            "slug":"mozdok",
+            "city_names":"{'city1': 'Моздок'}"
+        }
+    },
+    {
+        "pk":417,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Реж",
+            "slug":"rezh",
+            "city_names":"{'city1': 'Реж'}"
+        }
+    },
+    {
+        "pk":418,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Партизанск",
+            "slug":"partizansk",
+            "city_names":"{'city1': 'Партизанск'}"
+        }
+    },
+    {
+        "pk":419,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Шарыпово",
+            "slug":"sharypovo",
+            "city_names":"{'city1': 'Шарыпово'}"
+        }
+    },
+    {
+        "pk":420,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Светлоград",
+            "slug":"svetlograd",
+            "city_names":"{'city1': 'Светлоград'}"
+        }
+    },
+    {
+        "pk":421,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сокол",
+            "slug":"sokol",
+            "city_names":"{'city1': 'Сокол'}"
+        }
+    },
+    {
+        "pk":422,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ирбит",
+            "slug":"irbit",
+            "city_names":"{'city1': 'Ирбит'}"
+        }
+    },
+    {
+        "pk":423,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Гай",
+            "slug":"gaj",
+            "city_names":"{'city1': 'Гай'}"
+        }
+    },
+    {
+        "pk":424,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Алатырь",
+            "slug":"alatyr",
+            "city_names":"{'city1': 'Алатырь'}"
+        }
+    },
+    {
+        "pk":425,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Алапаевск",
+            "slug":"alapaevsk",
+            "city_names":"{'city1': 'Алапаевск'}"
+        }
+    },
+    {
+        "pk":426,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Темрюк",
+            "slug":"temryuk",
+            "city_names":"{'city1': 'Темрюк'}"
+        }
+    },
+    {
+        "pk":427,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Южноуральск",
+            "slug":"yuzhnouralsk",
+            "city_names":"{'city1': 'Южноуральск'}"
+        }
+    },
+    {
+        "pk":428,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Учалы",
+            "slug":"uchaly",
+            "city_names":"{'city1': 'Учалы'}"
+        }
+    },
+    {
+        "pk":429,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Вичуга",
+            "slug":"vichuga",
+            "city_names":"{'city1': 'Вичуга'}"
+        }
+    },
+    {
+        "pk":430,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Дальнегорск",
+            "slug":"dalnegorsk",
+            "city_names":"{'city1': 'Дальнегорск'}"
+        }
+    },
+    {
+        "pk":431,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Протвино",
+            "slug":"protvino",
+            "city_names":"{'city1': 'Протвино'}"
+        }
+    },
+    {
+        "pk":515,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Мирный",
+            "slug":"mirnyj",
+            "city_names":"{'city1': 'Мирный'}"
+        }
+    },
+    {
+        "pk":433,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нижнеудинск",
+            "slug":"nizhneudinsk",
+            "city_names":"{'city1': 'Нижнеудинск'}"
+        }
+    },
+    {
+        "pk":434,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Лесозаводск",
+            "slug":"lesozavodsk",
+            "city_names":"{'city1': 'Лесозаводск'}"
+        }
+    },
+    {
+        "pk":435,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Баксан",
+            "slug":"baksan",
+            "city_names":"{'city1': 'Баксан'}"
+        }
+    },
+    {
+        "pk":436,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Беслан",
+            "slug":"beslan",
+            "city_names":"{'city1': 'Беслан'}"
+        }
+    },
+    {
+        "pk":437,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ялуторовск",
+            "slug":"yalutorovsk",
+            "city_names":"{'city1': 'Ялуторовск'}"
+        }
+    },
+    {
+        "pk":438,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Миллерово",
+            "slug":"millerovo",
+            "city_names":"{'city1': 'Миллерово'}"
+        }
+    },
+    {
+        "pk":439,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Луга",
+            "slug":"luga",
+            "city_names":"{'city1': 'Луга'}"
+        }
+    },
+    {
+        "pk":440,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кизилюрт",
+            "slug":"kizilyurt",
+            "city_names":"{'city1': 'Кизилюрт'}"
+        }
+    },
+    {
+        "pk":441,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Фурманов",
+            "slug":"furmanov",
+            "city_names":"{'city1': 'Фурманов'}"
+        }
+    },
+    {
+        "pk":442,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Краснознаменск",
+            "slug":"krasnoznamensk",
+            "city_names":"{'city1': 'Краснознаменск'}"
+        }
+    },
+    {
+        "pk":443,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Зеленокумск",
+            "slug":"zelenokumsk",
+            "city_names":"{'city1': 'Зеленокумск'}"
+        }
+    },
+    {
+        "pk":444,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кулебаки",
+            "slug":"kulebaki",
+            "city_names":"{'city1': 'Кулебаки'}"
+        }
+    },
+    {
+        "pk":445,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Добрянка",
+            "slug":"dobryanka",
+            "city_names":"{'city1': 'Добрянка'}"
+        }
+    },
+    {
+        "pk":446,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Джанкой ",
+            "slug":"dzhankoj",
+            "city_names":"{'city1': 'Джанкой '}"
+        }
+    },
+    {
+        "pk":447,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кандалакша",
+            "slug":"kandalaksha",
+            "city_names":"{'city1': 'Кандалакша'}"
+        }
+    },
+    {
+        "pk":448,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тында",
+            "slug":"tynda",
+            "city_names":"{'city1': 'Тында'}"
+        }
+    },
+    {
+        "pk":449,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тайшет",
+            "slug":"tajshet",
+            "city_names":"{'city1': 'Тайшет'}"
+        }
+    },
+    {
+        "pk":450,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тавда",
+            "slug":"tavda",
+            "city_names":"{'city1': 'Тавда'}"
+        }
+    },
+    {
+        "pk":451,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сердобск",
+            "slug":"serdobsk",
+            "city_names":"{'city1': 'Сердобск'}"
+        }
+    },
+    {
+        "pk":452,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Валуйки",
+            "slug":"valujki",
+            "city_names":"{'city1': 'Валуйки'}"
+        }
+    },
+    {
+        "pk":453,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Гулькевичи",
+            "slug":"gulkevichi",
+            "city_names":"{'city1': 'Гулькевичи'}"
+        }
+    },
+    {
+        "pk":454,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Вятские Поляны",
+            "slug":"vyatskie-polyany",
+            "city_names":"{'city1': 'Вятские Поляны'}"
+        }
+    },
+    {
+        "pk":455,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Истра",
+            "slug":"istra",
+            "city_names":"{'city1': 'Истра'}"
+        }
+    },
+    {
+        "pk":456,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тейково",
+            "slug":"tejkovo",
+            "city_names":"{'city1': 'Тейково'}"
+        }
+    },
+    {
+        "pk":457,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Абинск",
+            "slug":"abinsk",
+            "city_names":"{'city1': 'Абинск'}"
+        }
+    },
+    {
+        "pk":458,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Азнакаево",
+            "slug":"aznakaevo",
+            "city_names":"{'city1': 'Азнакаево'}"
+        }
+    },
+    {
+        "pk":459,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Новокубанск",
+            "slug":"novokubansk",
+            "city_names":"{'city1': 'Новокубанск'}"
+        }
+    },
+    {
+        "pk":460,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сухой Лог",
+            "slug":"suhoj-log",
+            "city_names":"{'city1': 'Сухой Лог'}"
+        }
+    },
+    {
+        "pk":461,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Углич",
+            "slug":"uglich",
+            "city_names":"{'city1': 'Углич'}"
+        }
+    },
+    {
+        "pk":462,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кинель",
+            "slug":"kinel",
+            "city_names":"{'city1': 'Кинель'}"
+        }
+    },
+    {
+        "pk":464,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Югорск",
+            "slug":"yugorsk",
+            "city_names":"{'city1': 'Югорск'}"
+        }
+    },
+    {
+        "pk":465,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Слободской",
+            "slug":"slobodskoj",
+            "city_names":"{'city1': 'Слободской'}"
+        }
+    },
+    {
+        "pk":466,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Острогожск",
+            "slug":"ostrogozhsk",
+            "city_names":"{'city1': 'Острогожск'}"
+        }
+    },
+    {
+        "pk":467,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Трёхгорный",
+            "slug":"tryohgornyj",
+            "city_names":"{'city1': 'Трёхгорный'}"
+        }
+    },
+    {
+        "pk":468,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сланцы",
+            "slug":"slancy",
+            "city_names":"{'city1': 'Сланцы'}"
+        }
+    },
+    {
+        "pk":469,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Корсаков",
+            "slug":"korsakov",
+            "city_names":"{'city1': 'Корсаков'}"
+        }
+    },
+    {
+        "pk":470,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Касимов",
+            "slug":"kasimov",
+            "city_names":"{'city1': 'Касимов'}"
+        }
+    },
+    {
+        "pk":471,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Шумерля",
+            "slug":"shumerlya",
+            "city_names":"{'city1': 'Шумерля'}"
+        }
+    },
+    {
+        "pk":472,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Муравленко",
+            "slug":"muravlenko",
+            "city_names":"{'city1': 'Муравленко'}"
+        }
+    },
+    {
+        "pk":473,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Чернушка",
+            "slug":"chernushka",
+            "city_names":"{'city1': 'Чернушка'}"
+        }
+    },
+    {
+        "pk":474,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сосновоборск",
+            "slug":"sosnovoborsk",
+            "city_names":"{'city1': 'Сосновоборск'}"
+        }
+    },
+    {
+        "pk":475,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кушва",
+            "slug":"kushva",
+            "city_names":"{'city1': 'Кушва'}"
+        }
+    },
+    {
+        "pk":476,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кондопога",
+            "slug":"kondopoga",
+            "city_names":"{'city1': 'Кондопога'}"
+        }
+    },
+    {
+        "pk":477,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Артёмовский",
+            "slug":"artyomovskij",
+            "city_names":"{'city1': 'Артёмовский'}"
+        }
+    },
+    {
+        "pk":478,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Шатура",
+            "slug":"shatura",
+            "city_names":"{'city1': 'Шатура'}"
+        }
+    },
+    {
+        "pk":479,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Благодарный",
+            "slug":"blagodarnyj",
+            "city_names":"{'city1': 'Благодарный'}"
+        }
+    },
+    {
+        "pk":480,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Балтийск",
+            "slug":"baltijsk",
+            "city_names":"{'city1': 'Балтийск'}"
+        }
+    },
+    {
+        "pk":481,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нововоронеж",
+            "slug":"novovoronezh",
+            "city_names":"{'city1': 'Нововоронеж'}"
+        }
+    },
+    {
+        "pk":482,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нурлат",
+            "slug":"nurlat",
+            "city_names":"{'city1': 'Нурлат'}"
+        }
+    },
+    {
+        "pk":483,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Зима",
+            "slug":"zima",
+            "city_names":"{'city1': 'Зима'}"
+        }
+    },
+    {
+        "pk":484,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Котельники",
+            "slug":"kotelniki",
+            "city_names":"{'city1': 'Котельники'}"
+        }
+    },
+    {
+        "pk":485,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Приморско-Ахтарск",
+            "slug":"primorsko-ahtarsk",
+            "city_names":"{'city1': 'Приморско-Ахтарск'}"
+        }
+    },
+    {
+        "pk":486,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Старая Русса",
+            "slug":"staraya-russa",
+            "city_names":"{'city1': 'Старая Русса'}"
+        }
+    },
+    {
+        "pk":487,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Инта",
+            "slug":"inta",
+            "city_names":"{'city1': 'Инта'}"
+        }
+    },
+    {
+        "pk":488,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Аша",
+            "slug":"asha",
+            "city_names":"{'city1': 'Аша'}"
+        }
+    },
+    {
+        "pk":489,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Богородицк",
+            "slug":"bogorodick",
+            "city_names":"{'city1': 'Богородицк'}"
+        }
+    },
+    {
+        "pk":491,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Котовск",
+            "slug":"kotovsk",
+            "city_names":"{'city1': 'Котовск'}"
+        }
+    },
+    {
+        "pk":492,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ростов",
+            "slug":"rostov-velikiy",
+            "city_names":"{'city1': 'Ростов'}"
+        }
+    },
+    {
+        "pk":493,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Богданович",
+            "slug":"bogdanovich",
+            "city_names":"{'city1': 'Богданович'}"
+        }
+    },
+    {
+        "pk":494,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Гагарин",
+            "slug":"gagarin",
+            "city_names":"{'city1': 'Гагарин'}"
+        }
+    },
+    {
+        "pk":495,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нарткала",
+            "slug":"nartkala",
+            "city_names":"{'city1': 'Нарткала'}"
+        }
+    },
+    {
+        "pk":496,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Великий Устюг",
+            "slug":"velikij-ustyug",
+            "city_names":"{'city1': 'Великий Устюг'}"
+        }
+    },
+    {
+        "pk":497,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Маркс",
+            "slug":"marks",
+            "city_names":"{'city1': 'Маркс'}"
+        }
+    },
+    {
+        "pk":498,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Можайск",
+            "slug":"mozhajsk",
+            "city_names":"{'city1': 'Можайск'}"
+        }
+    },
+    {
+        "pk":499,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Борзя",
+            "slug":"borzya",
+            "city_names":"{'city1': 'Борзя'}"
+        }
+    },
+    {
+        "pk":500,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ликино-Дулёво",
+            "slug":"likino-dulyovo",
+            "city_names":"{'city1': 'Ликино-Дулёво'}"
+        }
+    },
+    {
+        "pk":501,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Дюртюли",
+            "slug":"dyurtyuli",
+            "city_names":"{'city1': 'Дюртюли'}"
+        }
+    },
+    {
+        "pk":502,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Петровск",
+            "slug":"petrovsk",
+            "city_names":"{'city1': 'Петровск'}"
+        }
+    },
+    {
+        "pk":503,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Карабулак",
+            "slug":"karabulak",
+            "city_names":"{'city1': 'Карабулак'}"
+        }
+    },
+    {
+        "pk":504,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Малгобек",
+            "slug":"malgobek",
+            "city_names":"{'city1': 'Малгобек'}"
+        }
+    },
+    {
+        "pk":505,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Удомля",
+            "slug":"udomlya",
+            "city_names":"{'city1': 'Удомля'}"
+        }
+    },
+    {
+        "pk":506,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Холмск",
+            "slug":"holmsk",
+            "city_names":"{'city1': 'Холмск'}"
+        }
+    },
+    {
+        "pk":507,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кудымкар",
+            "slug":"kudymkar",
+            "city_names":"{'city1': 'Кудымкар'}"
+        }
+    },
+    {
+        "pk":508,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Городец",
+            "slug":"gorodec",
+            "city_names":"{'city1': 'Городец'}"
+        }
+    },
+    {
+        "pk":509,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Дагестанские Огни",
+            "slug":"dagestanskie-ogni",
+            "city_names":"{'city1': 'Дагестанские Огни'}"
+        }
+    },
+    {
+        "pk":510,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Усть-Джегута",
+            "slug":"ust-dzheguta",
+            "city_names":"{'city1': 'Усть-Джегута'}"
+        }
+    },
+    {
+        "pk":511,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Верхний Уфалей",
+            "slug":"verhnij-ufalej",
+            "city_names":"{'city1': 'Верхний Уфалей'}"
+        }
+    },
+    {
+        "pk":512,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Малоярославец",
+            "slug":"maloyaroslavec",
+            "city_names":"{'city1': 'Малоярославец'}"
+        }
+    },
+    {
+        "pk":513,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Скопин",
+            "slug":"skopin",
+            "city_names":"{'city1': 'Скопин'}"
+        }
+    },
+    {
+        "pk":514,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Славгород",
+            "slug":"slavgorod",
+            "city_names":"{'city1': 'Славгород'}"
+        }
+    },
+    {
+        "pk":516,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Барабинск",
+            "slug":"barabinsk",
+            "city_names":"{'city1': 'Барабинск'}"
+        }
+    },
+    {
+        "pk":517,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Еманжелинск",
+            "slug":"emanzhelinsk",
+            "city_names":"{'city1': 'Еманжелинск'}"
+        }
+    },
+    {
+        "pk":518,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сорочинск",
+            "slug":"sorochinsk",
+            "city_names":"{'city1': 'Сорочинск'}"
+        }
+    },
+    {
+        "pk":519,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Горячий Ключ",
+            "slug":"goryachij-klyuch",
+            "city_names":"{'city1': 'Горячий Ключ'}"
+        }
+    },
+    {
+        "pk":520,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Киржач",
+            "slug":"kirzhach",
+            "city_names":"{'city1': 'Киржач'}"
+        }
+    },
+    {
+        "pk":521,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Луховицы",
+            "slug":"luhovicy",
+            "city_names":"{'city1': 'Луховицы'}"
+        }
+    },
+    {
+        "pk":522,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Десногорск",
+            "slug":"desnogorsk",
+            "city_names":"{'city1': 'Десногорск'}"
+        }
+    },
+    {
+        "pk":523,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сегежа",
+            "slug":"segezha",
+            "city_names":"{'city1': 'Сегежа'}"
+        }
+    },
+    {
+        "pk":524,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Красноперекопск ",
+            "slug":"krasnoperekopsk",
+            "city_names":"{'city1': 'Красноперекопск '}"
+        }
+    },
+    {
+        "pk":525,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Аргун",
+            "slug":"argun",
+            "city_names":"{'city1': 'Аргун'}"
+        }
+    },
+    {
+        "pk":526,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Дятьково",
+            "slug":"dyatkovo",
+            "city_names":"{'city1': 'Дятьково'}"
+        }
+    },
+    {
+        "pk":527,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кохма",
+            "slug":"kohma",
+            "city_names":"{'city1': 'Кохма'}"
+        }
+    },
+    {
+        "pk":528,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Знаменск",
+            "slug":"znamensk",
+            "city_names":"{'city1': 'Знаменск'}"
+        }
+    },
+    {
+        "pk":529,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Дедовск",
+            "slug":"dedovsk",
+            "city_names":"{'city1': 'Дедовск'}"
+        }
+    },
+    {
+        "pk":530,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Североуральск",
+            "slug":"severouralsk",
+            "city_names":"{'city1': 'Североуральск'}"
+        }
+    },
+    {
+        "pk":531,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Карталы",
+            "slug":"kartaly",
+            "city_names":"{'city1': 'Карталы'}"
+        }
+    },
+    {
+        "pk":532,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Карпинск",
+            "slug":"karpinsk",
+            "city_names":"{'city1': 'Карпинск'}"
+        }
+    },
+    {
+        "pk":533,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Карасук",
+            "slug":"karasuk",
+            "city_names":"{'city1': 'Карасук'}"
+        }
+    },
+    {
+        "pk":582,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кировск",
+            "slug":"kirovsk",
+            "city_names":"{'city1': 'Кировск'}"
+        }
+    },
+    {
+        "pk":535,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Топки",
+            "slug":"topki",
+            "city_names":"{'city1': 'Топки'}"
+        }
+    },
+    {
+        "pk":536,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Алушта ",
+            "slug":"alushta",
+            "city_names":"{'city1': 'Алушта '}"
+        }
+    },
+    {
+        "pk":537,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Алейск",
+            "slug":"alejsk",
+            "city_names":"{'city1': 'Алейск'}"
+        }
+    },
+    {
+        "pk":538,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кимовск",
+            "slug":"kimovsk",
+            "city_names":"{'city1': 'Кимовск'}"
+        }
+    },
+    {
+        "pk":539,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Костомукша",
+            "slug":"kostomuksha",
+            "city_names":"{'city1': 'Костомукша'}"
+        }
+    },
+    {
+        "pk":540,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Дивногорск",
+            "slug":"divnogorsk",
+            "city_names":"{'city1': 'Дивногорск'}"
+        }
+    },
+    {
+        "pk":541,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Гусев",
+            "slug":"gusev",
+            "city_names":"{'city1': 'Гусев'}"
+        }
+    },
+    {
+        "pk":542,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Похвистнево",
+            "slug":"pohvistnevo",
+            "city_names":"{'city1': 'Похвистнево'}"
+        }
+    },
+    {
+        "pk":543,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сасово",
+            "slug":"sasovo",
+            "city_names":"{'city1': 'Сасово'}"
+        }
+    },
+    {
+        "pk":544,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сосногорск",
+            "slug":"sosnogorsk",
+            "city_names":"{'city1': 'Сосногорск'}"
+        }
+    },
+    {
+        "pk":545,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Советская Гавань",
+            "slug":"sovetskaya-gavan",
+            "city_names":"{'city1': 'Советская Гавань'}"
+        }
+    },
+    {
+        "pk":546,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нефтекумск",
+            "slug":"neftekumsk",
+            "city_names":"{'city1': 'Нефтекумск'}"
+        }
+    },
+    {
+        "pk":547,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Морозовск",
+            "slug":"morozovsk",
+            "city_names":"{'city1': 'Морозовск'}"
+        }
+    },
+    {
+        "pk":548,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Полысаево",
+            "slug":"polysaevo",
+            "city_names":"{'city1': 'Полысаево'}"
+        }
+    },
+    {
+        "pk":549,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Дальнереченск",
+            "slug":"dalnerechensk",
+            "city_names":"{'city1': 'Дальнереченск'}"
+        }
+    },
+    {
+        "pk":550,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Губаха",
+            "slug":"gubaha",
+            "city_names":"{'city1': 'Губаха'}"
+        }
+    },
+    {
+        "pk":551,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Медногорск",
+            "slug":"mednogorsk",
+            "city_names":"{'city1': 'Медногорск'}"
+        }
+    },
+    {
+        "pk":552,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Октябрьск",
+            "slug":"oktyabrsk",
+            "city_names":"{'city1': 'Октябрьск'}"
+        }
+    },
+    {
+        "pk":553,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Бутурлиновка",
+            "slug":"buturlinovka",
+            "city_names":"{'city1': 'Бутурлиновка'}"
+        }
+    },
+    {
+        "pk":554,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Янаул",
+            "slug":"yanaul",
+            "city_names":"{'city1': 'Янаул'}"
+        }
+    },
+    {
+        "pk":555,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Лабытнанги",
+            "slug":"labytnangi",
+            "city_names":"{'city1': 'Лабытнанги'}"
+        }
+    },
+    {
+        "pk":556,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Калач-на-Дону",
+            "slug":"kalach-na-donu",
+            "city_names":"{'city1': 'Калач-на-Дону'}"
+        }
+    },
+    {
+        "pk":557,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Камышлов",
+            "slug":"kamyshlov",
+            "city_names":"{'city1': 'Камышлов'}"
+        }
+    },
+    {
+        "pk":558,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Зерноград",
+            "slug":"zernograd",
+            "city_names":"{'city1': 'Зерноград'}"
+        }
+    },
+    {
+        "pk":559,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Уварово",
+            "slug":"uvarovo",
+            "city_names":"{'city1': 'Уварово'}"
+        }
+    },
+    {
+        "pk":561,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Новоалександровск",
+            "slug":"novoaleksandrovsk",
+            "city_names":"{'city1': 'Новоалександровск'}"
+        }
+    },
+    {
+        "pk":562,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Майский",
+            "slug":"majskij",
+            "city_names":"{'city1': 'Майский'}"
+        }
+    },
+    {
+        "pk":563,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тара",
+            "slug":"tara",
+            "city_names":"{'city1': 'Тара'}"
+        }
+    },
+    {
+        "pk":564,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Новопавловск",
+            "slug":"novopavlovsk",
+            "city_names":"{'city1': 'Новопавловск'}"
+        }
+    },
+    {
+        "pk":565,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Советский",
+            "slug":"sovetskij",
+            "city_names":"{'city1': 'Советский'}"
+        }
+    },
+    {
+        "pk":566,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Бахчисарай ",
+            "slug":"bahchisaraj",
+            "city_names":"{'city1': 'Бахчисарай '}"
+        }
+    },
+    {
+        "pk":567,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Балабаново",
+            "slug":"balabanovo",
+            "city_names":"{'city1': 'Балабаново'}"
+        }
+    },
+    {
+        "pk":568,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Родники",
+            "slug":"rodniki",
+            "city_names":"{'city1': 'Родники'}"
+        }
+    },
+    {
+        "pk":569,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Соль-Илецк",
+            "slug":"sol-ileck",
+            "city_names":"{'city1': 'Соль-Илецк'}"
+        }
+    },
+    {
+        "pk":601,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Красноармейск",
+            "slug":"krasnoarmejsk",
+            "city_names":"{'city1': 'Красноармейск'}"
+        }
+    },
+    {
+        "pk":571,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Унеча",
+            "slug":"unecha",
+            "city_names":"{'city1': 'Унеча'}"
+        }
+    },
+    {
+        "pk":572,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кувандык",
+            "slug":"kuvandyk",
+            "city_names":"{'city1': 'Кувандык'}"
+        }
+    },
+    {
+        "pk":573,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Обь",
+            "slug":"ob",
+            "city_names":"{'city1': 'Обь'}"
+        }
+    },
+    {
+        "pk":574,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Железногорск-Илимский",
+            "slug":"zheleznogorsk-ilimskij",
+            "city_names":"{'city1': 'Железногорск-Илимский'}"
+        }
+    },
+    {
+        "pk":575,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Татарск",
+            "slug":"tatarsk",
+            "city_names":"{'city1': 'Татарск'}"
+        }
+    },
+    {
+        "pk":576,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ипатово",
+            "slug":"ipatovo",
+            "city_names":"{'city1': 'Ипатово'}"
+        }
+    },
+    {
+        "pk":577,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Семилуки",
+            "slug":"semiluki",
+            "city_names":"{'city1': 'Семилуки'}"
+        }
+    },
+    {
+        "pk":578,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Исилькуль",
+            "slug":"isilkul",
+            "city_names":"{'city1': 'Исилькуль'}"
+        }
+    },
+    {
+        "pk":579,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Озёры",
+            "slug":"ozyory",
+            "city_names":"{'city1': 'Озёры'}"
+        }
+    },
+    {
+        "pk":580,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Буй",
+            "slug":"buj",
+            "city_names":"{'city1': 'Буй'}"
+        }
+    },
+    {
+        "pk":581,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Заводоуковск",
+            "slug":"zavodoukovsk",
+            "city_names":"{'city1': 'Заводоуковск'}"
+        }
+    },
+    {
+        "pk":583,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Аткарск",
+            "slug":"atkarsk",
+            "city_names":"{'city1': 'Аткарск'}"
+        }
+    },
+    {
+        "pk":584,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Асино",
+            "slug":"asino",
+            "city_names":"{'city1': 'Асино'}"
+        }
+    },
+    {
+        "pk":585,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Киреевск",
+            "slug":"kireevsk",
+            "city_names":"{'city1': 'Киреевск'}"
+        }
+    },
+    {
+        "pk":586,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Богородск",
+            "slug":"bogorodsk",
+            "city_names":"{'city1': 'Богородск'}"
+        }
+    },
+    {
+        "pk":587,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тайга",
+            "slug":"tajga",
+            "city_names":"{'city1': 'Тайга'}"
+        }
+    },
+    {
+        "pk":588,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Невьянск",
+            "slug":"nevyansk",
+            "city_names":"{'city1': 'Невьянск'}"
+        }
+    },
+    {
+        "pk":589,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Павловск",
+            "slug":"pavlovsk",
+            "city_names":"{'city1': 'Павловск'}"
+        }
+    },
+    {
+        "pk":590,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Зея",
+            "slug":"zeya",
+            "city_names":"{'city1': 'Зея'}"
+        }
+    },
+    {
+        "pk":591,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Котельнич",
+            "slug":"kotelnich",
+            "city_names":"{'city1': 'Котельнич'}"
+        }
+    },
+    {
+        "pk":592,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Красноуральск",
+            "slug":"krasnouralsk",
+            "city_names":"{'city1': 'Красноуральск'}"
+        }
+    },
+    {
+        "pk":593,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ленск",
+            "slug":"lensk",
+            "city_names":"{'city1': 'Ленск'}"
+        }
+    },
+    {
+        "pk":594,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Северобайкальск",
+            "slug":"severobajkalsk",
+            "city_names":"{'city1': 'Северобайкальск'}"
+        }
+    },
+    {
+        "pk":595,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Гурьевск",
+            "slug":"gurevsk",
+            "city_names":"{'city1': 'Гурьевск'}"
+        }
+    },
+    {
+        "pk":596,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Зарайск",
+            "slug":"zarajsk",
+            "city_names":"{'city1': 'Зарайск'}"
+        }
+    },
+    {
+        "pk":597,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Гусиноозёрск",
+            "slug":"gusinoozyorsk",
+            "city_names":"{'city1': 'Гусиноозёрск'}"
+        }
+    },
+    {
+        "pk":598,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Бежецк",
+            "slug":"bezheck",
+            "city_names":"{'city1': 'Бежецк'}"
+        }
+    },
+    {
+        "pk":599,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Железноводск",
+            "slug":"zheleznovodsk",
+            "city_names":"{'city1': 'Железноводск'}"
+        }
+    },
+    {
+        "pk":600,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Семёнов",
+            "slug":"semyonov",
+            "city_names":"{'city1': 'Семёнов'}"
+        }
+    },
+    {
+        "pk":602,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Колпашево",
+            "slug":"kolpashevo",
+            "city_names":"{'city1': 'Колпашево'}"
+        }
+    },
+    {
+        "pk":603,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Котово",
+            "slug":"kotovo",
+            "city_names":"{'city1': 'Котово'}"
+        }
+    },
+    {
+        "pk":604,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Давлеканово",
+            "slug":"davlekanovo",
+            "city_names":"{'city1': 'Давлеканово'}"
+        }
+    },
+    {
+        "pk":605,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Калачинск",
+            "slug":"kalachinsk",
+            "city_names":"{'city1': 'Калачинск'}"
+        }
+    },
+    {
+        "pk":606,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Строитель",
+            "slug":"stroitel",
+            "city_names":"{'city1': 'Строитель'}"
+        }
+    },
+    {
+        "pk":607,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Вельск",
+            "slug":"velsk",
+            "city_names":"{'city1': 'Вельск'}"
+        }
+    },
+    {
+        "pk":608,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Семикаракорск",
+            "slug":"semikarakorsk",
+            "city_names":"{'city1': 'Семикаракорск'}"
+        }
+    },
+    {
+        "pk":609,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Отрадное",
+            "slug":"otradnoe",
+            "city_names":"{'city1': 'Отрадное'}"
+        }
+    },
+    {
+        "pk":610,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Карачаевск",
+            "slug":"karachaevsk",
+            "city_names":"{'city1': 'Карачаевск'}"
+        }
+    },
+    {
+        "pk":611,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Фокино",
+            "slug":"fokino",
+            "city_names":"{'city1': 'Фокино'}"
+        }
+    },
+    {
+        "pk":612,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Шарья",
+            "slug":"sharya",
+            "city_names":"{'city1': 'Шарья'}"
+        }
+    },
+    {
+        "pk":613,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Омутнинск",
+            "slug":"omutninsk",
+            "city_names":"{'city1': 'Омутнинск'}"
+        }
+    },
+    {
+        "pk":614,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Усть-Катав",
+            "slug":"ust-katav",
+            "city_names":"{'city1': 'Усть-Катав'}"
+        }
+    },
+    {
+        "pk":615,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Бологое",
+            "slug":"bologoe",
+            "city_names":"{'city1': 'Бологое'}"
+        }
+    },
+    {
+        "pk":616,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Саки ",
+            "slug":"saki",
+            "city_names":"{'city1': 'Саки '}"
+        }
+    },
+    {
+        "pk":617,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Волоколамск",
+            "slug":"volokolamsk",
+            "city_names":"{'city1': 'Волоколамск'}"
+        }
+    },
+    {
+        "pk":618,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Губкинский",
+            "slug":"gubkinskij",
+            "city_names":"{'city1': 'Губкинский'}"
+        }
+    },
+    {
+        "pk":619,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Таштагол",
+            "slug":"tashtagol",
+            "city_names":"{'city1': 'Таштагол'}"
+        }
+    },
+    {
+        "pk":620,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Оленегорск",
+            "slug":"olenegorsk",
+            "city_names":"{'city1': 'Оленегорск'}"
+        }
+    },
+    {
+        "pk":621,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Оха",
+            "slug":"oha",
+            "city_names":"{'city1': 'Оха'}"
+        }
+    },
+    {
+        "pk":622,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кубинка",
+            "slug":"kubinka",
+            "city_names":"{'city1': 'Кубинка'}"
+        }
+    },
+    {
+        "pk":623,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Вилючинск",
+            "slug":"vilyuchinsk",
+            "city_names":"{'city1': 'Вилючинск'}"
+        }
+    },
+    {
+        "pk":624,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нелидово",
+            "slug":"nelidovo",
+            "city_names":"{'city1': 'Нелидово'}"
+        }
+    },
+    {
+        "pk":625,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нерехта",
+            "slug":"nerekhta",
+            "city_names":"{'city1': 'Нерехта'}"
+        }
+    },
+    {
+        "pk":626,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Николаевск-на-Амуре",
+            "slug":"nikolaevsk-na-amure",
+            "city_names":"{'city1': 'Николаевск-на-Амуре'}"
+        }
+    },
+    {
+        "pk":627,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Верещагино",
+            "slug":"vereshchagino",
+            "city_names":"{'city1': 'Верещагино'}"
+        }
+    },
+    {
+        "pk":628,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нижний Ломов",
+            "slug":"nizhnij-lomov",
+            "city_names":"{'city1': 'Нижний Ломов'}"
+        }
+    },
+    {
+        "pk":629,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Лосино-Петровский",
+            "slug":"losino-petrovskij",
+            "city_names":"{'city1': 'Лосино-Петровский'}"
+        }
+    },
+    {
+        "pk":630,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Лермонтов",
+            "slug":"lermontov",
+            "city_names":"{'city1': 'Лермонтов'}"
+        }
+    },
+    {
+        "pk":631,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Вихоревка",
+            "slug":"vihorevka",
+            "city_names":"{'city1': 'Вихоревка'}"
+        }
+    },
+    {
+        "pk":632,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Никольск",
+            "slug":"nikolsk",
+            "city_names":"{'city1': 'Никольск'}"
+        }
+    },
+    {
+        "pk":633,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Армянск ",
+            "slug":"armyansk",
+            "city_names":"{'city1': 'Армянск '}"
+        }
+    },
+    {
+        "pk":634,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Оса",
+            "slug":"osa",
+            "city_names":"{'city1': 'Оса'}"
+        }
+    },
+    {
+        "pk":635,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Зверево",
+            "slug":"zverevo",
+            "city_names":"{'city1': 'Зверево'}"
+        }
+    },
+    {
+        "pk":636,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Няндома",
+            "slug":"nyandoma",
+            "city_names":"{'city1': 'Няндома'}"
+        }
+    },
+    {
+        "pk":637,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Дудинка",
+            "slug":"dudinka",
+            "city_names":"{'city1': 'Дудинка'}"
+        }
+    },
+    {
+        "pk":638,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Электрогорск",
+            "slug":"ehlektrogorsk",
+            "city_names":"{'city1': 'Электрогорск'}"
+        }
+    },
+    {
+        "pk":639,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Бавлы",
+            "slug":"bavly",
+            "city_names":"{'city1': 'Бавлы'}"
+        }
+    },
+    {
+        "pk":640,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Менделеевск",
+            "slug":"mendeleevsk",
+            "city_names":"{'city1': 'Менделеевск'}"
+        }
+    },
+    {
+        "pk":641,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кировград",
+            "slug":"kirovgrad",
+            "city_names":"{'city1': 'Кировград'}"
+        }
+    },
+    {
+        "pk":642,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Калтан",
+            "slug":"kaltan",
+            "city_names":"{'city1': 'Калтан'}"
+        }
+    },
+    {
+        "pk":643,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Лысково",
+            "slug":"lyskovo",
+            "city_names":"{'city1': 'Лысково'}"
+        }
+    },
+    {
+        "pk":644,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Старая Купавна",
+            "slug":"staraya-kupavna",
+            "city_names":"{'city1': 'Старая Купавна'}"
+        }
+    },
+    {
+        "pk":645,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Куровское",
+            "slug":"kurovskoe",
+            "city_names":"{'city1': 'Куровское'}"
+        }
+    },
+    {
+        "pk":646,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ряжск",
+            "slug":"ryazhsk",
+            "city_names":"{'city1': 'Ряжск'}"
+        }
+    },
+    {
+        "pk":647,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Остров",
+            "slug":"ostrov",
+            "city_names":"{'city1': 'Остров'}"
+        }
+    },
+    {
+        "pk":648,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Хотьково",
+            "slug":"hotkovo",
+            "city_names":"{'city1': 'Хотьково'}"
+        }
+    },
+    {
+        "pk":649,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нижняя Тура",
+            "slug":"nizhnyaya-tura",
+            "city_names":"{'city1': 'Нижняя Тура'}"
+        }
+    },
+    {
+        "pk":650,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Хадыженск",
+            "slug":"hadyzhensk",
+            "city_names":"{'city1': 'Хадыженск'}"
+        }
+    },
+    {
+        "pk":651,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Пикалёво",
+            "slug":"pikalyovo",
+            "city_names":"{'city1': 'Пикалёво'}"
+        }
+    },
+    {
+        "pk":652,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тогучин",
+            "slug":"toguchin",
+            "city_names":"{'city1': 'Тогучин'}"
+        }
+    },
+    {
+        "pk":653,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Льгов",
+            "slug":"lgov",
+            "city_names":"{'city1': 'Льгов'}"
+        }
+    },
+    {
+        "pk":654,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ершов",
+            "slug":"ershov",
+            "city_names":"{'city1': 'Ершов'}"
+        }
+    },
+    {
+        "pk":655,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сергач",
+            "slug":"sergach",
+            "city_names":"{'city1': 'Сергач'}"
+        }
+    },
+    {
+        "pk":656,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Светлый",
+            "slug":"svetlyj",
+            "city_names":"{'city1': 'Светлый'}"
+        }
+    },
+    {
+        "pk":657,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Онега",
+            "slug":"onega",
+            "city_names":"{'city1': 'Онега'}"
+        }
+    },
+    {
+        "pk":658,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Шахунья",
+            "slug":"shahunya",
+            "city_names":"{'city1': 'Шахунья'}"
+        }
+    },
+    {
+        "pk":659,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Ковылкино",
+            "slug":"kovylkino",
+            "city_names":"{'city1': 'Ковылкино'}"
+        }
+    },
+    {
+        "pk":660,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Нарьян-Мар",
+            "slug":"naryan-mar",
+            "city_names":"{'city1': 'Нарьян-Мар'}"
+        }
+    },
+    {
+        "pk":661,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Алдан",
+            "slug":"aldan",
+            "city_names":"{'city1': 'Алдан'}"
+        }
+    },
+    {
+        "pk":662,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Рошаль",
+            "slug":"roshal",
+            "city_names":"{'city1': 'Рошаль'}"
+        }
+    },
+    {
+        "pk":663,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Козьмодемьянск",
+            "slug":"kozmodemyansk",
+            "city_names":"{'city1': 'Козьмодемьянск'}"
+        }
+    },
+    {
+        "pk":664,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Бронницы",
+            "slug":"bronnicy",
+            "city_names":"{'city1': 'Бронницы'}"
+        }
+    },
+    {
+        "pk":665,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Данков",
+            "slug":"dankov",
+            "city_names":"{'city1': 'Данков'}"
+        }
+    },
+    {
+        "pk":666,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Лодейное Поле",
+            "slug":"lodejnoe-pole",
+            "city_names":"{'city1': 'Лодейное Поле'}"
+        }
+    },
+    {
+        "pk":667,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Боготол",
+            "slug":"bogotol",
+            "city_names":"{'city1': 'Боготол'}"
+        }
+    },
+    {
+        "pk":668,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тырныауз",
+            "slug":"tyrnyauz",
+            "city_names":"{'city1': 'Тырныауз'}"
+        }
+    },
+    {
+        "pk":669,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Лебедянь",
+            "slug":"lebedyan",
+            "city_names":"{'city1': 'Лебедянь'}"
+        }
+    },
+    {
+        "pk":670,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Черноголовка",
+            "slug":"chernogolovka",
+            "city_names":"{'city1': 'Черноголовка'}"
+        }
+    },
+    {
+        "pk":671,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Бакал",
+            "slug":"bakal",
+            "city_names":"{'city1': 'Бакал'}"
+        }
+    },
+    {
+        "pk":672,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Алагир",
+            "slug":"alagir",
+            "city_names":"{'city1': 'Алагир'}"
+        }
+    },
+    {
+        "pk":673,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Абдулино",
+            "slug":"abdulino",
+            "city_names":"{'city1': 'Абдулино'}"
+        }
+    },
+    {
+        "pk":674,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Сысерть",
+            "slug":"sysert",
+            "city_names":"{'city1': 'Сысерть'}"
+        }
+    },
+    {
+        "pk":675,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Суровикино",
+            "slug":"surovikino",
+            "city_names":"{'city1': 'Суровикино'}"
+        }
+    },
+    {
+        "pk":676,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Райчихинск",
+            "slug":"rajchihinsk",
+            "city_names":"{'city1': 'Райчихинск'}"
+        }
+    },
+    {
+        "pk":677,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Котельниково",
+            "slug":"kotelnikovo",
+            "city_names":"{'city1': 'Котельниково'}"
+        }
+    },
+    {
+        "pk":678,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Тарко-Сале",
+            "slug":"tarko-sale",
+            "city_names":"{'city1': 'Тарко-Сале'}"
+        }
+    },
+    {
+        "pk":679,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Среднеуральск",
+            "slug":"sredneuralsk",
+            "city_names":"{'city1': 'Среднеуральск'}"
+        }
+    },
+    {
+        "pk":680,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Буинск",
+            "slug":"buinsk",
+            "city_names":"{'city1': 'Буинск'}"
+        }
+    },
+    {
+        "pk":681,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Белоярский",
+            "slug":"beloyarskij",
+            "city_names":"{'city1': 'Белоярский'}"
+        }
+    },
+    {
+        "pk":682,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Кизел",
+            "slug":"kizel",
+            "city_names":"{'city1': 'Кизел'}"
+        }
+    },
+    {
+        "pk":683,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Пролетарск",
+            "slug":"proletarsk",
+            "city_names":"{'city1': 'Пролетарск'}"
+        }
+    },
+    {
+        "pk":684,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Коммунар",
+            "slug":"kommunar",
+            "city_names":"{'city1': 'Коммунар'}"
+        }
+    },
+    {
+        "pk":685,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Пущино",
+            "slug":"pushchino",
+            "city_names":"{'city1': 'Пущино'}"
+        }
+    },
+    {
+        "pk":686,
+        "model": "mainapp.city",
+        "fields":{
+            "name":"Электроугли",
+            "slug":"ehlektrougli",
+            "city_names":"{'city1': 'Электроугли'}"
+        }
+    }
+]

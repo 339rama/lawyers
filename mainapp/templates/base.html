@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block title %}{% endblock title %}
+    {% block meta_description %}{% endblock meta_description %}
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}" />
+    <script src="{% static 'js/scripts.js' %}"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'mainapp:Index' %}" class="logo">Юр — дело.рф</a>
+            <div id='menu-burger' onclick="openMenu()">
+                <img src="{% static 'images/menu-btn.svg' %}" />Меню
+                <div class="dn" onmouseout="closeMenu()">
+                    <div><a href="/{{ city_slug }}/" class="city-page">Все специализации</a></div>
+                    {% for spec in specializations %}
+                        <div>
+                            <a href="/{{city_slug}}/{{ spec.slug}}">
+                                {{ spec.name }}
+                                <img src="{% static 'images/arrow-right.svg' %}"/>  
+                            </a>
+                            {% with spec.related.all as subs %}
+                            <div>
+                                {% for sub in subs  %}
+                                <a href="/{{city_slug}}/{{ sub.slug }}">{{ sub.name }}</a>
+                                {% endfor %}
+                            </div>
+                            {% endwith %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <a href="">Задать вопрос</a>
+            <a href="/{{ city_slug }}/" class="city-page">Наши юристы</a>
+            <div class="menu-buttons">
+                <a id='current-city' onclick="showCities(this)"><span data-value="{{ main_city.slug }}">{{ main_city.name }}</span>
+                    <div class="dn">
+                        <ul>
+                            {% for c in cities|dictsort:'id' %}
+                                <li data-value="{{ c.slug }}" onclick="selectCity(this)" {% if c == city %}style='color:#BDBDBD;'{% endif %}>{{ c.name }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </a>
+                <a href="" id='enter'>Войти</a>
+            </div>
+        </nav>
+        
+    </header>
+    <div class="content">
+        {% block content %}{% endblock content %}
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>

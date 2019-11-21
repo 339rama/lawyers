@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}<title>{{ title }}</title>{% endblock title %}
+{% block meta_description %}<meta name="description" content="{{ meta }}">{% endblock meta_description %}
+
+
+{% block content %}
+
+<div class="breadcrumbs df">
+    <a href="{% url 'mainapp:Index' %}" class="flex-abs-center">Главная</a>
+    <a href="" class="flex-abs-center">Адвокаты и юристы</a>
+</div>
+<h1>{{ h1 }}</h1>
+<p class="after-h1">{{ h1text }}</p>
+<p class="results-count">{{ results_count }} результатов</p>
+<div class="list-wrapper">
+    <div class="list">
+        {% for lawyer in lawyers %}
+            <div class="list-item" data-href="{{ lawyer.get_absolute_url }}" onclick="goToPage(this)">
+                <img src="{{ lawyer.image.url }}" class="list-item"/>
+                <div class="item-desc">
+                    <div class="item-desc-top">
+                        <p>{{ lawyer.major|capfirst }}</p>
+                        <div class="rating">
+                            <img src="{% static 'images/star.svg' %}"/>
+                            <span class="{% if lawyer.rating >= 8 %}green{% else %}orange{% endif %}">{{ lawyer.rating }}</span>
+                            <span class="lawyer-feedbacks">{{ lawyer.num_comments }} отзыва</span>
+                        </div>
+                    </div>
+                    <p class="name">{{ lawyer.lawyername }}</p>
+                    <p class="item-desc">{{ lawyer.aboutself}}</p>
+                    <a href="{{ lawyer.get_absolute_url }}" class="item-btn">Подробнее</a>
+                </div>
+            </div>
+        {% endfor %}
+        {% if lawyers|length > 0 %}
+        <button class="filter-btn" data-shown="5" onclick="showMore(this)">Показать ещё</button>
+        {% endif %}
+    </div>
+    <div class="filter-wrapper">
+        <div class="filters">
+            <div class="filter-select">
+                <span>Город</span>
+                <div class="filter-value"  style="z-index: 1;">
+                    <input type="text" placeholder="Выбрать" oninput="filterSearch(this)" data-value="{{ city.slug }}" data-uses="city" value='{{ city.name }}'>
+                    <img src="{% static 'images/arrow-down.svg' %}" onclick="ShowValues(this)"/>
+                    <div class="dn">
+                        <ul>
+                            {% for city in cities|dictsort:'id' %}
+                                <li data-value="{{ city.slug }}" onclick="SelectValue(this)">{{ city.name }}</li>
+                            {% endfor %}    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-select">
+                <span>Специализация</span>
+                <div class="filter-value">
+                    <input type="text" placeholder="Выбрать" oninput="filterSearch(this)" data-value="{{ specialization.slug }}"
+                        value='{{ specialization.name }}'>
+                    <img src="{% static 'images/arrow-down.svg' %}" onclick="ShowValues(this)" />
+                    <div class="dn">
+                        <ul>
+                            {% for spec in all_specializations %}
+                            <li data-value="{{ spec.slug }}" onclick="SelectValue(this)">{{ spec.name }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <button class="filter-btn" onclick="filter(this)">Применить</button>
+            {% csrf_token %}
+        </div>
+    </div>
+</div>
+{% endblock content %}

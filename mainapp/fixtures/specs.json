@@ -1,0 +1,587 @@
+[
+    {
+        "pk":1,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Гражданское право",
+            "slug":"civil-law",
+            "related":[2, 3, 4, 5]
+        }
+    },
+    {
+        "pk":2,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Договорное право",
+            "slug":"conventional-law",
+            "related":[]
+        }
+    },
+    {
+        "pk":3,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Право собственности",
+            "slug":"property",
+            "related":[]
+        }
+    },
+    {
+        "pk":4,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Взыскание задолженности",
+            "slug":"debt-collection",
+            "related":[]
+        }
+    },
+    {
+        "pk":5,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Кредитование",
+            "slug":"lending",
+            "related":[]
+        }
+    },
+    {
+        "pk":6,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Недвижимость",
+            "slug":"realty",
+            "related":[7, 8, 9, 10, 11, 12]
+        }
+    },
+    {
+        "pk":7,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Жилищное право",
+            "slug":"housing-law",
+            "related":[]
+        }
+    },
+    {
+        "pk":8,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Ипотека",
+            "slug":"mortgage",
+            "related":[]
+        }
+    },
+    {
+        "pk":9,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"ЖКХ",
+            "slug":"hcs",
+            "related":[]
+        }
+    },
+    {
+        "pk":10,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Долевое участие в строительстве",
+            "slug":"building",
+            "related":[]
+        }
+    },
+    {
+        "pk":11,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Приватизация",
+            "slug":"privatization",
+            "related":[]
+        }
+    },
+    {
+        "pk":12,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Земельное право",
+            "slug":"land-law",
+            "related":[]
+        }
+    },
+    {
+        "pk":13,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Арбитраж",
+            "slug":"arbitration",
+            "related":[]
+        }
+    },
+    {
+        "pk":14,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Корпоративное право",
+            "slug":"corporate-law",
+            "related":[15, 16]
+        }
+    },
+    {
+        "pk":15,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Регистрация юридических лиц",
+            "slug":"registration",
+            "related":[]
+        }
+    },
+    {
+        "pk":16,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Банкротство",
+            "slug":"bankruptcy",
+            "related":[]
+        }
+    },
+    {
+        "pk":17,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Трудовое право",
+            "slug":"labour-law",
+            "related":[18, 19]
+        }
+    },
+    {
+        "pk":18,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Защита прав работников",
+            "slug":"employee",
+            "related":[]
+        }
+    },
+    {
+        "pk":19,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Защита прав работодателя",
+            "slug":"employers",
+            "related":[]
+        }
+    },
+    {
+        "pk":20,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Автомобильное право",
+            "slug":"auto-law",
+            "related":[21, 22]
+        }
+    },
+    {
+        "pk":21,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"ДТП, ГИБДД, ПДД",
+            "slug":"road-traffic-accidents",
+            "related":[]
+        }
+    },
+    {
+        "pk":22,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Лишение водительских прав",
+            "slug":"driving-ban",
+            "related":[]
+        }
+    },
+    {
+        "pk":23,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Страхование",
+            "slug":"insurance",
+            "related":[24]
+        }
+    },
+    {
+        "pk":24,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"ОСАГО, Каско",
+            "slug":"osago-casco",
+            "related":[]
+        }
+    },
+    {
+        "pk":25,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Уголовное право",
+            "slug":"criminal-law",
+            "related":[26]
+        }
+    },
+    {
+        "pk":26,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Наркотики",
+            "slug":"drugs",
+            "related":[]
+        }
+    },
+    {
+        "pk":27,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Семейное право",
+            "slug":"family-law",
+            "related":[28, 29, 30, 31, 32]
+        }
+    },
+    {
+        "pk":28,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Заключение и расторжение брака",
+            "slug":"marriage-and-divorce",
+            "related":[]
+        }
+    },
+    {
+        "pk":29,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Алименты",
+            "slug":"alimony",
+            "related":[]
+        }
+    },
+    {
+        "pk":30,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Раздел имущества",
+            "slug":"property-claim",
+            "related":[]
+        }
+    },
+    {
+        "pk":31,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Усыновление, опека и попечительство",
+            "slug":"adoption",
+            "related":[]
+        }
+    },
+    {
+        "pk":32,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Права детей",
+            "slug":"childrens-rights",
+            "related":[]
+        }
+    },
+    {
+        "pk":33,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Наследство",
+            "slug":"inheritance",
+            "related":[]
+        }
+    },
+    {
+        "pk":34,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Защита прав потребителей",
+            "slug":"consumer-right",
+            "related":[]
+        }
+    },
+    {
+        "pk":35,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Интеллектуальная собственность",
+            "slug":"intellectual-property",
+            "related":[36, 37, 38, 39]
+        }
+    },
+    {
+        "pk":36,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Авторские и смежные права",
+            "slug":"copyright",
+            "related":[]
+        }
+    },
+    {
+        "pk":37,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Товарные знаки, патенты",
+            "slug":"trademarks",
+            "related":[]
+        }
+    },
+    {
+        "pk":38,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Интернет и право",
+            "slug":"internet-law",
+            "related":[]
+        }
+    },
+    {
+        "pk":39,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Программы ЭВМ и базы данных",
+            "slug":"software",
+            "related":[]
+        }
+    },
+    {
+        "pk":40,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Предпринимательское право",
+            "slug":"business-law",
+            "related":[41]
+        }
+    },
+    {
+        "pk":41,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Тендеры, контрактная система в сфере закупок",
+            "slug":"tenders-and-contract-system",
+            "related":[]
+        }
+    },
+    {
+        "pk":42,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Военное право",
+            "slug":"military-law",
+            "related":[43]
+        }
+    },
+    {
+        "pk":43,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Защита прав призывников",
+            "slug":"inductee",
+            "related":[]
+        }
+    },
+    {
+        "pk":44,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Медицинское право",
+            "slug":"healthcare-law",
+            "related":[]
+        }
+    },
+    {
+        "pk":45,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Нотариат",
+            "slug":"notary",
+            "related":[]
+        }
+    },
+    {
+        "pk":46,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Бухгалтерский учет",
+            "slug":"accounting",
+            "related":[]
+        }
+    },
+    {
+        "pk":47,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Административное право",
+            "slug":"administrative-law",
+            "related":[48]
+        }
+    },
+    {
+        "pk":48,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Произвол чиновников",
+            "slug":"bureaucrats-lawlessness",
+            "related":[]
+        }
+    },
+    {
+        "pk":49,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Гражданство",
+            "slug":"citizenship",
+            "related":[50]
+        }
+    },
+    {
+        "pk":50,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Миграционное право",
+            "slug":"migration-law",
+            "related":[]
+        }
+    },
+    {
+        "pk":51,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Конституционное право",
+            "slug":"constitutional-law",
+            "related":[]
+        }
+    },
+    {
+        "pk":52,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Исполнительное производство",
+            "slug":"executory-process",
+            "related":[]
+        }
+    },
+    {
+        "pk":53,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Лицензирование",
+            "slug":"licensing",
+            "related":[]
+        }
+    },
+    {
+        "pk":54,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Социальное обеспечение",
+            "slug":"social-maintenance",
+            "related":[55, 56]
+        }
+    },
+    {
+        "pk":55,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Пенсии и пособия",
+            "slug":"pensions-and-benefits",
+            "related":[]
+        }
+    },
+    {
+        "pk":56,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Гарантии, льготы, компенсации",
+            "slug":"compensations",
+            "related":[]
+        }
+    },
+    {
+        "pk":57,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Международное право",
+            "slug":"international-law",
+            "related":[]
+        }
+    },
+    {
+        "pk":58,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Таможенное право",
+            "slug":"customs-law",
+            "related":[]
+        }
+    },
+    {
+        "pk":59,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Налоговое право",
+            "slug":"fiscal-law",
+            "related":[]
+        }
+    },
+    {
+        "pk":60,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Тендеры и закупки",
+            "slug":"tenders-and-purchases",
+            "related":[]
+        }
+    },
+    {
+        "pk":61,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Хищения",
+            "slug":"embezzlement",
+            "related":[]
+        }
+    },
+    {
+        "pk":62,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Получение образования",
+            "slug":"getting-an-education",
+            "related":[]
+        }
+    },
+    {
+        "pk":63,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Материнский капитал",
+            "slug":"maternal-capital",
+            "related":[]
+        }
+    },
+    {
+        "pk":64,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Доверенности нотариуса",
+            "slug":"notarized-proverb",
+            "related":[]
+        }
+    },
+    {
+        "pk":65,
+        "model": "mainapp.specialization",
+        "fields":{
+            "name":"Побои",
+            "slug":"beating",
+            "related":[]
+        }
+    }
+]
