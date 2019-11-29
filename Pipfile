@@ -9,6 +9,7 @@ autopep8 = "*"
 
 [packages]
 pillow = "*"
+geopy = "*"
 
 [requires]
 python_version = "3.7"

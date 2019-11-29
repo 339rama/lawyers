@@ -1,6 +1,6 @@
 from mainapp.models import *
 from django.shortcuts import get_object_or_404
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.db.models import Count
 
 def cities(request):

@@ -1,8 +1,6 @@
 from django.db import models
 from django.urls import reverse
 from django.utils.safestring import mark_safe
-from django.contrib.sessions.backends.db import SessionStore
-
 
 class City(models.Model):
     name = models.CharField(max_length=128, verbose_name='Название города')
@@ -19,7 +17,7 @@ class City(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('mainapp:LawyersByCiy', args=[self.slug])
+        return reverse('mainapp:LawyersByCity', args=[self.slug])
 
     def get_new_name(self):
         if self.name[-1] == 'ь':
@@ -48,7 +46,7 @@ class Specialization(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        city=None
+        # city = exposed_request.session['city']
         return reverse('mainapp:LawyersBySpecialization', args=[city, self.slug])
 
     def get_new_name(self):
@@ -66,6 +64,10 @@ class Specialization(models.Model):
                 new_name += n[1][0:-1] + 'и'
             elif n[0][-1:] == 'л':
                 new_name += n[0] + 'у ' + n[1]
+            elif n[0][-2:] == 'ие':
+                new_name = n[0][:-2] + 'ию ' + n[1]
+            elif n[0][-1:] == 'о':
+                new_name = n[0][:-1] + 'у ' + n[1]
         elif len(n) == 1:
             if n[0][-2:] == 'ие':
                 new_name = n[0][:-2] + 'ию'
@@ -77,17 +79,34 @@ class Specialization(models.Model):
                 new_name = n[0][:-1] + 'е'
             elif n[0][-1:] == 'о':
                 new_name = n[0][:-1] + 'у'
+            elif n[0][-4:] == 'ость':
+                new_name = n[0][:-1] + 'и'
             else:
                 new_name = self.name
         elif len(n) == 3:
             if n[0][-1:] == 'а':
                 new_name += n[0][:-1] + 'е ' + n[1] + ' ' + n[2]
-            if n[0][-2:] == 'ия':
+            elif n[0][-2:] == 'ия':
                 new_name += n[0][:-2] + 'ии ' + n[1] + ' ' + n[2]
-            if n[0][-2:] == 'ие':
+            elif n[0][-2:] == 'ие':
                 new_name += n[0][:-2] + 'ию ' + n[1] + ' ' + n[2]
-            if n[0][-1:] == 'ы':
-                new_name = n[0][:-1] + 'ам ' + n[1] + ' ' +n[2][:-1] + 'ам' 
+            elif n[0][-1:] == 'ы':
+                new_name = n[0][:-1] + 'ам ' + n[1] + ' ' +n[2][:-1] + 'ам'
+        elif len(n) == 4 and n[1] == 'и':
+            if n[0][-3:] == 'ние' and n[2][-3:] == 'ние':
+                new_name += n[0][:-2] + 'ию' + ' и ' + n[2][:-2] + 'ию ' + n[3]
+            if n[0][-3:] == 'кие' and n[2][-3:] == 'ные':
+                new_name += n[0][:-2] + 'им' + ' и ' + n[2][:-2] + 'ым ' + n[3] + 'м'
+        elif len(n) == 4:
+            for i in n:
+                if i[-3:] == 'ние' or i[-4:-1] == 'ние':
+                    new_name += i[0:-2] + 'ию '
+                elif i == 'и':
+                    new_name += i + ' '
+                elif i[-3:] == 'ека':
+                    new_name += i[:-1] + 'а '
+                elif i[-4:] == 'ство':
+                    new_name += i[:-1] + 'у '
         else:
             new_name = self.name
         return new_name
@@ -134,4 +153,3 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.author
-

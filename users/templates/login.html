@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}<title>Вход</title>{% endblock title %}
+
+{% block content %}
+    <form action="" method="post" class="register">
+        <h1>Вход</h1>
+        {% csrf_token %}
+        {% for field in form %}
+            <div>
+                {{ field.errors }}
+                {{ field.label_tag }}
+                {{ field }}
+            </div>
+        {% endfor %}
+        <a href="{% url 'users:Register' %}">Еще не зарегестрировались?</a>
+        <button type="submit">Вход</button>
+    </form>
+{% endblock content %}

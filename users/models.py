@@ -7,7 +7,7 @@ from .managers import CustomUserManager
 import uuid
 
 from users.models import *
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Group
 from django.dispatch import receiver
 from django.db.models.signals import post_save
 from django.core.mail import send_mail
@@ -26,11 +26,12 @@ def SendMail(sender, instance, created, **kwargs):
 
 
 class CustomUser(AbstractBaseUser, PermissionsMixin):
-    email = models.EmailField(_('email address'), unique=True)
+    email = models.EmailField(_('email address'), unique=True, help_text=_('Email address'))
     uuid = models.UUIDField(default=uuid.uuid4, editable=False)
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=False)
     date_joined = models.DateTimeField(default=timezone.now)
+    groups = models.ManyToManyField(Group, verbose_name='Группы')
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
@@ -39,6 +40,10 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.email
+    
+    class Meta:
+        verbose_name = 'Пользователь'
+        verbose_name_plural = 'Пользователи'
 
 
 post_save.connect(SendMail, sender=CustomUser)

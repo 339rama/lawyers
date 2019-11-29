@@ -4,8 +4,25 @@ import json
 from django.db.models import Count
 
 def Index(request):
-    # specializations = Specialization.objects.annotate(num_subspecs = Count('related')).filter(num_subspecs__gt=0).order_by('num_subspecs').reverse()
-    return render(request, 'index.html')
+    if request.GET.get('lat'):
+        from django.conf import settings
+        from geopy.geocoders import Yandex
+        from django.http import HttpResponse, JsonResponse
+        import json
+        geo = Yandex(api_key=settings.YANDEX_MAP_TOKEN)
+        lat = request.GET.__getitem__('lat')
+        lng = request.GET.__getitem__('lng')
+        city_name = geo.reverse(
+            (lat, lng), exactly_one=True, timeout=5, kind="locality").address.split(', ')[0]
+        try:
+            city_slug = City.objects.get(name=city_name).slug
+            request.session['city'] = city_slug
+        except:
+            pass
+        return HttpResponse(json.dumps({'city_slug': city_slug, 'city_name': city_name}, ensure_ascii=False), content_type='application/json')
+    else:
+        # specializations = Specialization.objects.annotate(num_subspecs = Count('related')).filter(num_subspecs__gt=0).order_by('num_subspecs').reverse()
+        return render(request, 'index.html')
 
 def LawyersByCity(request, city):
     # request.session['city'] = city
@@ -39,6 +56,7 @@ def LawyersByCity(request, city):
             "meta": meta,
             "h1": h1,
             "h1text": h1text,
+            'spec_new_name': specialization.get_new_name().lower(),
         })
 
 
@@ -61,7 +79,7 @@ def LawyersBySpecialization(request, city, filter_spec):
         meta = "Ищите адвокатов по " + specialization.get_new_name().lower() + " в " + city_where + " ? На странице собраны все юристы и компании, которые оказывают услуги в городе " + \
             city.name + " . В базе собрано 1000 юристов. На сайте можно получить бесплатную консультацию."
         h1 = "Адвокаты и юристы по " + specialization.get_new_name().lower() + " в " + city_where
-        h1text = "Здесь вы можете найти юриста для решения своей задачи, получить коснультацию, получить ответ на вопрос."
+        h1text = "Здесь вы можете найти юриста для решения своей задачи, получить консультацию, получить ответ на вопрос."
 
         return render(request, 'city.html', {
             'city': city,
@@ -72,6 +90,7 @@ def LawyersBySpecialization(request, city, filter_spec):
             "meta": meta,
             "h1": h1,
             "h1text": h1text,
+            'spec_new_name': specialization.get_new_name().lower(),
         })
 
 def LawyerPage(request, lawyer_id):

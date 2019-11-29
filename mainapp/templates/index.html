@@ -21,10 +21,10 @@
             <img src="{% if specialization.image %}{{ specialization.image.url }}{% else %}{% static 'images/spec-placeholder.png' %}{% endif %}" alt="{{ specialization.name }}">
             {% endif %}
             <div class="df fxd-c">
-                <a href="/{{city_slug}}/{{ specialization.slug }}" class="spec-card">{{ specialization.name }}</a>
+                <a href="/{{city_slug}}/{{ specialization.slug }}/" class="spec-card">{{ specialization.name }}</a>
                 <div class="subspecs df">
                     {% for subspec in specialization.related.all %}
-                    <a href="/{{city_slug}}/{{ subspec.slug }}">{{ subspec.name }}</a>
+                    <a href="/{{city_slug}}/{{ subspec.slug }}/">{{ subspec.name }}</a>
                     {% endfor %}
                 </div>
                 <a href="" class="spec-card-btn flex-abs-center">Задать вопрос</a>
@@ -33,10 +33,10 @@
     {% elif subspecs == 1 %}
         <div class="spec-card df fxd-c">
             <div class="df fxd-c">
-                    <a href="/{{city_slug}}/{{ specialization.slug }}" class="spec-card">{{ specialization.name }}</a>
+                    <a href="/{{city_slug}}/{{ specialization.slug }}/" class="spec-card">{{ specialization.name }}</a>
                     <div class="subspecs df">
                         {% for subspec in specialization.related.all %}
-                        <a href="/{{city_slug}}/{{ subspec.slug }}">{{ subspec.name }}</a>
+                        <a href="/{{city_slug}}/{{ subspec.slug }}/">{{ subspec.name }}</a>
                         {% endfor %}
                     </div>
             </div>
@@ -65,10 +65,10 @@
             <img src="{% if specialization.image %}{{ specialization.image.url }}{% else %}{% static 'images/spec-placeholder.png' %}{% endif %}" alt="{{ specialization.name }}">
             {% endif %}
             <div class="df fxd-c">
-                <a href="/{{city_slug}}/{{ specialization.slug }}" class="spec-card">{{ specialization.name }}</a>
+                <a href="/{{city_slug}}/{{ specialization.slug }}/" class="spec-card">{{ specialization.name }}</a>
                 <div class="subspecs df">
                     {% for subspec in specialization.related.all %}
-                    <a href="/{{city_slug}}/{{ subspec.slug }}">{{ subspec.name }}</a>
+                    <a href="/{{city_slug}}/{{ subspec.slug }}/">{{ subspec.name }}</a>
                     {% endfor %}
                 </div>
                 <a href="" class="spec-card-btn flex-abs-center">Задать вопрос</a>
@@ -80,10 +80,10 @@
     <div class="specs-card df fxd-c">
     {% for specialization in specializations|slice:"8:10" %}
         <div class="df fxd-c">
-            <a href="/{{city_slug}}/{{ specialization.slug }}" class="spec-card">{{ specialization.name }}</a>
+            <a href="/{{city_slug}}/{{ specialization.slug }}/" class="spec-card">{{ specialization.name }}</a>
             <div class="subspecs df">
                 {% for subspec in specialization.related.all %}
-                    <a href="/{{city_slug}}/{{ subspec.slug }}">{{ subspec.name }}</a>
+                    <a href="/{{city_slug}}/{{ subspec.slug }}/">{{ subspec.name }}</a>
                 {% endfor %}
             </div>
         </div>
@@ -93,10 +93,10 @@
         <div class="spec-card mini-card df fxd-c">
             <img src="{% if specialization.image %}{{ specialization.image.url }}{% else %}{% static 'images/spec-placeholder.png' %}{% endif %}" alt="{{ specialization.name }}">
             <div class="df fxd-c">
-                <a href="/{{city_slug}}/{{ specialization.slug }}" class="spec-card">{{ specialization.name }}</a>
+                <a href="/{{city_slug}}/{{ specialization.slug }}/" class="spec-card">{{ specialization.name }}</a>
                 <div class="subspecs df">
                     {% for subspec in specialization.related.all %}
-                    <a href="/{{city_slug}}/{{ subspec.slug }}">{{ subspec.name }}</a>
+                    <a href="/{{city_slug}}/{{ subspec.slug }}/">{{ subspec.name }}</a>
                     {% endfor %}
                 </div>
                 <a href="" class="spec-card-btn flex-abs-center">Задать вопрос</a>

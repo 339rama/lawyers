@@ -14,29 +14,106 @@
 <h1>{{ h1 }}</h1>
 <p class="after-h1">{{ h1text }}</p>
 <p class="results-count">{{ results_count }} результатов</p>
+
+{% for lawyer in lawyers|slice:"0:1" %}
+<div class="list-item top-item" data-href="{{ lawyer.get_absolute_url }}" onclick="goToPage(this)">
+    <img src="{{ lawyer.image.url }}" class="list-item m-dn" />
+    <div class="item-desc">
+        <div class="item-desc-top">
+            <p class="top-best">
+                Лучший специалист
+                <img src="{% static 'images/white-star.svg' %}" />
+                <span  style="font-size: 14px;font-weight: 700;">{{ lawyer.rating }}</span>
+                <span class="lawyer-feedbacks">( {% if lawyer.num_comments == 0 %}0{% else %}{{ lawyer.num_comments }}{% endif %} )</span>
+            </p>
+            <p>{{ lawyer.major|capfirst }}</p>
+            <div class="rating m-dn">
+                <img src="{% static 'images/white-star.svg' %}" />
+                <span>{{ lawyer.rating }}</span>
+                <span class="lawyer-feedbacks">
+                    <span class="d-dn">(</span>
+                    {% if lawyer.num_comments == 0 %}
+                    <span class="d-dn">0</span>
+                    <span class="m-dn">Нет отзывов</span>
+                    {% else %}{{ lawyer.num_comments }} <span class="m-dn">отзыва</span>{% endif %}
+                    <span class="d-dn">)</span>
+                </span>
+            </div>
+        </div>
+        <img src="{{ lawyer.image.url }}" class="list-item dn" />
+        <p class="name">{{ lawyer.lawyername }}</p>
+        <p class="item-desc">{{ lawyer.aboutself}}</p>
+        <div class="item-btns flex-v-c">
+            <a href="{{ lawyer.get_absolute_url }}" class="item-btn">Подробнее</a>
+            <a class="item-btn-quest">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="item-btn-quest">
+                    <g clip-path="url(#clip0)">
+                        <path
+                            d="M1.53568 5.58934C1.73808 5.73217 2.34818 6.15635 3.36602 6.86168C4.38389 7.56701 5.16365 8.11009 5.70532 8.49096C5.76484 8.53271 5.89127 8.62346 6.08469 8.76335C6.27815 8.90333 6.43889 9.01644 6.5668 9.10272C6.6948 9.18897 6.84953 9.28573 7.03117 9.39284C7.21274 9.49985 7.38389 9.58035 7.5446 9.63364C7.70535 9.68737 7.85414 9.71398 7.99102 9.71398H8H8.00901C8.14589 9.71398 8.29475 9.68734 8.45549 9.63364C8.61614 9.58035 8.78745 9.49976 8.96886 9.39284C9.15037 9.2856 9.30511 9.18894 9.43311 9.10272C9.56111 9.01644 9.72173 8.90333 9.91524 8.76335C10.1086 8.62334 10.2352 8.53271 10.2947 8.49096C10.8423 8.11009 12.2352 7.14279 14.4733 5.58915C14.9078 5.28571 15.2708 4.91957 15.5624 4.49098C15.8542 4.06257 16 3.61315 16 3.14296C16 2.75005 15.8586 2.41371 15.5758 2.13397C15.293 1.85418 14.9582 1.71436 14.5714 1.71436H1.42851C0.970209 1.71436 0.617514 1.86909 0.370489 2.17857C0.123496 2.48811 0 2.87502 0 3.33926C0 3.71425 0.163745 4.12061 0.491077 4.55809C0.818379 4.9956 1.1667 5.33938 1.53568 5.58934Z"
+                            fill="#fff" />
+                        <path
+                            d="M15.107 6.54461C13.1548 7.86592 11.6725 8.89279 10.6607 9.62501C10.3215 9.87492 10.0462 10.07 9.83485 10.2098C9.62348 10.3497 9.34237 10.4925 8.99111 10.6383C8.63998 10.7843 8.31275 10.857 8.00912 10.857H8.00002H7.99104C7.68748 10.857 7.36005 10.7843 7.00892 10.6383C6.65779 10.4925 6.37649 10.3497 6.16518 10.2098C5.95393 10.07 5.67861 9.87492 5.33936 9.62501C4.53574 9.03577 3.0566 8.00883 0.901876 6.54461C0.562504 6.31857 0.26191 6.05947 0 5.76785V12.8569C0 13.25 0.139821 13.5862 0.419618 13.866C0.699353 14.1458 1.03572 14.2857 1.4286 14.2857H14.5715C14.9643 14.2857 15.3006 14.1458 15.5804 13.866C15.8602 13.5861 16 13.2501 16 12.8569V5.76785C15.744 6.05344 15.4465 6.31253 15.107 6.54461Z"
+                            fill="#fff" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="16" height="16" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>Задать вопрос
+            </a>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
 <div class="list-wrapper">
     <div class="list">
-        {% for lawyer in lawyers %}
+        {% for lawyer in lawyers|slice:"1:" %}
             <div class="list-item" data-href="{{ lawyer.get_absolute_url }}" onclick="goToPage(this)">
-                <img src="{{ lawyer.image.url }}" class="list-item"/>
+                <img src="{{ lawyer.image.url }}" class="list-item m-dn"/>
                 <div class="item-desc">
                     <div class="item-desc-top">
                         <p>{{ lawyer.major|capfirst }}</p>
                         <div class="rating">
                             <img src="{% static 'images/star.svg' %}"/>
                             <span class="{% if lawyer.rating >= 8 %}green{% else %}orange{% endif %}">{{ lawyer.rating }}</span>
-                            <span class="lawyer-feedbacks">{{ lawyer.num_comments }} отзыва</span>
+                            <span class="lawyer-feedbacks">
+                                <span class="d-dn">(</span>
+                                {% if lawyer.num_comments == 0 %}
+                                <span class="d-dn">0</span>
+                                <span class="m-dn">Нет отзывов</span>
+                                {% else %}{{ lawyer.num_comments }} <span class="m-dn">отзыва</span>{% endif %}
+                                <span class="d-dn">)</span>
+                            </span>
                         </div>
                     </div>
+                    <img src="{{ lawyer.image.url }}" class="list-item dn" />
                     <p class="name">{{ lawyer.lawyername }}</p>
                     <p class="item-desc">{{ lawyer.aboutself}}</p>
-                    <a href="{{ lawyer.get_absolute_url }}" class="item-btn">Подробнее</a>
+                    <div class="item-btns flex-v-c">
+                        <a href="{{ lawyer.get_absolute_url }}" class="item-btn">Подробнее</a>
+                        <a class="item-btn-quest">
+                            <img src="{% static 'images/mail.svg' %}" class="item-btn-quest"/>Задать вопрос
+                        </a>
+                    </div>
                 </div>
             </div>
         {% endfor %}
         {% if lawyers|length > 0 %}
         <button class="filter-btn" data-shown="5" onclick="showMore(this)">Показать ещё</button>
         {% endif %}
+        <h2>Как выбрать юриста по {{ spec_new_name }}?</h2>
+        <p>Наш сервис помогает вам бесплатно найти специалиста, мы не берем
+        комиссию. Чтобы начать пользоваться надо выбрать специалиста, а после перейти на форму контакта. Система вас
+        перенаправит на сайт-партнера, где можно связаться с исполнителем.
+        <br>
+        <br>
+        Заранее предупреждаем, что мы являемся посредником и не берем плату,
+        потому не отвечаем за качество предоставляемых услуг третьими лицами.
+        Более того, настоятельно рекомендуем изучить ответы и рейтинг юристов
+        перед обращением. В карточке юриста можно увидеть отзывы, специализацию,
+        иные подробности.</p>
     </div>
     <div class="filter-wrapper">
         <div class="filters">
@@ -44,11 +121,15 @@
                 <span>Город</span>
                 <div class="filter-value"  style="z-index: 1;">
                     <input type="text" placeholder="Выбрать" oninput="filterSearch(this)" data-value="{{ city.slug }}" data-uses="city" value='{{ city.name }}'>
-                    <img src="{% static 'images/arrow-down.svg' %}" onclick="ShowValues(this)"/>
+                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="ShowValues(this)">
+                        <path
+                            d="M15.0449 0.291476C14.8464 0.0930268 14.5239 0.0930268 14.3255 0.291476L7.9999 6.62946L1.66192 0.291476C1.46347 0.0930268 1.14099 0.0930268 0.942538 0.291476C0.744089 0.489926 0.744089 0.812407 0.942538 1.01086L7.62781 7.69613C7.72703 7.79535 7.85106 7.84497 7.9875 7.84497C8.11153 7.84497 8.24796 7.79535 8.34719 7.69613L15.0325 1.01086C15.2433 0.812407 15.2433 0.489926 15.0449 0.291476Z"
+                            fill="#BDBDBD" />
+                    </svg>
                     <div class="dn">
                         <ul>
                             {% for city in cities|dictsort:'id' %}
-                                <li data-value="{{ city.slug }}" onclick="SelectValue(this)">{{ city.name }}</li>
+                                <li data-value="{{ city.slug }}" onclick="SelectValue(this)" {% if city.slug == city_slug %}class="selected"{% endif %}>{{ city.name }}</li>
                             {% endfor %}    
                         </ul>
                     </div>
@@ -60,7 +141,11 @@
                 <div class="filter-value">
                     <input type="text" placeholder="Выбрать" oninput="filterSearch(this)" data-value="{{ specialization.slug }}"
                         value='{{ specialization.name }}'>
-                    <img src="{% static 'images/arrow-down.svg' %}" onclick="ShowValues(this)" />
+                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="ShowValues(this)">
+                        <path
+                            d="M15.0449 0.291476C14.8464 0.0930268 14.5239 0.0930268 14.3255 0.291476L7.9999 6.62946L1.66192 0.291476C1.46347 0.0930268 1.14099 0.0930268 0.942538 0.291476C0.744089 0.489926 0.744089 0.812407 0.942538 1.01086L7.62781 7.69613C7.72703 7.79535 7.85106 7.84497 7.9875 7.84497C8.11153 7.84497 8.24796 7.79535 8.34719 7.69613L15.0325 1.01086C15.2433 0.812407 15.2433 0.489926 15.0449 0.291476Z"
+                            fill="#BDBDBD" />
+                    </svg>
                     <div class="dn">
                         <ul>
                             {% for spec in all_specializations %}

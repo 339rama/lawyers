@@ -22,13 +22,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '&z=w_n3uvuzrn*c1)9r2%kw*1^82jpm*rgcx3ipjzyp_13mor('
 
+YANDEX_MAP_TOKEN = 'e000b4b2-8a20-446f-9c2f-9a2471aa1b6e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['xn----htbdyph1h.xn--p1ai', 'www.xn----htbdyph1h.xn--p1ai', 'yur-delo.rf', '127.0.0.1']
 
-
+APPEND_SLASH =False
 # Application definition
+SITE_ID=1
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,9 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
+    'django.contrib.sites',
     'debug_toolbar',
     'users',
-    'mainapp'
+    'mainapp',
 ]
 
 AUTH_USER_MODEL = 'users.CustomUser'
@@ -53,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'mainapp.get_city.RequestExposerMiddleware',
 ]
 
 ROOT_URLCONF = 'main.urls'

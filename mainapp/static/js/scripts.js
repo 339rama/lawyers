@@ -41,6 +41,7 @@ function ShowValues(element) {
     let values = element.parentNode.querySelector('div');
     values.classList.toggle('dn');
     element.classList.toggle('transScaleY-1');
+    element.parentNode.classList.toggle('box-shadow');
 }
 
 function filterSearch(el) {
@@ -54,11 +55,12 @@ function filterSearch(el) {
             vars[i].style.cssText = "display: none;";
         }
     }
-    console.log(value, list);
 }
 
 function SelectValue(element) {
     let input = element.parentNode.parentNode.parentNode.querySelector('input');
+    element.parentNode.parentNode.parentNode.querySelector('svg').classList.toggle('transScaleY-1');
+    element.parentNode.parentNode.parentNode.classList.toggle('box-shadow');
     input.dataset.value = element.dataset.value;
     input.value = element.innerHTML;
     let siblings = element.parentNode.querySelectorAll('li');
@@ -67,6 +69,12 @@ function SelectValue(element) {
     }
     element.classList.add('selected');
     element.parentNode.parentNode.classList.toggle('dn');
+    if (window.matchMedia("(max-width: 425px)").matches){
+        console.log('ok');
+        let filter_btn = document.querySelector('div.filters button.filter-btn');
+        let machineEvent = new Event('click');
+        filter_btn.dispatchEvent(machineEvent);
+    }
 }
 
 function filter(element){
@@ -85,14 +93,14 @@ function filter(element){
     
 }
 
-function showCities(el) {
-    event.preventDefault;
+function showCities() {
     el = document.querySelector('#current-city');
     el.querySelector('div').classList.toggle('dn');
 }
 
 function selectCity(el) {
     let city_slug = el.dataset.value;
+    sessionStorage.setItem('city_slug', city_slug);
     let url = window.location.pathname + '?city=' + city_slug;
     document.querySelector('#current-city>span').innerHTML = el.innerHTML;
     let city_links = document.querySelectorAll('.city-page');
@@ -100,8 +108,9 @@ function selectCity(el) {
         city_links[i].setAttribute('href', '/' + city_slug + '/');
     }
     fetch(url).then(function(){
-        if (location.pathname.split('/')[1] !== 'lawyer'){
-            location.href = (location.pathname.split('/').length == 4 ? '/' + city_slug + '/' + (location.pathname.split('/'))[2] : '/' + city_slug + '/');
+        url_list = location.pathname.split('/');
+        if (url_list[1] !== 'lawyer'){
+            location.href = (url_list.length == 4 ? '/' + city_slug + '/' + url_list[2] + '/' : '/' + city_slug + '/');
         }
         });
     
@@ -115,13 +124,42 @@ function showMore(btn) {
         btn.insertAdjacentHTML('beforeBegin', data);
     });
 }
-
+// GEO
 function geo_success(position) {
+    url = '/' + '?lat=' + position.coords.latitude + '&lng=' + position.coords.longitude;
+    fetch(url)
+    .then(res => res.text())
+    .then(function(data) {
+        // sessionStorage.setItem('city_name', JSON.parse(data).city_slug);
+        ShowConfirmCity(data);
+        console.log('wrong');
+        // window.location.reload(true);
+
+    });
     console.log('Lat:' + position.coords.latitude, 'Lng:' + position.coords.longitude);
 };
 
+function ConfirmCity(elem) {
+    document.querySelector('div.confirm-city').classList.add('dn');
+    sessionStorage.setItem('city_slug', elem.dataset.city);
+    window.location.reload(true);
+}
+
+function ShowConfirmCity(data) {
+    document.querySelector('div.confirm-city').classList.remove('dn');
+    document.querySelector('button.confirm-city').dataset.city = JSON.parse(data).city_slug;
+    document.querySelector('div.confirm-city p:last-of-type').innerHTML = JSON.parse(data).city_name;
+}
+function NotConfirmCity() {
+    document.querySelector('div.confirm-city').classList.add('dn');
+    showCities();
+}
+
 function geo_error(err) {
     console.log('Geo Error', err)
+    if (sessionStorage.getItem('city_slug') === null) {
+        showCities();
+    }
 }
 
 let geo_options = {
@@ -130,4 +168,9 @@ let geo_options = {
     timeout: 27000
 };
 
-navigator.geolocation.getCurrentPosition(geo_success, geo_error, geo_options);
+if (sessionStorage.getItem('city_slug') === null){
+    navigator.geolocation.getCurrentPosition(geo_success, geo_error, geo_options);
+} else{
+    console.log(sessionStorage.getItem('city_slug'));
+}
+//  GEO END
