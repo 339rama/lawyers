@@ -25,17 +25,14 @@ class SpecializationSitemap(Sitemap):
     priority = 0.5
 
     def items(self):
-        # return Specialization.objects.all()
         spec_list = list()
         for city in City.objects.all():
             for spec in Specialization.objects.all():
                 spec_list.append([city.slug, spec.slug])
-        print(spec_list)
         return spec_list
         
 
     def location(self, item):
-        print(item)
         return reverse('mainapp:LawyersBySpecialization', args=item)
 
 
@@ -45,3 +42,4 @@ class LawyersSitemap(Sitemap):
 
     def items(self):
         return Lawyer.objects.all().order_by('id')
+

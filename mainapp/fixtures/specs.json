@@ -4,6 +4,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Гражданское право",
+            "name_form":"Гражданскому праву",
             "slug":"civil-law",
             "related":[2, 3, 4, 5]
         }
@@ -13,6 +14,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Договорное право",
+            "name_form":"Договорному праву",
             "slug":"conventional-law",
             "related":[]
         }
@@ -22,6 +24,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Право собственности",
+            "name_form":"Праву собственности",
             "slug":"property",
             "related":[]
         }
@@ -31,6 +34,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Взыскание задолженности",
+            "name_form":"Взысканию задолженности",
             "slug":"debt-collection",
             "related":[]
         }
@@ -40,6 +44,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Кредитование",
+            "name_form":"Кредитованию",
             "slug":"lending",
             "related":[]
         }
@@ -49,6 +54,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Недвижимость",
+            "name_form":"Недвижимости",
             "slug":"realty",
             "related":[7, 8, 9, 10, 11, 12]
         }
@@ -58,6 +64,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Жилищное право",
+            "name_form":"Жилищному праву",
             "slug":"housing-law",
             "related":[]
         }
@@ -67,6 +74,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Ипотека",
+            "name_form":"Ипотеке",
             "slug":"mortgage",
             "related":[]
         }
@@ -76,6 +84,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"ЖКХ",
+            "name_form":"ЖКХ",
             "slug":"hcs",
             "related":[]
         }
@@ -85,6 +94,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Долевое участие в строительстве",
+            "name_form":"Долевому участию в строительстве",
             "slug":"building",
             "related":[]
         }
@@ -94,6 +104,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Приватизация",
+            "name_form":"Приватизации",
             "slug":"privatization",
             "related":[]
         }
@@ -103,6 +114,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Земельное право",
+            "name_form":"Земельному праву",
             "slug":"land-law",
             "related":[]
         }
@@ -112,6 +124,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Арбитраж",
+            "name_form":"Арбитражу",
             "slug":"arbitration",
             "related":[]
         }
@@ -121,6 +134,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Корпоративное право",
+            "name_form":"Корпоративному праву",
             "slug":"corporate-law",
             "related":[15, 16]
         }
@@ -130,6 +144,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Регистрация юридических лиц",
+            "name_form":"Регистрации юридических лиц",
             "slug":"registration",
             "related":[]
         }
@@ -139,6 +154,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Банкротство",
+            "name_form":"Банкротству",
             "slug":"bankruptcy",
             "related":[]
         }
@@ -148,6 +164,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Трудовое право",
+            "name_form":"Трудовому праву",
             "slug":"labour-law",
             "related":[18, 19]
         }
@@ -157,6 +174,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Защита прав работников",
+            "name_form":"Защите прав работников",
             "slug":"employee",
             "related":[]
         }
@@ -166,6 +184,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Защита прав работодателя",
+            "name_form":"Защите прав работадетеля",
             "slug":"employers",
             "related":[]
         }
@@ -175,6 +194,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Автомобильное право",
+            "name_form":"Автомобильному праву",
             "slug":"auto-law",
             "related":[21, 22]
         }
@@ -184,6 +204,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"ДТП, ГИБДД, ПДД",
+            "name_form":"ДТП, ГИБДД, ПДД",
             "slug":"road-traffic-accidents",
             "related":[]
         }
@@ -193,6 +214,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Лишение водительских прав",
+            "name_form":"Лишению водительских прав",
             "slug":"driving-ban",
             "related":[]
         }
@@ -202,6 +224,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Страхование",
+            "name_form":"Страхованию",
             "slug":"insurance",
             "related":[24]
         }
@@ -211,6 +234,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"ОСАГО, Каско",
+            "name_form":"ОСАГО, Каско",
             "slug":"osago-casco",
             "related":[]
         }
@@ -220,6 +244,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Уголовное право",
+            "name_form":"Уголовному праву",
             "slug":"criminal-law",
             "related":[26]
         }
@@ -229,6 +254,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Наркотики",
+            "name_form":"Наркотикам",
             "slug":"drugs",
             "related":[]
         }
@@ -238,6 +264,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Семейное право",
+            "name_form":"Семейному праву",
             "slug":"family-law",
             "related":[28, 29, 30, 31, 32]
         }
@@ -247,6 +274,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Заключение и расторжение брака",
+            "name_form":"Заключению и расторжению брака",
             "slug":"marriage-and-divorce",
             "related":[]
         }
@@ -256,6 +284,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Алименты",
+            "name_form":"Алиментам",
             "slug":"alimony",
             "related":[]
         }
@@ -265,6 +294,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Раздел имущества",
+            "name_form":"Разделу имущества",
             "slug":"property-claim",
             "related":[]
         }
@@ -274,6 +304,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Усыновление, опека и попечительство",
+            "name_form":"Усыновлению, опеке и попечительству",
             "slug":"adoption",
             "related":[]
         }
@@ -283,6 +314,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Права детей",
+            "name_form":"Правам детей",
             "slug":"childrens-rights",
             "related":[]
         }
@@ -292,6 +324,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Наследство",
+            "name_form":"Наследству",
             "slug":"inheritance",
             "related":[]
         }
@@ -301,6 +334,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Защита прав потребителей",
+            "name_form":"Защите прав потребителей",
             "slug":"consumer-right",
             "related":[]
         }
@@ -310,6 +344,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Интеллектуальная собственность",
+            "name_form":"Интеллектуальной собственности",
             "slug":"intellectual-property",
             "related":[36, 37, 38, 39]
         }
@@ -319,6 +354,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Авторские и смежные права",
+            "name_form":"Авторским и смежным правам",
             "slug":"copyright",
             "related":[]
         }
@@ -328,6 +364,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Товарные знаки, патенты",
+            "name_form":"Товарным знакам и патентам",
             "slug":"trademarks",
             "related":[]
         }
@@ -337,6 +374,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Интернет и право",
+            "name_form":"Интернету и праву",
             "slug":"internet-law",
             "related":[]
         }
@@ -346,6 +384,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Программы ЭВМ и базы данных",
+            "name_form":"Программам ЭВМ и базам данных",
             "slug":"software",
             "related":[]
         }
@@ -355,6 +394,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Предпринимательское право",
+            "name_form":"Предпринимательскому праву",
             "slug":"business-law",
             "related":[41]
         }
@@ -364,6 +404,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Тендеры, контрактная система в сфере закупок",
+            "name_form":"Тендерам и контрактной системе в сфере закупок",
             "slug":"tenders-and-contract-system",
             "related":[]
         }
@@ -373,6 +414,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Военное право",
+            "name_form":"Военному праву",
             "slug":"military-law",
             "related":[43]
         }
@@ -382,6 +424,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Защита прав призывников",
+            "name_form":"Защите прав призывников",
             "slug":"inductee",
             "related":[]
         }
@@ -391,6 +434,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Медицинское право",
+            "name_form":"Медицинскому праву",
             "slug":"healthcare-law",
             "related":[]
         }
@@ -400,6 +444,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Нотариат",
+            "name_form":"Нотариату",
             "slug":"notary",
             "related":[]
         }
@@ -409,6 +454,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Бухгалтерский учет",
+            "name_form":"Бухгалтерскому учету",
             "slug":"accounting",
             "related":[]
         }
@@ -418,6 +464,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Административное право",
+            "name_form":"Административному праву",
             "slug":"administrative-law",
             "related":[48]
         }
@@ -427,6 +474,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Произвол чиновников",
+            "name_form":"произволу чиновников",
             "slug":"bureaucrats-lawlessness",
             "related":[]
         }
@@ -436,6 +484,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Гражданство",
+            "name_form":"Гражданству",
             "slug":"citizenship",
             "related":[50]
         }
@@ -445,6 +494,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Миграционное право",
+            "name_form":"Миграционному праву",
             "slug":"migration-law",
             "related":[]
         }
@@ -454,6 +504,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Конституционное право",
+            "name_form":"Конституционному праву",
             "slug":"constitutional-law",
             "related":[]
         }
@@ -463,6 +514,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Исполнительное производство",
+            "name_form":"Исполнительному производству",
             "slug":"executory-process",
             "related":[]
         }
@@ -472,6 +524,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Лицензирование",
+            "name_form":"Лицензированию",
             "slug":"licensing",
             "related":[]
         }
@@ -481,6 +534,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Социальное обеспечение",
+            "name_form":"Социальному обеспечению",
             "slug":"social-maintenance",
             "related":[55, 56]
         }
@@ -490,6 +544,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Пенсии и пособия",
+            "name_form":"Пенсиям и пособиям",
             "slug":"pensions-and-benefits",
             "related":[]
         }
@@ -499,6 +554,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Гарантии, льготы, компенсации",
+            "name_form":"Гарантиям, льготам и компенсациям",
             "slug":"compensations",
             "related":[]
         }
@@ -508,6 +564,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Международное право",
+            "name_form":"Международному праву",
             "slug":"international-law",
             "related":[]
         }
@@ -517,6 +574,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Таможенное право",
+            "name_form":"Таможенному праву",
             "slug":"customs-law",
             "related":[]
         }
@@ -526,6 +584,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Налоговое право",
+            "name_form":"Налоговому праву",
             "slug":"fiscal-law",
             "related":[]
         }
@@ -535,6 +594,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Тендеры и закупки",
+            "name_form":"Тендерам и закупкам",
             "slug":"tenders-and-purchases",
             "related":[]
         }
@@ -544,6 +604,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Хищения",
+            "name_form":"Хащениям",
             "slug":"embezzlement",
             "related":[]
         }
@@ -553,6 +614,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Получение образования",
+            "name_form":"Получению образования",
             "slug":"getting-an-education",
             "related":[]
         }
@@ -562,6 +624,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Материнский капитал",
+            "name_form":"Материнскому капиталу",
             "slug":"maternal-capital",
             "related":[]
         }
@@ -571,6 +634,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Доверенности нотариуса",
+            "name_form":"Доверенности нотариуса",
             "slug":"notarized-proverb",
             "related":[]
         }
@@ -580,6 +644,7 @@
         "model": "mainapp.specialization",
         "fields":{
             "name":"Побои",
+            "name_form":"Побоям",
             "slug":"beating",
             "related":[]
         }

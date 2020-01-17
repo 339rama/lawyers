@@ -1,14 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load my_tags %}
 
-{% block title %}<title>{{ lawyer.lawyername }} : юридическая помощь, {{ lawyer.specializations.all|first }}, отзывы</title>{% endblock title %}
+{% block title %}<title>{{ lawyer.lawyername }}: юридическая помощь, {{ lawyer.specializations.all|first }}, отзывы</title>{% endblock title %}
 {% block meta_description %}<meta name="description" content="{{ lawyer.aboutself }}">
 <meta name="keywords" content="{{ lawyer.lawyername }}">
 {% endblock meta_description %}
 
 {% block content %}
 
-<div class="breadcrumbs df">
+<div class="breadcrumbs df lawyer-page">
     <a href="{% url 'mainapp:Index' %}" class="flex-abs-center">Главная</a>
     <a href="/{{ city_slug }}/" class="flex-abs-center">Адвокаты и юристы</a>
     <a class="flex-abs-center lawyer-bread">{{ lawyer.lawyername }}</a>
@@ -29,7 +30,7 @@
                 <img src="{% static 'images/star.svg' %}" />
                 <span class="{% if lawyer.rating >= 8 %}green{% else %}orange{% endif %}">{{ lawyer.rating }}</span>
             </div>
-            <span class="lawyer-feedbacks">{{ comments|length }} отзыва</span>
+            <span class="lawyer-feedbacks">{{comments|length}} {{ comments|length|feedbacks_count }}</span>
             <span class="lawyer-city">{{ lawyer.city }}</span>
         </div>
         <div id="about">
@@ -46,12 +47,35 @@
             {% endfor %}    
         </div>
         <div id="question">
-            <h2 class="lawyer-title">Задайте свой вопрос юристу</h2>
-            <form action="" method="POST">
+            <form action="" method="POST" class="question-form">
                 {% csrf_token %}
-                <textarea name="question_body" placeholder="Опишите подробно вашу ситуацию. Чем подробнее вы разъясните ситуацию, тем полнее и точнее будут ответы юристов."></textarea>
+                <p>Задайте свой вопрос юристу</p>
+                <textarea name="{{question.question.html_name}}" id="{{question.question.id_for_label}}"
+                    placeholder="{{question.question.help_text}}"></textarea>
+                <input type="text" name="{{ question.phone_number.html_name }}" id="{{ question.phone_number.id_for_label }}"
+                    placeholder="{{ question.phone_number.help_text }}">
+                <input type="text" name="{{ question.email.html_name }}" id="{{ question.email.id_for_label }}"
+                    placeholder="{{ question.email.help_text }}">
                 <input type="submit" value="Отправить">
             </form>
+        </div>
+        <div>
+            <h2 class="lawyer-title">Другие юристы</h2>
+            {% for lawyer_ in lawyers %}
+                <div class="list-item" data-href="{{ lawyer_.get_absolute_url }}" onclick="goToPage(this)">
+                    <img src="{{ lawyer_.image.url }}" class="list-item m-dn" />
+                    <div class="item-desc">
+                        <div class="item-desc-top">
+                            <p>{{ lawyer_.major|capfirst }}</p>
+                        </div>
+                        <img src="{{ lawyer_.image.url }}" class="list-item dn" />
+                        <p class="name">{{ lawyer_.lawyername }}</p>
+                        <div class="item-btns flex-v-c">
+                            <a href="{{ lawyer_.get_absolute_url }}" class="item-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}    
         </div>
     </div>
 </div>

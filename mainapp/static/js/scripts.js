@@ -1,5 +1,8 @@
 function goToPage(el) {
-    location.href = el.dataset.href;
+    let opened_dialog = document.querySelector('dialog').getAttribute('open');
+    if (!opened_dialog.getAttribute('open') == 'open'){
+        location.href = el.dataset.href;
+    }
 }
 
 function toggleMenu() {
@@ -8,30 +11,100 @@ function toggleMenu() {
     el.querySelector('div').classList.toggle('dn');
 }
 function openMenu() {
-    let el = document.querySelector('#menu-burger');
-    el.classList.add('active-menu');
-    el.querySelector('div').classList.remove('dn');
+    if (!window.matchMedia("(max-width: 425px)").matches) {
+        let el = document.querySelector('#menu-burger');
+        el.classList.add('active-menu');
+        el.querySelector('div').classList.remove('dn');
+    }else if (document.querySelector('#menu-burger>svg').dataset.action === 'back'){
+        let index = document.querySelectorAll('div[data-state=open]').length - 1;
+        document.querySelectorAll('div[data-state=open]')[index].querySelector('div').removeAttribute('style');
+        document.querySelectorAll('div[data-state=open]')[index].removeAttribute('data-state');
+        if (!index>0){
+            document.querySelector('#menu-burger>svg').removeAttribute('data-action');
+        }
+    }else{
+        toggleMenu();
+        document.querySelector('header').classList.toggle('dark-bg');
+    }
+}
+
+function mobileMenuOpenSub(el) {
+    if (window.matchMedia("(max-width: 425px)").matches) {
+        el.querySelector('div').style.left = 0;
+        document.querySelector('#menu-burger>svg').dataset.action = 'back';
+        el.dataset.state = 'open';
+    }
 }
 function closeMenu() {
-    let el = document.querySelector('#menu-burger');
-    el.classList.remove('active-menu');
-    el.querySelector('div').classList.add('dn');
+    if (!window.matchMedia("(max-width: 425px)").matches) {
+        let el = document.querySelector('#menu-burger');
+        el.classList.remove('active-menu');
+        el.querySelector('div').classList.add('dn');
+    }
 }
 document.addEventListener('DOMContentLoaded', function () {
     let menu_btn = document.querySelector('#menu-burger');
-    menu_btn.addEventListener('mouseover', openMenu);
-    menu_btn.addEventListener('click', toggleMenu);
-    document.addEventListener('click', closeMenu);
+    if (!window.matchMedia("(max-width: 425px)").matches) {
+        menu_btn.addEventListener('mouseover', openMenu);
+        menu_btn.addEventListener('click', toggleMenu);
+        document.addEventListener('click', showCities);
+    } else {
+        // Rebuilt menu to mobile
+        let menu_inner_conts = document.querySelectorAll('#menu-burger>div>div');
+        let lawyers_cont = document.createElement('div');
+        lawyers_cont.setAttribute('onclick', 'mobileMenuOpenSub(this)');
+        lawyers_cont.setAttribute('onclick', 'mobileMenuOpenSub(this)');
+        let img_arrow = '<img src="/static/images/arrow-right.svg">';
+        let div = document.createElement('div');
+        lawyers_cont.insertAdjacentHTML('afterBegin', '<a href="">Наши юристы</a>');
+        lawyers_cont.insertAdjacentHTML('beforeend', img_arrow);
+        [...menu_inner_conts].forEach(function(el){
+            let el_clone = el.cloneNode(true);
+            div.appendChild(el_clone);
+            el.parentNode.removeChild(el);
+        });
+        lawyers_cont.appendChild(div);
+        document.querySelector('#menu-burger>div').appendChild(lawyers_cont);
+        // Rebuilt menu to mobile
+        // Append city-settings in menu start
+        let city_elem = document.querySelector('#current-city').cloneNode(true);
+        document.querySelector('#current-city').parentNode.removeChild(document.querySelector('#current-city'));
+        let city_cont = document.createElement('div');
+        city_cont.setAttribute('onclick', 'mobileMenuOpenSub(this)');
+        city_cont.appendChild(city_elem);
+        // let img_arrow = '<img src="/static/images/arrow-right.svg">';
+        city_cont.insertAdjacentHTML('beforeend', img_arrow);
+        city_cont.appendChild(city_elem.querySelector('div'));
+        city_elem.removeChild(city_elem.querySelector('div'));
+        city_elem.insertAdjacentHTML('afterBegin', 'Ваш город: ')
+        city_cont.querySelector('div').removeAttribute('class');
+        document.querySelector('#menu-burger>div').appendChild(city_cont);
+        // Append add-link in menu start
+        let add_link = document.getElementById('add-offer').cloneNode(true);
+        document.getElementById('add-offer').parentNode.removeChild(document.getElementById('add-offer'));
+        add_link.insertAdjacentHTML('beforeend', img_arrow);
+        add_link.insertAdjacentHTML('afterbegin', '+ ');
+        document.querySelector('#menu-burger>div').appendChild(add_link);
+        // Append add-link in menu end
+            // city search start
+        let input = document.createElement('input');
+        input.classList.add('city_search');
+        input.setAttribute('oninput', 'filterSearch(this)');
+        city_cont.querySelector('div').appendChild(input);
+            // city search end
+        // Append city-settings in menu end
+    }
+    
     
     lawyer_links = document.querySelectorAll('a.lawyer-links');
-    for (let i=0; i<lawyer_links.length; i++){
-        lawyer_links[i].addEventListener('click', setLawyerLink);
-    }
+    [...lawyer_links].forEach(function(el, i , arr) {
+        el.addEventListener('click', setLawyerLink);
+    })
     function setLawyerLink() {
         lawyer_links = document.querySelectorAll('a.lawyer-links');
-            for (let i = 0; i < lawyer_links.length; i++) {
-                lawyer_links[i].removeAttribute('style');
-            }
+        [...lawyer_links].forEach(function (el, i, arr) {
+            el.removeAttribute('style');
+        })
         this.style.cssText ='color: #1771E6;'
     }
 
@@ -70,7 +143,6 @@ function SelectValue(element) {
     element.classList.add('selected');
     element.parentNode.parentNode.classList.toggle('dn');
     if (window.matchMedia("(max-width: 425px)").matches){
-        console.log('ok');
         let filter_btn = document.querySelector('div.filters button.filter-btn');
         let machineEvent = new Event('click');
         filter_btn.dispatchEvent(machineEvent);
@@ -93,9 +165,15 @@ function filter(element){
     
 }
 
-function showCities() {
+function showCities(event) {
     el = document.querySelector('#current-city');
-    el.querySelector('div').classList.toggle('dn');
+    console.log(event);
+    if ((event.target.innerText === 'Нет, другой') || event.toElement == el.querySelector('span')){
+        el.querySelector('div').classList.toggle('dn');
+    } else if (event.toElement != el.querySelector('span'))  {
+        console.log('ok');
+        el.querySelector('div').classList.add('dn');
+    }
 }
 
 function selectCity(el) {
@@ -104,9 +182,9 @@ function selectCity(el) {
     let url = window.location.pathname + '?city=' + city_slug;
     document.querySelector('#current-city>span').innerHTML = el.innerHTML;
     let city_links = document.querySelectorAll('.city-page');
-    for (let i=0; i<city_links.length; i++){
-        city_links[i].setAttribute('href', '/' + city_slug + '/');
-    }
+    [...city_links].forEach(function(city_link) {
+        city_link.setAttribute('href', '/' + city_slug + '/');
+    });
     fetch(url).then(function(){
         url_list = location.pathname.split('/');
         if (url_list[1] !== 'lawyer'){
@@ -117,22 +195,23 @@ function selectCity(el) {
 }
 
 function showMore(btn) {
-    btn.dataset.shown = Number(btn.dataset.shown) + 5;
-    url = location.href + '?show=' + btn.dataset.shown;
+    btn.dataset.shown = Number(btn.dataset.shown) + 10;
+    url = location.pathname + '?show=' + btn.dataset.shown;
     fetch(url).then(res => res.text()).then(function(data) {
         btn = document.querySelector('div.list>button');
         btn.insertAdjacentHTML('beforeBegin', data);
     });
 }
-// GEO
+// GEO START
 function geo_success(position) {
     url = '/' + '?lat=' + position.coords.latitude + '&lng=' + position.coords.longitude;
     fetch(url)
     .then(res => res.text())
     .then(function(data) {
         // sessionStorage.setItem('city_name', JSON.parse(data).city_slug);
-        ShowConfirmCity(data);
-        console.log('wrong');
+        if (!window.matchMedia("(max-width: 425px)").matches) {
+            ShowConfirmCity(data);
+        }
         // window.location.reload(true);
 
     });
@@ -170,7 +249,24 @@ let geo_options = {
 
 if (sessionStorage.getItem('city_slug') === null){
     navigator.geolocation.getCurrentPosition(geo_success, geo_error, geo_options);
-} else{
-    console.log(sessionStorage.getItem('city_slug'));
 }
 //  GEO END
+
+// Forms
+function OpenDialog(el) {
+    event.preventDefault();
+    document.querySelector('dialog').setAttribute('open', 'open');
+    document.querySelector('dialog').style.top = String(window.pageYOffset)+'px';
+    document.querySelector('body').style.overflow = 'hidden';
+}
+function CloseCustomDialog(el) {
+    el.parentNode.parentNode.removeAttribute('open');
+    document.querySelector('body').removeAttribute('style');
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    let opened_dialog = document.querySelector('dialog[open="open"]');
+    if (opened_dialog !=null){
+        opened_dialog.style.top = String(window.pageYOffset) + 'px';
+    }
+});

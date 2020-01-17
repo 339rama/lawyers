@@ -18,9 +18,9 @@ def SendMail(sender, instance, created, **kwargs):
     if not instance.is_active:
         uuid = instance.uuid
         email = instance.email
-        message = 'Потвердите свою регистрацию  {0}/user/confirm/{1}'.format(settings.ALLOWED_HOSTS[0], uuid)
+        message = 'Потвердите свою регистрацию  <a href="{0}/user/confirm/{1}">{0}/user/confirm/{1}</a>'.format(settings.ALLOWED_HOSTS[0], uuid)
         send_mail('Confirm your email', message,
-                'samosvalom@gmail.com', [email], fail_silently=False)
+                'samosvalom@gmail.com', [email], fail_silently=False, html_message=message)
     else:
         pass
 

@@ -23,6 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '&z=w_n3uvuzrn*c1)9r2%kw*1^82jpm*rgcx3ipjzyp_13mor('
 
 YANDEX_MAP_TOKEN = 'e000b4b2-8a20-446f-9c2f-9a2471aa1b6e'
+GAINNET_API_ID = '46569123'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 

@@ -17,7 +17,7 @@ class CustomUserChangeForm(UserChangeForm):
 
 class RegisterFormView(FormView):
     form_class = CustomUserCreationForm
-    success_url = "user/login/"
+    success_url = "/user/login/"
     template_name = "register.html"
     def form_valid(self, form):
         form.save()

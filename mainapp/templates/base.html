@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,21 +12,46 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}" />
     <script src="{% static 'js/scripts.js' %}"></script>
+    {% block canonical %}{% endblock canonical %}
 </head>
 <body>
     <header>
         <nav>
-            <a href="{% url 'mainapp:Index' %}" class="logo">Юр — дело.рф</a>
-            <div id='menu-burger' onclick="openMenu()">
-                <img src="{% static 'images/menu-btn.svg' %}" /><span>Меню</span>
+            <a href="{% url 'mainapp:Index' %}" class="logo flex-v-c">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo">
+                    <path
+                        d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
+                        fill="#22A221" />
+                    <path
+                        d="M16.0002 28.8001C23.0694 28.8001 28.8002 23.0693 28.8002 16.0001C28.8002 8.93083 23.0694 3.20007 16.0002 3.20007C8.93095 3.20007 3.2002 8.93083 3.2002 16.0001C3.2002 23.0693 8.93095 28.8001 16.0002 28.8001Z"
+                        fill="#22A221" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.80304 12.3744L12.3022 15.5568C12.3584 15.6074 12.4256 15.644 12.4985 15.6638C12.5714 15.6836 12.6479 15.6859 12.7219 15.6707C12.7959 15.6554 12.8652 15.623 12.9244 15.5759C12.9835 15.5289 13.0307 15.4687 13.0622 15.4L15.563 9.88481C15.6007 9.80046 15.662 9.72882 15.7395 9.67855C15.817 9.62828 15.9074 9.60153 15.9998 9.60153C16.0922 9.60153 16.1826 9.62828 16.2601 9.67855C16.3377 9.72882 16.399 9.80046 16.4366 9.88481L18.9374 15.4C18.9684 15.4692 19.0154 15.53 19.0745 15.5774C19.1336 15.6248 19.2031 15.6575 19.2773 15.6729C19.3515 15.6882 19.4283 15.6856 19.5014 15.6655C19.5744 15.6453 19.6416 15.608 19.6974 15.5568L23.1966 12.3744C23.291 12.289 23.4153 12.2445 23.5424 12.2505C23.6695 12.2565 23.7891 12.3125 23.875 12.4064C23.9742 12.5152 24.0174 12.6624 23.9934 12.8064L22.6398 21.0576C22.5784 21.4321 22.3858 21.7725 22.0965 22.0181C21.8073 22.2637 21.4401 22.3985 21.0606 22.3984H10.939C10.5596 22.3985 10.1924 22.2637 9.90315 22.0181C9.61387 21.7725 9.42131 21.4321 9.35984 21.0576L8.00624 12.8064C7.99026 12.7083 8.00516 12.6076 8.04886 12.5183C8.09256 12.429 8.16292 12.3555 8.25021 12.3079C8.3375 12.2603 8.43742 12.241 8.53616 12.2526C8.6349 12.2642 8.7276 12.3062 8.80144 12.3728"
+                        fill="white" />
+                </svg>
+                Юр — дело.рф
+            </a>
+            <div id='menu-burger' >
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="openMenu()">
+                    <path
+                        d="M0.685714 3.54284H15.3143C15.6914 3.54284 16 3.23427 16 2.85713C16 2.47999 15.6914 2.17142 15.3143 2.17142H0.685714C0.308571 2.17142 0 2.47999 0 2.85713C0 3.23427 0.308571 3.54284 0.685714 3.54284Z"
+                        fill="#4F4F4F" />
+                    <path
+                        d="M0.685714 8.68569H15.3143C15.6914 8.68569 16 8.37712 16 7.99998C16 7.62284 15.6914 7.31427 15.3143 7.31427H0.685714C0.308571 7.31427 0 7.62284 0 7.99998C0 8.37712 0.308571 8.68569 0.685714 8.68569Z"
+                        fill="#4F4F4F" />
+                    <path
+                        d="M0.685714 13.8285H15.3143C15.6914 13.8285 16 13.52 16 13.1428C16 12.7657 15.6914 12.4571 15.3143 12.4571H0.685714C0.308571 12.4571 0 12.7657 0 13.1428C0 13.52 0.308571 13.8285 0.685714 13.8285Z"
+                        fill="#4F4F4F" />
+                </svg>
+                <span onclick="openMenu()">Меню</span>
                 <div class="dn" onmouseout="closeMenu()">
                     <div><a href="/{{ city_slug }}/" class="city-page">Все специализации</a></div>
                     {% for spec in specializations %}
-                        <div>
+                        <div onclick="mobileMenuOpenSub(this)">
                             <a href="/{{city_slug}}/{{ spec.slug}}/">
                                 {{ spec.name }}
-                                <img src="{% static 'images/arrow-right.svg' %}"/>  
                             </a>
+                            <img src="{% static 'images/arrow-right.svg' %}" />
                             {% with spec.related.all as subs %}
                             <div>
                                 {% for sub in subs  %}
@@ -37,10 +63,17 @@
                     {% endfor %}
                 </div>
             </div>
-            <a href="" class="ask-question-top">Задать вопрос</a>
+            <a href="" onclick="OpenDialog(this)" class="ask-question-top">Задать вопрос</a>
             <a href="/{{ city_slug }}/" class="city-page">Наши юристы</a>
             <div class="menu-buttons">
-                <a id='current-city' ><span onclick="showCities()" data-value="{{ main_city.slug }}">{{ main_city.name }}</span>
+                <a id='current-city' class="flex-v-c">
+                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        style="margin:0 10px 0 0;">
+                        <path
+                            d="M7.00021 0C3.67221 0 0.964844 2.70737 0.964844 6.03495C0.964844 10.8261 6.35263 15.6392 6.58211 15.8421C6.70211 15.9474 6.85116 16 7.00021 16C7.15516 16 7.31011 15.9432 7.43095 15.8299C7.65958 15.616 13.0356 10.5381 13.0356 6.03537C13.0356 2.70779 10.3274 0 7.00021 0ZM7.00021 8.91284C5.41074 8.91284 4.12274 7.624 4.12274 6.03579C4.12274 4.44758 5.41074 3.15874 7.00021 3.15874C8.58884 3.15874 9.87684 4.44716 9.87684 6.03579C9.87684 7.62442 8.58884 8.91284 7.00021 8.91284Z"
+                            fill="#828282" />
+                    </svg>
+                    <span onclick="showCities()" data-value="{{ main_city.slug }}">{{ main_city.name }}</span>
                     <div class="dn">
                         <ul>
                             {% for c in cities|dictsort:'id' %}
@@ -60,6 +93,9 @@
                 {% else %}
                     <a href="{% url 'users:Login' %}" id='enter'>Войти</a>
                 {% endif %}
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScuYzp1I1AXfB1XTgxWK_62lppk0jymgufVLxkxRtJ7HxruJQ/viewform?usp=sf_link" target="_blank" id="add-offer">
+                    Добавить объявление
+                </a>
             </div>
         </nav>
         
@@ -68,7 +104,45 @@
         {% block content %}{% endblock content %}
     </div>
     <footer>
-
+        <div class="content">
+            {% for specialization in specializations %}
+                <ul class="footer-links">
+                    <li><a href="/{{city_slug}}/{{ specialization.slug }}/">{{ specialization.name }}</a></li>
+                    {% with specialization.related.all as subspecializations %}
+                    {% for subspec in subspecializations %}
+                    <li><a href="/{{city_slug}}/{{ subspec.slug }}/">{{ subspec.name }}</a></li>
+                    {% endfor %}
+                    {% endwith %}
+                </ul>
+            {% endfor %} 
+        </div>
     </footer>
+
+<!-- Question Form -->
+<dialog class="question-form">
+    <form action="" method="POST" class="question-form">
+        <img src="{% static 'images/X.svg' %}" onclick="CloseCustomDialog(this)">
+        {% csrf_token %}
+        <p>Задайте свой вопрос юристу</p>
+        <textarea name="{{question.question.html_name}}" id="{{question.question.id_for_label}}" placeholder="{{question.question.help_text}}"></textarea>
+        <input type="text" name="{{ question.phone_number.html_name }}" id="{{ question.phone_number.id_for_label }}" placeholder="{{ question.phone_number.help_text }}">
+        <input type="text" name="name" id="{{ question.email.id_for_label }}" placeholder="Имя">
+        <input type="submit" value="Отправить">
+    </form>
+</dialog>
+{% if not after_receive_message == None %}
+    <dialog open=open class="question-form">
+        <form action="" method="POST" class="question-form">
+            <img src="{% static 'images/X.svg' %}" onclick="CloseCustomDialog(this)">
+            <p style="margin-bottom: 0;">{{ after_receive_message }}</p>
+        </form>
+    </dialog>
+{% endif %}
+<!-- Question Form -->
+<!-- Gainnet form start -->
+<script>
+    (function () { let g65 = document.createElement('gain-form65'); let place65 = document.scripts[document.scripts.length - 1]; place65.parentElement.insertBefore(g65, place65); let s65 = document.createElement('script'); s65.type = 'text/javascript'; s65.async = 1; s65.src = 'https://gainnet.ru/api/script/46569123/65'; let ss65 = document.getElementsByTagName('script')[0]; ss65.parentNode.insertBefore(s65, ss65) })()
+</script>
+<!-- Gainnet form end -->
 </body>
 </html>

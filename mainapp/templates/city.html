@@ -1,9 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load my_tags %}
 
 {% block title %}<title>{{ title }}</title>{% endblock title %}
 {% block meta_description %}<meta name="description" content="{{ meta }}">{% endblock meta_description %}
 
+{% block canonical %}
+    {% if pages > 1 %}
+    <link rel="canonical" href="/{{ city.slug }}/{% if specialization %}{{ specialization.slug }}/{% endif %}" />
+    {% endif %}
+{% endblock canonical %}
 
 {% block content %}
 
@@ -11,10 +17,11 @@
     <a href="{% url 'mainapp:Index' %}" class="flex-abs-center">Главная</a>
     <a href="" class="flex-abs-center">Адвокаты и юристы</a>
 </div>
-<h1>{{ h1 }}</h1>
-<p class="after-h1">{{ h1text }}</p>
-<p class="results-count">{{ results_count }} результатов</p>
-
+<h1>{{ h1 }}{% if page != 1 %} — Страница {{ page }}{% endif %}</h1>
+<div class="df">
+    <p class="after-h1">{{ h1text }}</p>
+    <p class="results-count">{{ results_count }} {{ results_count|result_count }}</p>
+</div>
 {% for lawyer in lawyers|slice:"0:1" %}
 <div class="list-item top-item" data-href="{{ lawyer.get_absolute_url }}" onclick="goToPage(this)">
     <img src="{{ lawyer.image.url }}" class="list-item m-dn" />
@@ -35,7 +42,7 @@
                     {% if lawyer.num_comments == 0 %}
                     <span class="d-dn">0</span>
                     <span class="m-dn">Нет отзывов</span>
-                    {% else %}{{ lawyer.num_comments }} <span class="m-dn">отзыва</span>{% endif %}
+                    {% else %}{{ lawyer.num_comments }} <span class="m-dn">{{ lawyer.num_comments|feedbacks_count }}</span>{% endif %}
                     <span class="d-dn">)</span>
                 </span>
             </div>
@@ -45,7 +52,7 @@
         <p class="item-desc">{{ lawyer.aboutself}}</p>
         <div class="item-btns flex-v-c">
             <a href="{{ lawyer.get_absolute_url }}" class="item-btn">Подробнее</a>
-            <a class="item-btn-quest">
+            <button onclick="OpenDialog(this);" class="item-btn-quest">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="item-btn-quest">
                     <g clip-path="url(#clip0)">
                         <path
@@ -61,7 +68,7 @@
                         </clipPath>
                     </defs>
                 </svg>Задать вопрос
-            </a>
+            </button>
         </div>
     </div>
 </div>
@@ -69,6 +76,7 @@
 
 <div class="list-wrapper">
     <div class="list">
+        {% if lawyers %}
         {% for lawyer in lawyers|slice:"1:" %}
             <div class="list-item" data-href="{{ lawyer.get_absolute_url }}" onclick="goToPage(this)">
                 <img src="{{ lawyer.image.url }}" class="list-item m-dn"/>
@@ -83,7 +91,7 @@
                                 {% if lawyer.num_comments == 0 %}
                                 <span class="d-dn">0</span>
                                 <span class="m-dn">Нет отзывов</span>
-                                {% else %}{{ lawyer.num_comments }} <span class="m-dn">отзыва</span>{% endif %}
+                                {% else %}{{ lawyer.num_comments }} <span class="m-dn">{{ lawyer.num_comments|feedbacks_count }}</span>{% endif %}
                                 <span class="d-dn">)</span>
                             </span>
                         </div>
@@ -93,17 +101,93 @@
                     <p class="item-desc">{{ lawyer.aboutself}}</p>
                     <div class="item-btns flex-v-c">
                         <a href="{{ lawyer.get_absolute_url }}" class="item-btn">Подробнее</a>
-                        <a class="item-btn-quest">
+                        <button onclick="OpenDialog(this);" class="item-btn-quest">
                             <img src="{% static 'images/mail.svg' %}" class="item-btn-quest"/>Задать вопрос
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
         {% endfor %}
-        {% if lawyers|length > 0 %}
-        <button class="filter-btn" data-shown="5" onclick="showMore(this)">Показать ещё</button>
+        {% else %}
+        <div class="df fxd-c no-offers">
+            <h2>Отличная новость</h2>
+            <p>
+                В этом городе еще нет юристов! У вас есть уникальная возможность стать первым!
+                Оставьте заявку на добавление и после проверки вы появитесь на этой странице
+            </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScuYzp1I1AXfB1XTgxWK_62lppk0jymgufVLxkxRtJ7HxruJQ/viewform?usp=sf_link"
+                target="_blank"
+                id="add-offer">
+                Добавить объявление
+            </a>
+        </div>
         {% endif %}
-        <h2>Как выбрать юриста по {{ spec_new_name }}?</h2>
+        {% if pages > 0 %}
+        <!-- <button class="filter-btn" data-shown="10" onclick="showMore(this)">Показать ещё</button> -->
+        <!-- Pagination -->
+        <div class="pagination">
+            {% if pages == 1 %}
+
+            {% elif pages <= 5 %}
+                {% for page_ in pages %}
+                    <a href="?page={{ page_ }}">{{ page_ }}</a>
+                {% endfor %}
+            {% else %}
+                <a href="?page=1" {% if page == 1 %}class="current-page"{% endif %}>1</a>
+                    {% if page > 3 and page <= pages|add:'-3' %}
+                        <a href="?page={{ page|add:'-1' }}" class="arrow">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.0218 13.2424L10.0217 13.2423L6.10371 8.50522L10.0218 3.75878C10.1927 3.55174 10.1927 3.22526 10.0218 3.01822C9.93301 2.91064 9.80963 2.85 9.6793 2.85C9.54897 2.85 9.42559 2.91064 9.33679 3.01822L5.12076 8.12556C5.03356 8.23119 4.99258 8.36079 4.99258 8.49584C4.99258 8.61969 5.03259 8.75932 5.12076 8.86612L9.33549 13.9719C9.42297 14.0834 9.54559 14.1481 9.67714 14.15C9.80911 14.1519 9.93314 14.0904 10.0218 13.9829C10.1927 13.7759 10.1927 13.4494 10.0218 13.2424Z"
+                                    fill="#959BA4" stroke="#959BA4" stroke-width="0.3" />
+                                <rect x="15.5" y="0.5" width="15" height="15" transform="rotate(90 15.5 0.5)" stroke="white" />
+                            </svg>
+                        </a>
+                        <a href="?page={{ page|add:'-1' }}">{{ page|add:'-1' }}</a>
+                        <a href="?page={{ page }}" class="current-page">{{ page }}</a>
+                        <a href="?page={{ page|add:'1' }}">{{ page|add:'1' }}</a>
+                    {% elif page <= 3 %}
+                        <a href="?page=2"{% if page == 2 %}class="current-page"{% endif %}>2</a>
+                        <a href="?page=3"{% if page == 3 %}class="current-page"{% endif %}>3</a>
+                    {% elif page > pages|add:'-3' and page != pages %}
+                        <a href="?page={{ page|add:'-1' }}" class="arrow">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.0218 13.2424L10.0217 13.2423L6.10371 8.50522L10.0218 3.75878C10.1927 3.55174 10.1927 3.22526 10.0218 3.01822C9.93301 2.91064 9.80963 2.85 9.6793 2.85C9.54897 2.85 9.42559 2.91064 9.33679 3.01822L5.12076 8.12556C5.03356 8.23119 4.99258 8.36079 4.99258 8.49584C4.99258 8.61969 5.03259 8.75932 5.12076 8.86612L9.33549 13.9719C9.42297 14.0834 9.54559 14.1481 9.67714 14.15C9.80911 14.1519 9.93314 14.0904 10.0218 13.9829C10.1927 13.7759 10.1927 13.4494 10.0218 13.2424Z"
+                                    fill="#959BA4" stroke="#959BA4" stroke-width="0.3" />
+                                <rect x="15.5" y="0.5" width="15" height="15" transform="rotate(90 15.5 0.5)" stroke="white" />
+                            </svg>
+                        </a>
+                        {% if page > pages|add:'-2' %}<a href="?page={{ page|add:'-1' }}">{{ page|add:'-1' }}</a>{% endif %}
+                        {% if page != pages %}<a href="?page={{ page }}" class="current-page">{{ page }}</a>{% endif %}
+                        {% if page == pages|add:'-2' %}<a href="?page={{ pages|add:'-1' }}">{{ pages|add:'-1' }}</a>{% endif %}
+                    {% elif page == pages %}
+                        <a href="?page={{ page|add:'-1' }}" class="arrow">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.0218 13.2424L10.0217 13.2423L6.10371 8.50522L10.0218 3.75878C10.1927 3.55174 10.1927 3.22526 10.0218 3.01822C9.93301 2.91064 9.80963 2.85 9.6793 2.85C9.54897 2.85 9.42559 2.91064 9.33679 3.01822L5.12076 8.12556C5.03356 8.23119 4.99258 8.36079 4.99258 8.49584C4.99258 8.61969 5.03259 8.75932 5.12076 8.86612L9.33549 13.9719C9.42297 14.0834 9.54559 14.1481 9.67714 14.15C9.80911 14.1519 9.93314 14.0904 10.0218 13.9829C10.1927 13.7759 10.1927 13.4494 10.0218 13.2424Z"
+                                    fill="#959BA4" stroke="#959BA4" stroke-width="0.3" />
+                                <rect x="15.5" y="0.5" width="15" height="15" transform="rotate(90 15.5 0.5)" stroke="white" />
+                            </svg>
+                        </a>
+                        <a href="?page={{ page|add:'-2' }}">{{ page|add:'-2' }}</a>
+                        <a href="?page={{ page|add:'-1' }}">{{ page|add:'-1' }}</a>
+                    {% endif %}
+                {% if page != pages and page <= pages|add:'-3' %}
+                    <a href="?page={{ page|add:'1' }}" class="arrow">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.97818 2.75762L5.97828 2.75774L9.89629 7.49478L5.97818 12.2412C5.80727 12.4483 5.80727 12.7747 5.97818 12.9818C6.06699 13.0894 6.19037 13.15 6.3207 13.15C6.45103 13.15 6.57441 13.0894 6.66321 12.9818L10.8792 7.87444C10.9664 7.76881 11.0074 7.63921 11.0074 7.50416C11.0074 7.38031 10.9674 7.24068 10.8792 7.13388L6.66451 2.0281C6.57703 1.91655 6.45441 1.85194 6.32286 1.85004C6.19089 1.84814 6.06686 1.90963 5.97818 2.01706C5.80727 2.2241 5.80727 2.55058 5.97818 2.75762Z"
+                                fill="#959BA4" stroke="#959BA4" stroke-width="0.3" />
+                            <rect x="0.5" y="15.5" width="15" height="15" transform="rotate(-90 0.5 15.5)" stroke="white" />
+                        </svg>
+                    </a>
+                {% endif %}
+                <a href="?page={{ pages }}" {% if page == pages %}class="current-page"{% endif %}>{{ pages }}</a>
+            {% endif %}
+        </div>
+        <!-- Pagination -->
+        {% endif %}
+        <h2>Как выбрать юриста {% if spec_new_name %}по {{ spec_new_name }}{% endif %}?</h2>
         <p>Наш сервис помогает вам бесплатно найти специалиста, мы не берем
         комиссию. Чтобы начать пользоваться надо выбрать специалиста, а после перейти на форму контакта. Система вас
         перенаправит на сайт-партнера, где можно связаться с исполнителем.
@@ -114,6 +198,19 @@
         Более того, настоятельно рекомендуем изучить ответы и рейтинг юристов
         перед обращением. В карточке юриста можно увидеть отзывы, специализацию,
         иные подробности.</p>
+        <h2>Юристы {% if spec_new_name %}по {{ spec_new_name }}{% endif %} в других городах</h2>
+        <div class="cities-links"> 
+            {% for city_link in cities|dictsort:'id'|slice:'5' %}
+                {% if not city_link == city %}
+                    <a href="/{{ city_link.slug }}/{% if specialization %}{{ specialization.slug }}/{% endif %}">{{ city_link.name }}</a>
+                {% endif %}
+            {% endfor %}
+            {% for city_link in cities|my_random:'4' %}
+                {% if not city_link == city %}
+                    <a href="/{{ city_link.slug }}/{% if specialization %}{{ specialization.slug }}/{% endif %}">{{ city_link.name }}</a>
+                {% endif %}
+            {% endfor %}
+        </div>    
     </div>
     <div class="filter-wrapper">
         <div class="filters">

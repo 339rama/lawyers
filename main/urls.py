@@ -4,7 +4,7 @@ from django.conf.urls import url, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-from django.contrib.sitemaps.views import sitemap
+from django.contrib.sitemaps.views import sitemap, index
 from mainapp.sitemaps import *
 
 sitemaps = {
@@ -15,7 +15,8 @@ sitemaps = {
 }
 
 urlpatterns = [
-    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+    path('sitemap.xml', index, {'sitemaps': sitemaps}),
+    path('sitemap-<section>.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
     path('admin/', admin.site.urls),
     path('user/', include(('users.urls', 'users'), namespace='users')),
     path('', include(('mainapp.urls', 'mainapp'), namespace='mainapp')),

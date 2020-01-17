@@ -7,10 +7,10 @@
 {% endblock meta_description %}
 
 {% block content %}
-<div class="banner df" style="background-image: url({% static 'images/main-banner.png' %});">
+<div class="banner df" style="background-image:url({% static 'images/main-banner.jpg' %})">
     <h1>Бесплатная консультация юриста</h1>
     <p>На сайте можно получить бесплатную консультацию юриста и получить бесплатную помощь компетентного юриста в течение 10 минут</p>
-    <a href="" class='banner-btn flex-abs-center'>Задать вопрос</a>
+    <button onclick="OpenDialog(this)" class='banner-btn flex-abs-center'>Задать вопрос</button>
 </div>
 <div class="index-specs">
     {% for specialization in specializations|slice:":6" %}
@@ -27,7 +27,7 @@
                     <a href="/{{city_slug}}/{{ subspec.slug }}/">{{ subspec.name }}</a>
                     {% endfor %}
                 </div>
-                <a href="" class="spec-card-btn flex-abs-center">Задать вопрос</a>
+                <button onclick="OpenDialog(this)" class="spec-card-btn flex-abs-center">Задать вопрос</button>
             </div>
         </div>
     {% elif subspecs == 1 %}
@@ -50,9 +50,14 @@
         <p>Задайте свой вопрос юристу</p>
         <p>Чтобы задать вопрос юристу онлайн, вам потребуется всего несколько минут. Наши специалисты ответят в кратчайшие сроки и подскажут, как правильно поступить в вашей ситуации. Доверьте решение своей проблемы квалифицированным юристам!</p>
     </div>
-    <form action='/' method='POST'>
+    <form action='/' method='POST' class="question-form">
         {% csrf_token %}
-        <textarea name="text "placeholder="Опишите подробно вашу ситуацию. Чем подробнее вы разъясните ситуацию, тем полнее и точнее будут ответы юристов."></textarea>
+        <textarea name="{{question.question.html_name}}" id="{{question.question.id_for_label}}"
+            placeholder="{{question.question.help_text}}"></textarea>
+        <input type="text" name="{{ question.phone_number.html_name }}" id="{{ question.phone_number.id_for_label }}"
+            placeholder="{{ question.phone_number.help_text }}">
+        <input type="text" name="{{ question.email.html_name }}" id="{{ question.email.id_for_label }}"
+            placeholder="{{ question.email.help_text }}">
         <input type="submit" value="Отправить">
     </form>
 </div>
@@ -71,7 +76,7 @@
                     <a href="/{{city_slug}}/{{ subspec.slug }}/">{{ subspec.name }}</a>
                     {% endfor %}
                 </div>
-                <a href="" class="spec-card-btn flex-abs-center">Задать вопрос</a>
+                <button onclick="OpenDialog(this)" class="spec-card-btn flex-abs-center">Задать вопрос</button>
             </div>
         </div>
     {% endif %}
@@ -99,7 +104,7 @@
                     <a href="/{{city_slug}}/{{ subspec.slug }}/">{{ subspec.name }}</a>
                     {% endfor %}
                 </div>
-                <a href="" class="spec-card-btn flex-abs-center">Задать вопрос</a>
+                <button onclick="OpenDialog(this)" class="spec-card-btn flex-abs-center">Задать вопрос</button>
             </div>
         </div>
     {% endfor %}

@@ -32,6 +32,7 @@ class City(models.Model):
 class Specialization(models.Model):
     name = models.CharField(
         max_length=255, verbose_name='Название специализации')
+    name_form = models.CharField(max_length=255, blank=True, verbose_name='Форма', help_text='Форма')
     slug = models.SlugField(max_length=255, db_index=True,
                             unique=True, verbose_name='ЧПУ')
     related = models.ManyToManyField('self', symmetrical=False, related_name='related_specs', blank=True, verbose_name="Подспециализации")
@@ -128,14 +129,18 @@ class Lawyer(models.Model):
     education = models.TextField(blank=True, verbose_name='Образование')
     address = models.CharField(max_length=255, blank=True, verbose_name='Адрес')
     specializations = models.ManyToManyField(Specialization, related_name='specializations', blank=True, verbose_name='Специализации')
+    sorting = models.PositiveSmallIntegerField(verbose_name='Сортировка', default=100)
 
     class Meta:
-        ordering = ['lawyername']
+        ordering = ['sorting']
         verbose_name = 'Юрист'
         verbose_name_plural = 'Юристы'
     
     def __str__(self):
         return self.lawyername
+
+    def get_specializations(self):
+        return str("|".join([spec.name for spec in self.specializations.all()]))
 
     def get_absolute_url(self):
         return reverse('mainapp:LawyerPage', args=[self.id])
@@ -153,3 +158,17 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.author
+
+
+class Question(models.Model):
+    email = models.CharField(max_length=128, verbose_name='Имя', help_text='Имя')
+    phone_number = models.CharField(max_length=128, verbose_name='Номер телефона', help_text='Номер телефона')
+    question = models.TextField(verbose_name='Вопрос', help_text='Ваш вопрос')
+
+    class Meta:
+        ordering = ['email']
+        verbose_name = 'Вопрос'
+        verbose_name_plural = 'Вопросы'
+    
+    def __str__(self):
+        return self.email
